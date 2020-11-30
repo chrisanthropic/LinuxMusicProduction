@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="6000" id-counter="29039" name-counter="5" event-counter="26319" vca-counter="1">
+<Session version="6000" id-counter="34527" name-counter="5" event-counter="35474" vca-counter="1">
   <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
   <MIDIPorts>
     <Port name="MIDI Clock out" direction="output"/>
@@ -8,9 +8,7 @@
     <Port name="MTC out" direction="output"/>
     <Port name="Scene in" direction="input"/>
     <Port name="Scene out" direction="output"/>
-    <Port name="Virtual Keyboard" direction="output">
-      <Connection other="ardour:DrumGizmo/midi_in 1"/>
-    </Port>
+    <Port name="Virtual Keyboard" direction="output"/>
   </MIDIPorts>
   <Config>
     <Option name="use-region-fades" value="1"/>
@@ -66,7 +64,7 @@
   <Sources/>
   <Regions/>
   <Locations>
-    <Location id="29041" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1606703043"/>
+    <Location id="34529" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1606714462"/>
   </Locations>
   <Bundles/>
   <VCAManager/>
@@ -87,7 +85,6 @@
           <Connection other="MixBus 6/audio_out 1"/>
           <Connection other="MixBus 7/audio_out 1"/>
           <Connection other="MixBus 8/audio_out 1"/>
-          <Connection other="Out16(DrumGizmo)/audio_out 1"/>
         </Port>
         <Port type="audio" name="Master/audio_in 2">
           <Connection other="MB1- SYNTH/audio_out 2"/>
@@ -98,7 +95,6 @@
           <Connection other="MixBus 6/audio_out 2"/>
           <Connection other="MixBus 7/audio_out 2"/>
           <Connection other="MixBus 8/audio_out 2"/>
-          <Connection other="Out16(DrumGizmo)/audio_out 2"/>
         </Port>
       </IO>
       <IO name="Master" id="90" direction="Output" default-type="audio">
@@ -151,7 +147,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state12">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state14">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -665,7 +661,7 @@
     </Route>
     <Route version="6000" id="304" name="MB1: SYNTH" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="25" flags="AudioBus,OrderSet" color="3471155199"/>
+      <PresentationInfo order="2" flags="AudioBus,OrderSet" color="3471155199"/>
       <Controllable name="solo" id="312" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="318" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="320" flags="Toggle" value="0" solo-safe="0"/>
@@ -723,7 +719,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state11">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state13">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -1061,7 +1057,7 @@
         </OutputMap-0>
         <ThruMap/>
         <Processor id="734" name="SC MB1: SYNTH/ACE Compressor (stereo) 4" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="sidechain">
-          <IO name="TO BE RESET FROM XML" id="24789" direction="Input" default-type="audio" pretty-name="SC ACE Compressor (stereo)"/>
+          <IO name="TO BE RESET FROM XML" id="29906" direction="Input" default-type="audio" pretty-name="SC ACE Compressor (stereo)"/>
         </Processor>
         <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit">
           <Port symbol="att" value="10"/>
@@ -1138,7 +1134,7 @@
     </Route>
     <Route version="6000" id="392" name="MixBus 3" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="2" flags="AudioBus,Hidden,OrderSet" color="3266569727"/>
+      <PresentationInfo order="4" flags="AudioBus,Hidden,OrderSet" color="3266569727"/>
       <Controllable name="solo" id="400" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="406" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="408" flags="Toggle" value="0" solo-safe="0"/>
@@ -1196,7 +1192,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state12">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state14">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -1608,7 +1604,7 @@
     </Route>
     <Route version="6000" id="436" name="MixBus 4" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="3" flags="AudioBus,Hidden,OrderSet" color="3551520255"/>
+      <PresentationInfo order="5" flags="AudioBus,Hidden,OrderSet" color="3551520255"/>
       <Controllable name="solo" id="444" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="450" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="452" flags="Toggle" value="0" solo-safe="0"/>
@@ -1666,7 +1662,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state12">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state14">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -2078,7 +2074,7 @@
     </Route>
     <Route version="6000" id="480" name="MixBus 5" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="4" flags="AudioBus,Hidden,OrderSet" color="3404057343"/>
+      <PresentationInfo order="6" flags="AudioBus,Hidden,OrderSet" color="3404057343"/>
       <Controllable name="solo" id="488" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="494" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="496" flags="Toggle" value="0" solo-safe="0"/>
@@ -2136,7 +2132,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state13">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state15">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -2548,7 +2544,7 @@
     </Route>
     <Route version="6000" id="524" name="MixBus 6" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="5" flags="AudioBus,Hidden,OrderSet" color="3521765375"/>
+      <PresentationInfo order="7" flags="AudioBus,Hidden,OrderSet" color="3521765375"/>
       <Controllable name="solo" id="532" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="538" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="540" flags="Toggle" value="0" solo-safe="0"/>
@@ -2606,7 +2602,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state13">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state15">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -3018,7 +3014,7 @@
     </Route>
     <Route version="6000" id="568" name="MixBus 7" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="6" flags="AudioBus,Hidden,OrderSet" color="2155013631"/>
+      <PresentationInfo order="8" flags="AudioBus,Hidden,OrderSet" color="2155013631"/>
       <Controllable name="solo" id="576" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="582" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="584" flags="Toggle" value="0" solo-safe="0"/>
@@ -3076,7 +3072,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state14">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state16">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -3488,7 +3484,7 @@
     </Route>
     <Route version="6000" id="612" name="MixBus 8" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="7" flags="AudioBus,Hidden,OrderSet" color="3855339007"/>
+      <PresentationInfo order="9" flags="AudioBus,Hidden,OrderSet" color="3855339007"/>
       <Controllable name="solo" id="620" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="626" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="628" flags="Toggle" value="0" solo-safe="0"/>
@@ -3546,7 +3542,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state15">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state17">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -3958,13 +3954,12 @@
     </Route>
     <Route version="6000" id="15799" name="DrumGizmo" default-type="midi" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" midi-playlist="15838" saved-meter-point="MeterPostFader" alignment-choice="Automatic" playback-channel-mode="AllChannels" capture-channel-mode="AllChannels" playback-channel-mask="0xffff" capture-channel-mask="0xffff" note-mode="Sustained" step-editing="0" input-active="1">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="8" flags="MidiTrack,OrderSet" color="3853021951"/>
+      <PresentationInfo order="10" flags="MidiTrack,OrderSet" color="3853021951"/>
       <Controllable name="solo" id="15807" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="15813" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="15815" flags="Toggle" value="0" solo-safe="0"/>
       <IO name="DrumGizmo" id="15827" direction="Input" default-type="midi">
         <Port type="midi" name="DrumGizmo/midi_in 1">
-          <Connection other="Virtual Keyboard"/>
           <Connection other="system:midi_capture_1"/>
         </Port>
       </IO>
@@ -4014,9 +4009,7 @@
         <Port type="audio" name="DrumGizmo/audio_out 15">
           <Connection other="Kick Drum (Outside)/audio_in 1"/>
         </Port>
-        <Port type="audio" name="DrumGizmo/audio_out 16">
-          <Connection other="Out16(DrumGizmo)/audio_in 1"/>
-        </Port>
+        <Port type="audio" name="DrumGizmo/audio_out 16"/>
         <Port type="midi" name="DrumGizmo/midi_out 1"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
@@ -4075,7 +4068,7 @@
           <Channelmap type="audio" from="15" to="15"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state10">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state12">
           <Port symbol="lv2_freewheel" value="0"/>
         </lv2>
         <Controllable name="hidden" id="15918" flags="Toggle" value="0" parameter="0" symbol="lv2_freewheel"/>
@@ -4108,7 +4101,7 @@
     </Route>
     <Route version="6000" id="15927" name="Ambient (Left)" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="15966" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="9" flags="AudioTrack,OrderSet" color="3555054847"/>
+      <PresentationInfo order="11" flags="AudioTrack,OrderSet" color="3555054847"/>
       <Controllable name="solo" id="15935" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="15941" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="15943" flags="Toggle" value="0" solo-safe="0"/>
@@ -4147,9 +4140,9 @@
       <Processor id="15957" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="15931" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34205" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="1" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="15946" flags="" value="0"/>
@@ -4165,7 +4158,7 @@
             <AutomationList automation-id="pan-lfe" id="15953" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34219" flags="GainLike,InlineControl" value="0.95000666379928589"/>
       </Processor>
       <Processor id="15961" name="meter-Out1(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="15962" name="Ambient (Left)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Ambient (Left)" type="main-outs" role="Main">
@@ -4192,7 +4185,7 @@
     </Route>
     <Route version="6000" id="15983" name="Ambient (Right)" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16022" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="10" flags="AudioTrack,OrderSet" color="3856888575"/>
+      <PresentationInfo order="12" flags="AudioTrack,OrderSet" color="3856888575"/>
       <Controllable name="solo" id="15991" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="15997" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="15999" flags="Toggle" value="0" solo-safe="0"/>
@@ -4209,7 +4202,7 @@
       <Controllable name="mute" id="15993" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="15995" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="23378" flags="" value="0.5"/>
+        <Controllable name="pan-azimuth" id="23378" flags="" value="1"/>
         <Controllable name="pan-width" id="23382" flags="" value="1"/>
         <Controllable name="pan-elevation" id="23380" flags="" value="0"/>
         <Controllable name="pan-frontback" id="23384" flags="" value="0"/>
@@ -4231,12 +4224,12 @@
       <Processor id="16013" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="15987" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34226" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="4" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
-          <Controllable name="pan-azimuth" id="23378" flags="" value="0.5"/>
+          <Controllable name="pan-azimuth" id="23378" flags="" value="1"/>
           <Controllable name="pan-width" id="23382" flags="" value="1"/>
           <Controllable name="pan-elevation" id="23380" flags="" value="0"/>
           <Controllable name="pan-frontback" id="23384" flags="" value="0"/>
@@ -4249,13 +4242,13 @@
             <AutomationList automation-id="pan-lfe" id="23385" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34240" flags="GainLike,InlineControl" value="1.0319452285766602"/>
       </Processor>
       <Processor id="16017" name="meter-Out2(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16018" name="Ambient (Right)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Ambient (Right)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="23378" flags="" value="0.5"/>
+          <Controllable name="pan-azimuth" id="23378" flags="" value="1"/>
           <Controllable name="pan-width" id="23382" flags="" value="1"/>
           <Controllable name="pan-elevation" id="23380" flags="" value="0"/>
           <Controllable name="pan-frontback" id="23384" flags="" value="0"/>
@@ -4276,7 +4269,7 @@
     </Route>
     <Route version="6000" id="16039" name="Overhead (Left)" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16078" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="11" flags="AudioTrack,OrderSet" color="3670140415"/>
+      <PresentationInfo order="13" flags="AudioTrack,OrderSet" color="3670140415"/>
       <Controllable name="solo" id="16047" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16053" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16055" flags="Toggle" value="0" solo-safe="0"/>
@@ -4293,7 +4286,7 @@
       <Controllable name="mute" id="16049" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16051" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="23412" flags="" value="0.5"/>
+        <Controllable name="pan-azimuth" id="23412" flags="" value="0.042076923076923047"/>
         <Controllable name="pan-width" id="23416" flags="" value="1"/>
         <Controllable name="pan-elevation" id="23414" flags="" value="0"/>
         <Controllable name="pan-frontback" id="23418" flags="" value="0"/>
@@ -4315,12 +4308,12 @@
       <Processor id="16069" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16043" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34247" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="5" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
-          <Controllable name="pan-azimuth" id="23412" flags="" value="0.5"/>
+          <Controllable name="pan-azimuth" id="23412" flags="" value="0.042076923076923047"/>
           <Controllable name="pan-width" id="23416" flags="" value="1"/>
           <Controllable name="pan-elevation" id="23414" flags="" value="0"/>
           <Controllable name="pan-frontback" id="23418" flags="" value="0"/>
@@ -4333,13 +4326,13 @@
             <AutomationList automation-id="pan-lfe" id="23419" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34261" flags="GainLike,InlineControl" value="0.95000642538070679"/>
       </Processor>
       <Processor id="16073" name="meter-Out3(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16074" name="Overhead (Left)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Overhead (Left)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="23412" flags="" value="0.5"/>
+          <Controllable name="pan-azimuth" id="23412" flags="" value="0.042076923076923047"/>
           <Controllable name="pan-width" id="23416" flags="" value="1"/>
           <Controllable name="pan-elevation" id="23414" flags="" value="0"/>
           <Controllable name="pan-frontback" id="23418" flags="" value="0"/>
@@ -4360,7 +4353,7 @@
     </Route>
     <Route version="6000" id="16095" name="Overhead (Right)" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16134" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="12" flags="AudioTrack,OrderSet" color="1925637631"/>
+      <PresentationInfo order="14" flags="AudioTrack,OrderSet" color="1925637631"/>
       <Controllable name="solo" id="16103" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16109" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16111" flags="Toggle" value="0" solo-safe="0"/>
@@ -4377,7 +4370,7 @@
       <Controllable name="mute" id="16105" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16107" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="23446" flags="" value="0.5"/>
+        <Controllable name="pan-azimuth" id="23446" flags="" value="1"/>
         <Controllable name="pan-width" id="23450" flags="" value="1"/>
         <Controllable name="pan-elevation" id="23448" flags="" value="0"/>
         <Controllable name="pan-frontback" id="23452" flags="" value="0"/>
@@ -4399,12 +4392,12 @@
       <Processor id="16125" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16099" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34268" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="6" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
-          <Controllable name="pan-azimuth" id="23446" flags="" value="0.5"/>
+          <Controllable name="pan-azimuth" id="23446" flags="" value="1"/>
           <Controllable name="pan-width" id="23450" flags="" value="1"/>
           <Controllable name="pan-elevation" id="23448" flags="" value="0"/>
           <Controllable name="pan-frontback" id="23452" flags="" value="0"/>
@@ -4417,13 +4410,13 @@
             <AutomationList automation-id="pan-lfe" id="23453" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34282" flags="GainLike,InlineControl" value="0.95000666379928589"/>
       </Processor>
       <Processor id="16129" name="meter-Out4(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16130" name="Overhead (Right)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Overhead (Right)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="23446" flags="" value="0.5"/>
+          <Controllable name="pan-azimuth" id="23446" flags="" value="1"/>
           <Controllable name="pan-width" id="23450" flags="" value="1"/>
           <Controllable name="pan-elevation" id="23448" flags="" value="0"/>
           <Controllable name="pan-frontback" id="23452" flags="" value="0"/>
@@ -4444,7 +4437,7 @@
     </Route>
     <Route version="6000" id="16151" name="Overhead (Center)" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16190" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="13" flags="AudioTrack,OrderSet" color="3319064063"/>
+      <PresentationInfo order="15" flags="AudioTrack,OrderSet" color="3319064063"/>
       <Controllable name="solo" id="16159" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16165" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16167" flags="Toggle" value="0" solo-safe="0"/>
@@ -4483,9 +4476,9 @@
       <Processor id="16181" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16155" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34289" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="7" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23480" flags="" value="0.5"/>
@@ -4501,7 +4494,7 @@
             <AutomationList automation-id="pan-lfe" id="23487" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34303" flags="GainLike,InlineControl" value="0.99039649963378906"/>
       </Processor>
       <Processor id="16185" name="meter-Out5(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16186" name="Overhead (Center)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Overhead (Center)" type="main-outs" role="Main">
@@ -4528,7 +4521,7 @@
     </Route>
     <Route version="6000" id="16207" name="HiHat" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16246" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="14" flags="AudioTrack,OrderSet" color="1927538175"/>
+      <PresentationInfo order="16" flags="AudioTrack,OrderSet" color="1927538175"/>
       <Controllable name="solo" id="16215" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16221" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16223" flags="Toggle" value="0" solo-safe="0"/>
@@ -4567,9 +4560,9 @@
       <Processor id="16237" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16211" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34310" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="8" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23514" flags="" value="0.5"/>
@@ -4585,7 +4578,7 @@
             <AutomationList automation-id="pan-lfe" id="23521" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34324" flags="GainLike,InlineControl" value="0.99039667844772339"/>
       </Processor>
       <Processor id="16241" name="meter-Out6(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16242" name="HiHat" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="HiHat" type="main-outs" role="Main">
@@ -4612,7 +4605,7 @@
     </Route>
     <Route version="6000" id="16263" name="Ride" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16302" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="15" flags="AudioTrack,OrderSet" color="1927665919"/>
+      <PresentationInfo order="17" flags="AudioTrack,OrderSet" color="1927665919"/>
       <Controllable name="solo" id="16271" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16277" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16279" flags="Toggle" value="0" solo-safe="0"/>
@@ -4651,9 +4644,9 @@
       <Processor id="16293" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16267" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34331" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="9" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23548" flags="" value="0.5"/>
@@ -4669,7 +4662,7 @@
             <AutomationList automation-id="pan-lfe" id="23555" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34345" flags="GainLike,InlineControl" value="0.91075730323791504"/>
       </Processor>
       <Processor id="16297" name="meter-Out7(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16298" name="Ride" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Ride" type="main-outs" role="Main">
@@ -4696,7 +4689,7 @@
     </Route>
     <Route version="6000" id="16319" name="Snare (Top)" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16358" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="16" flags="AudioTrack,OrderSet" color="3637437951"/>
+      <PresentationInfo order="18" flags="AudioTrack,OrderSet" color="3637437951"/>
       <Controllable name="solo" id="16327" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16333" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16335" flags="Toggle" value="0" solo-safe="0"/>
@@ -4735,9 +4728,9 @@
       <Processor id="16349" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16323" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34352" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="10" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23582" flags="" value="0.5"/>
@@ -4753,7 +4746,7 @@
             <AutomationList automation-id="pan-lfe" id="23589" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34366" flags="GainLike,InlineControl" value="0.95000624656677246"/>
       </Processor>
       <Processor id="16353" name="meter-Out8(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16354" name="Snare (Top)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Snare (Top)" type="main-outs" role="Main">
@@ -4780,7 +4773,7 @@
     </Route>
     <Route version="6000" id="16375" name="Snare (Bottom)" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16414" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="17" flags="AudioTrack,OrderSet" color="3854856959"/>
+      <PresentationInfo order="19" flags="AudioTrack,OrderSet" color="3854856959"/>
       <Controllable name="solo" id="16383" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16389" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16391" flags="Toggle" value="0" solo-safe="0"/>
@@ -4819,9 +4812,9 @@
       <Processor id="16405" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16379" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34373" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="11" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23616" flags="" value="0.5"/>
@@ -4837,7 +4830,7 @@
             <AutomationList automation-id="pan-lfe" id="23623" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34387" flags="GainLike,InlineControl" value="0.95000684261322021"/>
       </Processor>
       <Processor id="16409" name="meter-Out9(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16410" name="Snare (Bottom)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Snare (Bottom)" type="main-outs" role="Main">
@@ -4864,7 +4857,7 @@
     </Route>
     <Route version="6000" id="16431" name="Tom 1" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16470" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="18" flags="AudioTrack,OrderSet" color="3855928063"/>
+      <PresentationInfo order="20" flags="AudioTrack,OrderSet" color="3855928063"/>
       <Controllable name="solo" id="16439" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16445" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16447" flags="Toggle" value="0" solo-safe="0"/>
@@ -4903,9 +4896,9 @@
       <Processor id="16461" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16435" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34394" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="12" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23650" flags="" value="0.5"/>
@@ -4921,7 +4914,7 @@
             <AutomationList automation-id="pan-lfe" id="23657" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34408" flags="GainLike,InlineControl" value="0.99039649963378906"/>
       </Processor>
       <Processor id="16465" name="meter-Out10(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16466" name="Tom 1" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Tom 1" type="main-outs" role="Main">
@@ -4948,7 +4941,7 @@
     </Route>
     <Route version="6000" id="16487" name="Tom 2" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16526" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="19" flags="AudioTrack,OrderSet" color="1927643391"/>
+      <PresentationInfo order="21" flags="AudioTrack,OrderSet" color="1927643391"/>
       <Controllable name="solo" id="16495" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16501" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16503" flags="Toggle" value="0" solo-safe="0"/>
@@ -4987,9 +4980,9 @@
       <Processor id="16517" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16491" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34415" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="13" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23684" flags="" value="0.5"/>
@@ -5005,7 +4998,7 @@
             <AutomationList automation-id="pan-lfe" id="23691" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34429" flags="GainLike,InlineControl" value="0.95000642538070679"/>
       </Processor>
       <Processor id="16521" name="meter-Out11(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16522" name="Tom 2" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Tom 2" type="main-outs" role="Main">
@@ -5032,7 +5025,7 @@
     </Route>
     <Route version="6000" id="16543" name="Floor Tom 1" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16582" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="20" flags="AudioTrack,OrderSet" color="2322916863"/>
+      <PresentationInfo order="22" flags="AudioTrack,OrderSet" color="2322916863"/>
       <Controllable name="solo" id="16551" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16557" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16559" flags="Toggle" value="0" solo-safe="0"/>
@@ -5071,9 +5064,9 @@
       <Processor id="16573" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16547" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34436" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="14" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23718" flags="" value="0.5"/>
@@ -5089,7 +5082,7 @@
             <AutomationList automation-id="pan-lfe" id="23725" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34450" flags="GainLike,InlineControl" value="0.91075730323791504"/>
       </Processor>
       <Processor id="16577" name="meter-Out12(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16578" name="Floor Tom 1" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Floor Tom 1" type="main-outs" role="Main">
@@ -5116,7 +5109,7 @@
     </Route>
     <Route version="6000" id="16599" name="Floor Tom 2" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16638" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="21" flags="AudioTrack,OrderSet" color="2162526719"/>
+      <PresentationInfo order="23" flags="AudioTrack,OrderSet" color="2162526719"/>
       <Controllable name="solo" id="16607" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16613" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16615" flags="Toggle" value="0" solo-safe="0"/>
@@ -5155,9 +5148,9 @@
       <Processor id="16629" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16603" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34457" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="15" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23752" flags="" value="0.5"/>
@@ -5173,7 +5166,7 @@
             <AutomationList automation-id="pan-lfe" id="23759" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34471" flags="GainLike,InlineControl" value="0.99039649963378906"/>
       </Processor>
       <Processor id="16633" name="meter-Out13(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16634" name="Floor Tom 2" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Floor Tom 2" type="main-outs" role="Main">
@@ -5200,7 +5193,7 @@
     </Route>
     <Route version="6000" id="16655" name="Kick Drum (Inside)" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16694" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="22" flags="AudioTrack,OrderSet" color="3538252543"/>
+      <PresentationInfo order="24" flags="AudioTrack,OrderSet" color="3538252543"/>
       <Controllable name="solo" id="16663" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16669" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16671" flags="Toggle" value="0" solo-safe="0"/>
@@ -5239,9 +5232,9 @@
       <Processor id="16685" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16659" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34478" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="16" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23786" flags="" value="0.5"/>
@@ -5257,7 +5250,7 @@
             <AutomationList automation-id="pan-lfe" id="23793" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34492" flags="GainLike,InlineControl" value="0.91075652837753296"/>
       </Processor>
       <Processor id="16689" name="meter-Out14(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16690" name="Kick Drum (Inside)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Kick Drum (Inside)" type="main-outs" role="Main">
@@ -5284,7 +5277,7 @@
     </Route>
     <Route version="6000" id="16711" name="Kick Drum (Outside)" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16750" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="23" flags="AudioTrack,OrderSet" color="3269826559"/>
+      <PresentationInfo order="25" flags="AudioTrack,OrderSet" color="3269826559"/>
       <Controllable name="solo" id="16719" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16725" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16727" flags="Toggle" value="0" solo-safe="0"/>
@@ -5323,9 +5316,9 @@
       <Processor id="16741" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="16715" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
+      <Processor id="34499" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="17" selfdestruct="0" target="34157" allow-feedback="0">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
+          <Panner uri="http://ardour.org/plugin/panner_1in2out" type="Mono to Stereo Panner"/>
         </PannerShell>
         <Pannable>
           <Controllable name="pan-azimuth" id="23820" flags="" value="0.5"/>
@@ -5341,7 +5334,7 @@
             <AutomationList automation-id="pan-lfe" id="23827" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="34513" flags="GainLike,InlineControl" value="0.99039626121520996"/>
       </Processor>
       <Processor id="16745" name="meter-Out15(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16746" name="Kick Drum (Outside)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Kick Drum (Outside)" type="main-outs" role="Main">
@@ -5366,783 +5359,64 @@
       <Controllable name="rec-safe" id="16755" flags="Toggle,RealTime" value="0"/>
       <Controllable name="rec-enable" id="16753" flags="Toggle,RealTime" value="0"/>
     </Route>
-    <Route version="6000" id="16767" name="Out16(DrumGizmo)" default-type="audio" strict-io="0" active="0" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16806" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
+    <Route version="6000" id="34157" name="MB2: DRUMS" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="24" flags="AudioTrack,Hidden,OrderSet" color="3856521471"/>
-      <Controllable name="solo" id="16775" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
-      <Controllable name="solo-iso" id="16781" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
-      <Controllable name="solo-safe" id="16783" flags="Toggle" value="0" solo-safe="0"/>
-      <IO name="Out16(DrumGizmo)" id="16795" direction="Input" default-type="audio">
-        <Port type="audio" name="Out16(DrumGizmo)/audio_in 1">
-          <Connection other="DrumGizmo/audio_out 16"/>
-        </Port>
-      </IO>
-      <IO name="Out16(DrumGizmo)" id="16796" direction="Output" default-type="audio">
-        <Port type="audio" name="Out16(DrumGizmo)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Out16(DrumGizmo)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
-      </IO>
-      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
-      <Controllable name="mute" id="16777" flags="Toggle,RealTime" value="0"/>
-      <Controllable name="phase" id="16779" flags="Toggle" value="0" phase-invert="0"/>
-      <Pannable>
-        <Controllable name="pan-azimuth" id="23854" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="23858" flags="" value="1"/>
-        <Controllable name="pan-elevation" id="23856" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="23860" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="23862" flags="" value="0"/>
-        <Automation>
-          <AutomationList automation-id="pan-azimuth" id="23853" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="23855" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="23857" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="23859" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="23861" interpolation-style="Linear" state="Off"/>
-        </Automation>
-      </Pannable>
-      <Processor id="16805" name="Out16(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
-      <Processor id="16804" name="Out16(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
-      <Processor id="16798" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
-      <Processor id="16800" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
-        <Controllable name="trimcontrol" id="16773" flags="GainLike" value="1"/>
-      </Processor>
-      <Processor id="16797" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
-        <Controllable name="gaincontrol" id="16771" flags="GainLike" value="1"/>
-      </Processor>
-      <Processor id="23354" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="22529" allow-feedback="0">
-        <PannerShell bypassed="0" user-panner="" linked-to-route="1">
-          <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
-        </PannerShell>
-        <Pannable>
-          <Controllable name="pan-azimuth" id="23854" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="23858" flags="" value="1"/>
-          <Controllable name="pan-elevation" id="23856" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="23860" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="23862" flags="" value="0"/>
-          <Automation>
-            <AutomationList automation-id="pan-azimuth" id="23853" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="23855" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="23857" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="23859" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="23861" interpolation-style="Linear" state="Off"/>
-          </Automation>
-        </Pannable>
-        <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
-      </Processor>
-      <Processor id="16801" name="meter-Out16(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
-      <Processor id="16802" name="Out16(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Out16(DrumGizmo)" type="main-outs" role="Main">
-        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
-        <Pannable>
-          <Controllable name="pan-azimuth" id="23854" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="23858" flags="" value="1"/>
-          <Controllable name="pan-elevation" id="23856" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="23860" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="23862" flags="" value="0"/>
-          <Automation>
-            <AutomationList automation-id="pan-azimuth" id="23853" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="23855" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="23857" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="23859" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="23861" interpolation-style="Linear" state="Off"/>
-          </Automation>
-        </Pannable>
-      </Processor>
-      <Slavable/>
-      <Controllable name="monitor" id="16813" flags="RealTime" value="1" monitoring="MonitorInput,MonitorDisk,MonitorCue"/>
-      <Controllable name="rec-safe" id="16811" flags="Toggle,RealTime" value="0"/>
-      <Controllable name="rec-enable" id="16809" flags="Toggle,RealTime" value="0"/>
-    </Route>
-    <Route version="6000" id="22529" name="MB2: DRUMS" default-type="audio" strict-io="0" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
-      <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="26" flags="AudioBus,OrderSet" color="4289374975"/>
-      <Controllable name="solo" id="22537" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
-      <Controllable name="solo-iso" id="22543" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
-      <Controllable name="solo-safe" id="22545" flags="Toggle" value="0" solo-safe="0"/>
-      <IO name="MB2- DRUMS" id="22557" direction="Input" default-type="audio">
+      <PresentationInfo order="3" flags="AudioBus,OrderSet" color="3849486079"/>
+      <Controllable name="solo" id="34165" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="34171" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="34173" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="MB2- DRUMS" id="34185" direction="Input" default-type="audio">
         <Port type="audio" name="MB2- DRUMS/audio_in 1"/>
         <Port type="audio" name="MB2- DRUMS/audio_in 2"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 3"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 4"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 5"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 6"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 7"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 8"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 9"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 10"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 11"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 12"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 13"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 14"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 15"/>
-        <Port type="audio" name="MB2- DRUMS/audio_in 16"/>
       </IO>
-      <IO name="MB2- DRUMS" id="22558" direction="Output" default-type="audio">
+      <IO name="MB2- DRUMS" id="34186" direction="Output" default-type="audio">
         <Port type="audio" name="MB2- DRUMS/audio_out 1">
           <Connection other="Master/audio_in 1"/>
         </Port>
         <Port type="audio" name="MB2- DRUMS/audio_out 2">
           <Connection other="Master/audio_in 2"/>
         </Port>
-        <Port type="audio" name="MB2- DRUMS/audio_out 3"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 4"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 5"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 6"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 7"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 8"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 9"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 10"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 11"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 12"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 13"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 14"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 15"/>
-        <Port type="audio" name="MB2- DRUMS/audio_out 16"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
-      <Controllable name="mute" id="22539" flags="Toggle,RealTime" value="0"/>
-      <Controllable name="phase" id="22541" flags="Toggle" value="0" phase-invert="0000000000000000"/>
+      <Controllable name="mute" id="34167" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="34169" flags="Toggle" value="0" phase-invert="00"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="22548" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="22552" flags="" value="1"/>
-        <Controllable name="pan-elevation" id="22550" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="22554" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="22556" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="34176" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="34180" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="34178" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="34182" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="34184" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="22547" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="22549" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="22551" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="22553" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="22555" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="34175" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="34177" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="34179" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="34181" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="34183" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
-      <Processor id="22566" name="return 10" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intreturn" bitslot="9"/>
-      <Processor id="22560" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
-      <Processor id="22562" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
-        <Controllable name="trimcontrol" id="22535" flags="GainLike" value="1"/>
+      <Processor id="34195" name="return 3" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intreturn" bitslot="2"/>
+      <Processor id="34188" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="34190" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="34163" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23268" name="LSP Parametric Equalizer x16 Stereo" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://lsp-plug.in/plugins/lv2/para_equalizer_x16_stereo" count="8" custom="0">
-        <ConfiguredInput>
-          <Channels type="audio" count="16"/>
-        </ConfiguredInput>
-        <CustomSinks>
-          <Channels type="audio" count="2"/>
-        </CustomSinks>
-        <ConfiguredOutput>
-          <Channels type="audio" count="16"/>
-        </ConfiguredOutput>
-        <PresetOutput/>
-        <InputMap-0>
-          <Channelmap type="audio" from="0" to="0"/>
-          <Channelmap type="audio" from="1" to="1"/>
-        </InputMap-0>
-        <OutputMap-0>
-          <Channelmap type="audio" from="0" to="0"/>
-          <Channelmap type="audio" from="1" to="1"/>
-        </OutputMap-0>
-        <InputMap-1>
-          <Channelmap type="audio" from="0" to="2"/>
-          <Channelmap type="audio" from="1" to="3"/>
-        </InputMap-1>
-        <OutputMap-1>
-          <Channelmap type="audio" from="0" to="2"/>
-          <Channelmap type="audio" from="1" to="3"/>
-        </OutputMap-1>
-        <InputMap-2>
-          <Channelmap type="audio" from="0" to="4"/>
-          <Channelmap type="audio" from="1" to="5"/>
-        </InputMap-2>
-        <OutputMap-2>
-          <Channelmap type="audio" from="0" to="4"/>
-          <Channelmap type="audio" from="1" to="5"/>
-        </OutputMap-2>
-        <InputMap-3>
-          <Channelmap type="audio" from="0" to="6"/>
-          <Channelmap type="audio" from="1" to="7"/>
-        </InputMap-3>
-        <OutputMap-3>
-          <Channelmap type="audio" from="0" to="6"/>
-          <Channelmap type="audio" from="1" to="7"/>
-        </OutputMap-3>
-        <InputMap-4>
-          <Channelmap type="audio" from="0" to="8"/>
-          <Channelmap type="audio" from="1" to="9"/>
-        </InputMap-4>
-        <OutputMap-4>
-          <Channelmap type="audio" from="0" to="8"/>
-          <Channelmap type="audio" from="1" to="9"/>
-        </OutputMap-4>
-        <InputMap-5>
-          <Channelmap type="audio" from="0" to="10"/>
-          <Channelmap type="audio" from="1" to="11"/>
-        </InputMap-5>
-        <OutputMap-5>
-          <Channelmap type="audio" from="0" to="10"/>
-          <Channelmap type="audio" from="1" to="11"/>
-        </OutputMap-5>
-        <InputMap-6>
-          <Channelmap type="audio" from="0" to="12"/>
-          <Channelmap type="audio" from="1" to="13"/>
-        </InputMap-6>
-        <OutputMap-6>
-          <Channelmap type="audio" from="0" to="12"/>
-          <Channelmap type="audio" from="1" to="13"/>
-        </OutputMap-6>
-        <InputMap-7>
-          <Channelmap type="audio" from="0" to="14"/>
-          <Channelmap type="audio" from="1" to="15"/>
-        </InputMap-7>
-        <OutputMap-7>
-          <Channelmap type="audio" from="0" to="14"/>
-          <Channelmap type="audio" from="1" to="15"/>
-        </OutputMap-7>
-        <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state14">
-          <Port symbol="enabled" value="0"/>
-          <Port symbol="g_in" value="1"/>
-          <Port symbol="g_out" value="1"/>
-          <Port symbol="mode" value="0"/>
-          <Port symbol="fft" value="0"/>
-          <Port symbol="react" value="0.20000000298023224"/>
-          <Port symbol="shift" value="1"/>
-          <Port symbol="zoom" value="1"/>
-          <Port symbol="fsel" value="0"/>
-          <Port symbol="bal" value="0"/>
-          <Port symbol="frqs" value="0"/>
-          <Port symbol="fftv_l" value="1"/>
-          <Port symbol="fftv_r" value="1"/>
-          <Port symbol="ft_0" value="0"/>
-          <Port symbol="fm_0" value="0"/>
-          <Port symbol="s_0" value="0"/>
-          <Port symbol="xs_0" value="0"/>
-          <Port symbol="xm_0" value="0"/>
-          <Port symbol="f_0" value="16"/>
-          <Port symbol="g_0" value="1"/>
-          <Port symbol="q_0" value="0"/>
-          <Port symbol="hue_0" value="0"/>
-          <Port symbol="ft_1" value="0"/>
-          <Port symbol="fm_1" value="0"/>
-          <Port symbol="s_1" value="0"/>
-          <Port symbol="xs_1" value="0"/>
-          <Port symbol="xm_1" value="0"/>
-          <Port symbol="f_1" value="25"/>
-          <Port symbol="g_1" value="1"/>
-          <Port symbol="q_1" value="0"/>
-          <Port symbol="hue_1" value="0.0625"/>
-          <Port symbol="ft_2" value="0"/>
-          <Port symbol="fm_2" value="0"/>
-          <Port symbol="s_2" value="0"/>
-          <Port symbol="xs_2" value="0"/>
-          <Port symbol="xm_2" value="0"/>
-          <Port symbol="f_2" value="40"/>
-          <Port symbol="g_2" value="1"/>
-          <Port symbol="q_2" value="0"/>
-          <Port symbol="hue_2" value="0.125"/>
-          <Port symbol="ft_3" value="0"/>
-          <Port symbol="fm_3" value="0"/>
-          <Port symbol="s_3" value="0"/>
-          <Port symbol="xs_3" value="0"/>
-          <Port symbol="xm_3" value="0"/>
-          <Port symbol="f_3" value="63"/>
-          <Port symbol="g_3" value="1"/>
-          <Port symbol="q_3" value="0"/>
-          <Port symbol="hue_3" value="0.1875"/>
-          <Port symbol="ft_4" value="0"/>
-          <Port symbol="fm_4" value="0"/>
-          <Port symbol="s_4" value="0"/>
-          <Port symbol="xs_4" value="0"/>
-          <Port symbol="xm_4" value="0"/>
-          <Port symbol="f_4" value="100"/>
-          <Port symbol="g_4" value="1"/>
-          <Port symbol="q_4" value="0"/>
-          <Port symbol="hue_4" value="0.25"/>
-          <Port symbol="ft_5" value="0"/>
-          <Port symbol="fm_5" value="0"/>
-          <Port symbol="s_5" value="0"/>
-          <Port symbol="xs_5" value="0"/>
-          <Port symbol="xm_5" value="0"/>
-          <Port symbol="f_5" value="160"/>
-          <Port symbol="g_5" value="1"/>
-          <Port symbol="q_5" value="0"/>
-          <Port symbol="hue_5" value="0.3125"/>
-          <Port symbol="ft_6" value="0"/>
-          <Port symbol="fm_6" value="0"/>
-          <Port symbol="s_6" value="0"/>
-          <Port symbol="xs_6" value="0"/>
-          <Port symbol="xm_6" value="0"/>
-          <Port symbol="f_6" value="250"/>
-          <Port symbol="g_6" value="1"/>
-          <Port symbol="q_6" value="0"/>
-          <Port symbol="hue_6" value="0.375"/>
-          <Port symbol="ft_7" value="0"/>
-          <Port symbol="fm_7" value="0"/>
-          <Port symbol="s_7" value="0"/>
-          <Port symbol="xs_7" value="0"/>
-          <Port symbol="xm_7" value="0"/>
-          <Port symbol="f_7" value="400"/>
-          <Port symbol="g_7" value="1"/>
-          <Port symbol="q_7" value="0"/>
-          <Port symbol="hue_7" value="0.4375"/>
-          <Port symbol="ft_8" value="0"/>
-          <Port symbol="fm_8" value="0"/>
-          <Port symbol="s_8" value="0"/>
-          <Port symbol="xs_8" value="0"/>
-          <Port symbol="xm_8" value="0"/>
-          <Port symbol="f_8" value="630"/>
-          <Port symbol="g_8" value="1"/>
-          <Port symbol="q_8" value="0"/>
-          <Port symbol="hue_8" value="0.5"/>
-          <Port symbol="ft_9" value="0"/>
-          <Port symbol="fm_9" value="0"/>
-          <Port symbol="s_9" value="0"/>
-          <Port symbol="xs_9" value="0"/>
-          <Port symbol="xm_9" value="0"/>
-          <Port symbol="f_9" value="1000"/>
-          <Port symbol="g_9" value="1"/>
-          <Port symbol="q_9" value="0"/>
-          <Port symbol="hue_9" value="0.5625"/>
-          <Port symbol="ft_10" value="0"/>
-          <Port symbol="fm_10" value="0"/>
-          <Port symbol="s_10" value="0"/>
-          <Port symbol="xs_10" value="0"/>
-          <Port symbol="xm_10" value="0"/>
-          <Port symbol="f_10" value="1600"/>
-          <Port symbol="g_10" value="1"/>
-          <Port symbol="q_10" value="0"/>
-          <Port symbol="hue_10" value="0.625"/>
-          <Port symbol="ft_11" value="0"/>
-          <Port symbol="fm_11" value="0"/>
-          <Port symbol="s_11" value="0"/>
-          <Port symbol="xs_11" value="0"/>
-          <Port symbol="xm_11" value="0"/>
-          <Port symbol="f_11" value="2500"/>
-          <Port symbol="g_11" value="1"/>
-          <Port symbol="q_11" value="0"/>
-          <Port symbol="hue_11" value="0.6875"/>
-          <Port symbol="ft_12" value="0"/>
-          <Port symbol="fm_12" value="0"/>
-          <Port symbol="s_12" value="0"/>
-          <Port symbol="xs_12" value="0"/>
-          <Port symbol="xm_12" value="0"/>
-          <Port symbol="f_12" value="4000"/>
-          <Port symbol="g_12" value="1"/>
-          <Port symbol="q_12" value="0"/>
-          <Port symbol="hue_12" value="0.75"/>
-          <Port symbol="ft_13" value="0"/>
-          <Port symbol="fm_13" value="0"/>
-          <Port symbol="s_13" value="0"/>
-          <Port symbol="xs_13" value="0"/>
-          <Port symbol="xm_13" value="0"/>
-          <Port symbol="f_13" value="6300"/>
-          <Port symbol="g_13" value="1"/>
-          <Port symbol="q_13" value="0"/>
-          <Port symbol="hue_13" value="0.8125"/>
-          <Port symbol="ft_14" value="0"/>
-          <Port symbol="fm_14" value="0"/>
-          <Port symbol="s_14" value="0"/>
-          <Port symbol="xs_14" value="0"/>
-          <Port symbol="xm_14" value="0"/>
-          <Port symbol="f_14" value="10000"/>
-          <Port symbol="g_14" value="1"/>
-          <Port symbol="q_14" value="0"/>
-          <Port symbol="hue_14" value="0.875"/>
-          <Port symbol="ft_15" value="0"/>
-          <Port symbol="fm_15" value="0"/>
-          <Port symbol="s_15" value="0"/>
-          <Port symbol="xs_15" value="0"/>
-          <Port symbol="xm_15" value="0"/>
-          <Port symbol="f_15" value="16000"/>
-          <Port symbol="g_15" value="1"/>
-          <Port symbol="q_15" value="0"/>
-          <Port symbol="hue_15" value="0.9375"/>
-        </lv2>
-        <Controllable name="Enabled" id="22953" flags="Toggle" value="0" parameter="4" symbol="enabled"/>
-        <Controllable name="Input gain" id="22954" flags="" value="1" parameter="5" symbol="g_in"/>
-        <Controllable name="Output gain" id="22955" flags="" value="1" parameter="6" symbol="g_out"/>
-        <Controllable name="Equalizer mode" id="22956" flags="" value="0" parameter="7" symbol="mode"/>
-        <Controllable name="FFT analysis" id="22957" flags="" value="0" parameter="8" symbol="fft"/>
-        <Controllable name="FFT reactivity" id="22958" flags="" value="0.20000000298023224" parameter="9" symbol="react"/>
-        <Controllable name="Shift gain" id="22959" flags="" value="1" parameter="10" symbol="shift"/>
-        <Controllable name="Graph zoom" id="22960" flags="" value="1" parameter="11" symbol="zoom"/>
-        <Controllable name="Filter select" id="22961" flags="" value="0" parameter="12" symbol="fsel"/>
-        <Controllable name="Output balance" id="22962" flags="" value="0" parameter="13" symbol="bal"/>
-        <Controllable name="Frequency shift" id="22963" flags="" value="0" parameter="14" symbol="frqs"/>
-        <Controllable name="FFT visibility Left" id="22964" flags="Toggle" value="1" parameter="17" symbol="fftv_l"/>
-        <Controllable name="FFT visibility Right" id="22965" flags="Toggle" value="1" parameter="20" symbol="fftv_r"/>
-        <Controllable name="Filter type 0" id="22966" flags="" value="0" parameter="21" symbol="ft_0"/>
-        <Controllable name="Filter mode 0" id="22967" flags="" value="0" parameter="22" symbol="fm_0"/>
-        <Controllable name="Filter slope 0" id="22968" flags="" value="0" parameter="23" symbol="s_0"/>
-        <Controllable name="Filter solo 0" id="22969" flags="Toggle" value="0" parameter="24" symbol="xs_0"/>
-        <Controllable name="Filter mute 0" id="22970" flags="Toggle" value="0" parameter="25" symbol="xm_0"/>
-        <Controllable name="Frequency 0" id="22971" flags="" value="16" parameter="26" symbol="f_0"/>
-        <Controllable name="Gain 0" id="22972" flags="" value="1" parameter="27" symbol="g_0"/>
-        <Controllable name="Quality factor 0" id="22973" flags="" value="0" parameter="28" symbol="q_0"/>
-        <Controllable name="Hue 0" id="22974" flags="" value="0" parameter="29" symbol="hue_0"/>
-        <Controllable name="Filter type 1" id="22975" flags="" value="0" parameter="31" symbol="ft_1"/>
-        <Controllable name="Filter mode 1" id="22976" flags="" value="0" parameter="32" symbol="fm_1"/>
-        <Controllable name="Filter slope 1" id="22977" flags="" value="0" parameter="33" symbol="s_1"/>
-        <Controllable name="Filter solo 1" id="22978" flags="Toggle" value="0" parameter="34" symbol="xs_1"/>
-        <Controllable name="Filter mute 1" id="22979" flags="Toggle" value="0" parameter="35" symbol="xm_1"/>
-        <Controllable name="Frequency 1" id="22980" flags="" value="25" parameter="36" symbol="f_1"/>
-        <Controllable name="Gain 1" id="22981" flags="" value="1" parameter="37" symbol="g_1"/>
-        <Controllable name="Quality factor 1" id="22982" flags="" value="0" parameter="38" symbol="q_1"/>
-        <Controllable name="Hue 1" id="22983" flags="" value="0.0625" parameter="39" symbol="hue_1"/>
-        <Controllable name="Filter type 2" id="22984" flags="" value="0" parameter="41" symbol="ft_2"/>
-        <Controllable name="Filter mode 2" id="22985" flags="" value="0" parameter="42" symbol="fm_2"/>
-        <Controllable name="Filter slope 2" id="22986" flags="" value="0" parameter="43" symbol="s_2"/>
-        <Controllable name="Filter solo 2" id="22987" flags="Toggle" value="0" parameter="44" symbol="xs_2"/>
-        <Controllable name="Filter mute 2" id="22988" flags="Toggle" value="0" parameter="45" symbol="xm_2"/>
-        <Controllable name="Frequency 2" id="22989" flags="" value="40" parameter="46" symbol="f_2"/>
-        <Controllable name="Gain 2" id="22990" flags="" value="1" parameter="47" symbol="g_2"/>
-        <Controllable name="Quality factor 2" id="22991" flags="" value="0" parameter="48" symbol="q_2"/>
-        <Controllable name="Hue 2" id="22992" flags="" value="0.125" parameter="49" symbol="hue_2"/>
-        <Controllable name="Filter type 3" id="22993" flags="" value="0" parameter="51" symbol="ft_3"/>
-        <Controllable name="Filter mode 3" id="22994" flags="" value="0" parameter="52" symbol="fm_3"/>
-        <Controllable name="Filter slope 3" id="22995" flags="" value="0" parameter="53" symbol="s_3"/>
-        <Controllable name="Filter solo 3" id="22996" flags="Toggle" value="0" parameter="54" symbol="xs_3"/>
-        <Controllable name="Filter mute 3" id="22997" flags="Toggle" value="0" parameter="55" symbol="xm_3"/>
-        <Controllable name="Frequency 3" id="22998" flags="" value="63" parameter="56" symbol="f_3"/>
-        <Controllable name="Gain 3" id="22999" flags="" value="1" parameter="57" symbol="g_3"/>
-        <Controllable name="Quality factor 3" id="23000" flags="" value="0" parameter="58" symbol="q_3"/>
-        <Controllable name="Hue 3" id="23001" flags="" value="0.1875" parameter="59" symbol="hue_3"/>
-        <Controllable name="Filter type 4" id="23002" flags="" value="0" parameter="61" symbol="ft_4"/>
-        <Controllable name="Filter mode 4" id="23003" flags="" value="0" parameter="62" symbol="fm_4"/>
-        <Controllable name="Filter slope 4" id="23004" flags="" value="0" parameter="63" symbol="s_4"/>
-        <Controllable name="Filter solo 4" id="23005" flags="Toggle" value="0" parameter="64" symbol="xs_4"/>
-        <Controllable name="Filter mute 4" id="23006" flags="Toggle" value="0" parameter="65" symbol="xm_4"/>
-        <Controllable name="Frequency 4" id="23007" flags="" value="100" parameter="66" symbol="f_4"/>
-        <Controllable name="Gain 4" id="23008" flags="" value="1" parameter="67" symbol="g_4"/>
-        <Controllable name="Quality factor 4" id="23009" flags="" value="0" parameter="68" symbol="q_4"/>
-        <Controllable name="Hue 4" id="23010" flags="" value="0.25" parameter="69" symbol="hue_4"/>
-        <Controllable name="Filter type 5" id="23011" flags="" value="0" parameter="71" symbol="ft_5"/>
-        <Controllable name="Filter mode 5" id="23012" flags="" value="0" parameter="72" symbol="fm_5"/>
-        <Controllable name="Filter slope 5" id="23013" flags="" value="0" parameter="73" symbol="s_5"/>
-        <Controllable name="Filter solo 5" id="23014" flags="Toggle" value="0" parameter="74" symbol="xs_5"/>
-        <Controllable name="Filter mute 5" id="23015" flags="Toggle" value="0" parameter="75" symbol="xm_5"/>
-        <Controllable name="Frequency 5" id="23016" flags="" value="160" parameter="76" symbol="f_5"/>
-        <Controllable name="Gain 5" id="23017" flags="" value="1" parameter="77" symbol="g_5"/>
-        <Controllable name="Quality factor 5" id="23018" flags="" value="0" parameter="78" symbol="q_5"/>
-        <Controllable name="Hue 5" id="23019" flags="" value="0.3125" parameter="79" symbol="hue_5"/>
-        <Controllable name="Filter type 6" id="23020" flags="" value="0" parameter="81" symbol="ft_6"/>
-        <Controllable name="Filter mode 6" id="23021" flags="" value="0" parameter="82" symbol="fm_6"/>
-        <Controllable name="Filter slope 6" id="23022" flags="" value="0" parameter="83" symbol="s_6"/>
-        <Controllable name="Filter solo 6" id="23023" flags="Toggle" value="0" parameter="84" symbol="xs_6"/>
-        <Controllable name="Filter mute 6" id="23024" flags="Toggle" value="0" parameter="85" symbol="xm_6"/>
-        <Controllable name="Frequency 6" id="23025" flags="" value="250" parameter="86" symbol="f_6"/>
-        <Controllable name="Gain 6" id="23026" flags="" value="1" parameter="87" symbol="g_6"/>
-        <Controllable name="Quality factor 6" id="23027" flags="" value="0" parameter="88" symbol="q_6"/>
-        <Controllable name="Hue 6" id="23028" flags="" value="0.375" parameter="89" symbol="hue_6"/>
-        <Controllable name="Filter type 7" id="23029" flags="" value="0" parameter="91" symbol="ft_7"/>
-        <Controllable name="Filter mode 7" id="23030" flags="" value="0" parameter="92" symbol="fm_7"/>
-        <Controllable name="Filter slope 7" id="23031" flags="" value="0" parameter="93" symbol="s_7"/>
-        <Controllable name="Filter solo 7" id="23032" flags="Toggle" value="0" parameter="94" symbol="xs_7"/>
-        <Controllable name="Filter mute 7" id="23033" flags="Toggle" value="0" parameter="95" symbol="xm_7"/>
-        <Controllable name="Frequency 7" id="23034" flags="" value="400" parameter="96" symbol="f_7"/>
-        <Controllable name="Gain 7" id="23035" flags="" value="1" parameter="97" symbol="g_7"/>
-        <Controllable name="Quality factor 7" id="23036" flags="" value="0" parameter="98" symbol="q_7"/>
-        <Controllable name="Hue 7" id="23037" flags="" value="0.4375" parameter="99" symbol="hue_7"/>
-        <Controllable name="Filter type 8" id="23038" flags="" value="0" parameter="101" symbol="ft_8"/>
-        <Controllable name="Filter mode 8" id="23039" flags="" value="0" parameter="102" symbol="fm_8"/>
-        <Controllable name="Filter slope 8" id="23040" flags="" value="0" parameter="103" symbol="s_8"/>
-        <Controllable name="Filter solo 8" id="23041" flags="Toggle" value="0" parameter="104" symbol="xs_8"/>
-        <Controllable name="Filter mute 8" id="23042" flags="Toggle" value="0" parameter="105" symbol="xm_8"/>
-        <Controllable name="Frequency 8" id="23043" flags="" value="630" parameter="106" symbol="f_8"/>
-        <Controllable name="Gain 8" id="23044" flags="" value="1" parameter="107" symbol="g_8"/>
-        <Controllable name="Quality factor 8" id="23045" flags="" value="0" parameter="108" symbol="q_8"/>
-        <Controllable name="Hue 8" id="23046" flags="" value="0.5" parameter="109" symbol="hue_8"/>
-        <Controllable name="Filter type 9" id="23047" flags="" value="0" parameter="111" symbol="ft_9"/>
-        <Controllable name="Filter mode 9" id="23048" flags="" value="0" parameter="112" symbol="fm_9"/>
-        <Controllable name="Filter slope 9" id="23049" flags="" value="0" parameter="113" symbol="s_9"/>
-        <Controllable name="Filter solo 9" id="23050" flags="Toggle" value="0" parameter="114" symbol="xs_9"/>
-        <Controllable name="Filter mute 9" id="23051" flags="Toggle" value="0" parameter="115" symbol="xm_9"/>
-        <Controllable name="Frequency 9" id="23052" flags="" value="1000" parameter="116" symbol="f_9"/>
-        <Controllable name="Gain 9" id="23053" flags="" value="1" parameter="117" symbol="g_9"/>
-        <Controllable name="Quality factor 9" id="23054" flags="" value="0" parameter="118" symbol="q_9"/>
-        <Controllable name="Hue 9" id="23055" flags="" value="0.5625" parameter="119" symbol="hue_9"/>
-        <Controllable name="Filter type 10" id="23056" flags="" value="0" parameter="121" symbol="ft_10"/>
-        <Controllable name="Filter mode 10" id="23057" flags="" value="0" parameter="122" symbol="fm_10"/>
-        <Controllable name="Filter slope 10" id="23058" flags="" value="0" parameter="123" symbol="s_10"/>
-        <Controllable name="Filter solo 10" id="23059" flags="Toggle" value="0" parameter="124" symbol="xs_10"/>
-        <Controllable name="Filter mute 10" id="23060" flags="Toggle" value="0" parameter="125" symbol="xm_10"/>
-        <Controllable name="Frequency 10" id="23061" flags="" value="1600" parameter="126" symbol="f_10"/>
-        <Controllable name="Gain 10" id="23062" flags="" value="1" parameter="127" symbol="g_10"/>
-        <Controllable name="Quality factor 10" id="23063" flags="" value="0" parameter="128" symbol="q_10"/>
-        <Controllable name="Hue 10" id="23064" flags="" value="0.625" parameter="129" symbol="hue_10"/>
-        <Controllable name="Filter type 11" id="23065" flags="" value="0" parameter="131" symbol="ft_11"/>
-        <Controllable name="Filter mode 11" id="23066" flags="" value="0" parameter="132" symbol="fm_11"/>
-        <Controllable name="Filter slope 11" id="23067" flags="" value="0" parameter="133" symbol="s_11"/>
-        <Controllable name="Filter solo 11" id="23068" flags="Toggle" value="0" parameter="134" symbol="xs_11"/>
-        <Controllable name="Filter mute 11" id="23069" flags="Toggle" value="0" parameter="135" symbol="xm_11"/>
-        <Controllable name="Frequency 11" id="23070" flags="" value="2500" parameter="136" symbol="f_11"/>
-        <Controllable name="Gain 11" id="23071" flags="" value="1" parameter="137" symbol="g_11"/>
-        <Controllable name="Quality factor 11" id="23072" flags="" value="0" parameter="138" symbol="q_11"/>
-        <Controllable name="Hue 11" id="23073" flags="" value="0.6875" parameter="139" symbol="hue_11"/>
-        <Controllable name="Filter type 12" id="23074" flags="" value="0" parameter="141" symbol="ft_12"/>
-        <Controllable name="Filter mode 12" id="23075" flags="" value="0" parameter="142" symbol="fm_12"/>
-        <Controllable name="Filter slope 12" id="23076" flags="" value="0" parameter="143" symbol="s_12"/>
-        <Controllable name="Filter solo 12" id="23077" flags="Toggle" value="0" parameter="144" symbol="xs_12"/>
-        <Controllable name="Filter mute 12" id="23078" flags="Toggle" value="0" parameter="145" symbol="xm_12"/>
-        <Controllable name="Frequency 12" id="23079" flags="" value="4000" parameter="146" symbol="f_12"/>
-        <Controllable name="Gain 12" id="23080" flags="" value="1" parameter="147" symbol="g_12"/>
-        <Controllable name="Quality factor 12" id="23081" flags="" value="0" parameter="148" symbol="q_12"/>
-        <Controllable name="Hue 12" id="23082" flags="" value="0.75" parameter="149" symbol="hue_12"/>
-        <Controllable name="Filter type 13" id="23083" flags="" value="0" parameter="151" symbol="ft_13"/>
-        <Controllable name="Filter mode 13" id="23084" flags="" value="0" parameter="152" symbol="fm_13"/>
-        <Controllable name="Filter slope 13" id="23085" flags="" value="0" parameter="153" symbol="s_13"/>
-        <Controllable name="Filter solo 13" id="23086" flags="Toggle" value="0" parameter="154" symbol="xs_13"/>
-        <Controllable name="Filter mute 13" id="23087" flags="Toggle" value="0" parameter="155" symbol="xm_13"/>
-        <Controllable name="Frequency 13" id="23088" flags="" value="6300" parameter="156" symbol="f_13"/>
-        <Controllable name="Gain 13" id="23089" flags="" value="1" parameter="157" symbol="g_13"/>
-        <Controllable name="Quality factor 13" id="23090" flags="" value="0" parameter="158" symbol="q_13"/>
-        <Controllable name="Hue 13" id="23091" flags="" value="0.8125" parameter="159" symbol="hue_13"/>
-        <Controllable name="Filter type 14" id="23092" flags="" value="0" parameter="161" symbol="ft_14"/>
-        <Controllable name="Filter mode 14" id="23093" flags="" value="0" parameter="162" symbol="fm_14"/>
-        <Controllable name="Filter slope 14" id="23094" flags="" value="0" parameter="163" symbol="s_14"/>
-        <Controllable name="Filter solo 14" id="23095" flags="Toggle" value="0" parameter="164" symbol="xs_14"/>
-        <Controllable name="Filter mute 14" id="23096" flags="Toggle" value="0" parameter="165" symbol="xm_14"/>
-        <Controllable name="Frequency 14" id="23097" flags="" value="10000" parameter="166" symbol="f_14"/>
-        <Controllable name="Gain 14" id="23098" flags="" value="1" parameter="167" symbol="g_14"/>
-        <Controllable name="Quality factor 14" id="23099" flags="" value="0" parameter="168" symbol="q_14"/>
-        <Controllable name="Hue 14" id="23100" flags="" value="0.875" parameter="169" symbol="hue_14"/>
-        <Controllable name="Filter type 15" id="23101" flags="" value="0" parameter="171" symbol="ft_15"/>
-        <Controllable name="Filter mode 15" id="23102" flags="" value="0" parameter="172" symbol="fm_15"/>
-        <Controllable name="Filter slope 15" id="23103" flags="" value="0" parameter="173" symbol="s_15"/>
-        <Controllable name="Filter solo 15" id="23104" flags="Toggle" value="0" parameter="174" symbol="xs_15"/>
-        <Controllable name="Filter mute 15" id="23105" flags="Toggle" value="0" parameter="175" symbol="xm_15"/>
-        <Controllable name="Frequency 15" id="23106" flags="" value="16000" parameter="176" symbol="f_15"/>
-        <Controllable name="Gain 15" id="23107" flags="" value="1" parameter="177" symbol="g_15"/>
-        <Controllable name="Quality factor 15" id="23108" flags="" value="0" parameter="178" symbol="q_15"/>
-        <Controllable name="Hue 15" id="23109" flags="" value="0.9375" parameter="179" symbol="hue_15"/>
+      <Processor id="34187" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="34161" flags="GainLike" value="1"/>
       </Processor>
-      <Processor id="23314" name="ACE Compressor (stereo)" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="urn:ardour:a-comp#stereo" count="8" custom="0">
-        <ConfiguredInput>
-          <Channels type="audio" count="16"/>
-        </ConfiguredInput>
-        <CustomSinks>
-          <Channels type="audio" count="3"/>
-        </CustomSinks>
-        <ConfiguredOutput>
-          <Channels type="audio" count="16"/>
-        </ConfiguredOutput>
-        <PresetOutput/>
-        <InputMap-0>
-          <Channelmap type="audio" from="0" to="0"/>
-          <Channelmap type="audio" from="1" to="1"/>
-        </InputMap-0>
-        <OutputMap-0>
-          <Channelmap type="audio" from="0" to="0"/>
-          <Channelmap type="audio" from="1" to="1"/>
-        </OutputMap-0>
-        <InputMap-1>
-          <Channelmap type="audio" from="0" to="2"/>
-          <Channelmap type="audio" from="1" to="3"/>
-        </InputMap-1>
-        <OutputMap-1>
-          <Channelmap type="audio" from="0" to="2"/>
-          <Channelmap type="audio" from="1" to="3"/>
-        </OutputMap-1>
-        <InputMap-2>
-          <Channelmap type="audio" from="0" to="4"/>
-          <Channelmap type="audio" from="1" to="5"/>
-        </InputMap-2>
-        <OutputMap-2>
-          <Channelmap type="audio" from="0" to="4"/>
-          <Channelmap type="audio" from="1" to="5"/>
-        </OutputMap-2>
-        <InputMap-3>
-          <Channelmap type="audio" from="0" to="6"/>
-          <Channelmap type="audio" from="1" to="7"/>
-        </InputMap-3>
-        <OutputMap-3>
-          <Channelmap type="audio" from="0" to="6"/>
-          <Channelmap type="audio" from="1" to="7"/>
-        </OutputMap-3>
-        <InputMap-4>
-          <Channelmap type="audio" from="0" to="8"/>
-          <Channelmap type="audio" from="1" to="9"/>
-        </InputMap-4>
-        <OutputMap-4>
-          <Channelmap type="audio" from="0" to="8"/>
-          <Channelmap type="audio" from="1" to="9"/>
-        </OutputMap-4>
-        <InputMap-5>
-          <Channelmap type="audio" from="0" to="10"/>
-          <Channelmap type="audio" from="1" to="11"/>
-        </InputMap-5>
-        <OutputMap-5>
-          <Channelmap type="audio" from="0" to="10"/>
-          <Channelmap type="audio" from="1" to="11"/>
-        </OutputMap-5>
-        <InputMap-6>
-          <Channelmap type="audio" from="0" to="12"/>
-          <Channelmap type="audio" from="1" to="13"/>
-        </InputMap-6>
-        <OutputMap-6>
-          <Channelmap type="audio" from="0" to="12"/>
-          <Channelmap type="audio" from="1" to="13"/>
-        </OutputMap-6>
-        <InputMap-7>
-          <Channelmap type="audio" from="0" to="14"/>
-          <Channelmap type="audio" from="1" to="15"/>
-        </InputMap-7>
-        <OutputMap-7>
-          <Channelmap type="audio" from="0" to="14"/>
-          <Channelmap type="audio" from="1" to="15"/>
-        </OutputMap-7>
-        <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit">
-          <Port symbol="att" value="10"/>
-          <Port symbol="rel" value="80"/>
-          <Port symbol="kn" value="0"/>
-          <Port symbol="rat" value="4"/>
-          <Port symbol="thr" value="0"/>
-          <Port symbol="mak" value="0"/>
-          <Port symbol="sidech" value="0"/>
-          <Port symbol="enable" value="0"/>
-        </lv2>
-        <Controllable name="Attack" id="23297" flags="" value="10" parameter="0" symbol="att"/>
-        <Controllable name="Release" id="23298" flags="" value="80" parameter="1" symbol="rel"/>
-        <Controllable name="Knee" id="23299" flags="" value="0" parameter="2" symbol="kn"/>
-        <Controllable name="Ratio" id="23300" flags="" value="4" parameter="3" symbol="rat"/>
-        <Controllable name="Threshold" id="23301" flags="" value="0" parameter="4" symbol="thr"/>
-        <Controllable name="Makeup" id="23302" flags="" value="0" parameter="5" symbol="mak"/>
-        <Controllable name="Sidechain" id="23303" flags="Toggle" value="0" parameter="9" symbol="sidech"/>
-        <Controllable name="Enable" id="23304" flags="Toggle" value="0" parameter="10" symbol="enable"/>
-      </Processor>
-      <Processor id="23336" name="TAP TubeWarmth" active="0" user-latency="0" use-user-latency="0" type="ladspa" unique-id="2158" count="16" custom="0">
-        <ConfiguredInput>
-          <Channels type="audio" count="16"/>
-        </ConfiguredInput>
-        <CustomSinks>
-          <Channels type="audio" count="1"/>
-        </CustomSinks>
-        <ConfiguredOutput>
-          <Channels type="audio" count="16"/>
-        </ConfiguredOutput>
-        <PresetOutput/>
-        <InputMap-0>
-          <Channelmap type="audio" from="0" to="0"/>
-        </InputMap-0>
-        <OutputMap-0>
-          <Channelmap type="audio" from="0" to="0"/>
-        </OutputMap-0>
-        <InputMap-1>
-          <Channelmap type="audio" from="0" to="1"/>
-        </InputMap-1>
-        <OutputMap-1>
-          <Channelmap type="audio" from="0" to="1"/>
-        </OutputMap-1>
-        <InputMap-2>
-          <Channelmap type="audio" from="0" to="2"/>
-        </InputMap-2>
-        <OutputMap-2>
-          <Channelmap type="audio" from="0" to="2"/>
-        </OutputMap-2>
-        <InputMap-3>
-          <Channelmap type="audio" from="0" to="3"/>
-        </InputMap-3>
-        <OutputMap-3>
-          <Channelmap type="audio" from="0" to="3"/>
-        </OutputMap-3>
-        <InputMap-4>
-          <Channelmap type="audio" from="0" to="4"/>
-        </InputMap-4>
-        <OutputMap-4>
-          <Channelmap type="audio" from="0" to="4"/>
-        </OutputMap-4>
-        <InputMap-5>
-          <Channelmap type="audio" from="0" to="5"/>
-        </InputMap-5>
-        <OutputMap-5>
-          <Channelmap type="audio" from="0" to="5"/>
-        </OutputMap-5>
-        <InputMap-6>
-          <Channelmap type="audio" from="0" to="6"/>
-        </InputMap-6>
-        <OutputMap-6>
-          <Channelmap type="audio" from="0" to="6"/>
-        </OutputMap-6>
-        <InputMap-7>
-          <Channelmap type="audio" from="0" to="7"/>
-        </InputMap-7>
-        <OutputMap-7>
-          <Channelmap type="audio" from="0" to="7"/>
-        </OutputMap-7>
-        <InputMap-8>
-          <Channelmap type="audio" from="0" to="8"/>
-        </InputMap-8>
-        <OutputMap-8>
-          <Channelmap type="audio" from="0" to="8"/>
-        </OutputMap-8>
-        <InputMap-9>
-          <Channelmap type="audio" from="0" to="9"/>
-        </InputMap-9>
-        <OutputMap-9>
-          <Channelmap type="audio" from="0" to="9"/>
-        </OutputMap-9>
-        <InputMap-10>
-          <Channelmap type="audio" from="0" to="10"/>
-        </InputMap-10>
-        <OutputMap-10>
-          <Channelmap type="audio" from="0" to="10"/>
-        </OutputMap-10>
-        <InputMap-11>
-          <Channelmap type="audio" from="0" to="11"/>
-        </InputMap-11>
-        <OutputMap-11>
-          <Channelmap type="audio" from="0" to="11"/>
-        </OutputMap-11>
-        <InputMap-12>
-          <Channelmap type="audio" from="0" to="12"/>
-        </InputMap-12>
-        <OutputMap-12>
-          <Channelmap type="audio" from="0" to="12"/>
-        </OutputMap-12>
-        <InputMap-13>
-          <Channelmap type="audio" from="0" to="13"/>
-        </InputMap-13>
-        <OutputMap-13>
-          <Channelmap type="audio" from="0" to="13"/>
-        </OutputMap-13>
-        <InputMap-14>
-          <Channelmap type="audio" from="0" to="14"/>
-        </InputMap-14>
-        <OutputMap-14>
-          <Channelmap type="audio" from="0" to="14"/>
-        </OutputMap-14>
-        <InputMap-15>
-          <Channelmap type="audio" from="0" to="15"/>
-        </InputMap-15>
-        <OutputMap-15>
-          <Channelmap type="audio" from="0" to="15"/>
-        </OutputMap-15>
-        <ThruMap/>
-        <ladspa last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0">
-          <Port number="0" value="2.5750000476837158"/>
-          <Port number="1" value="10"/>
-        </ladspa>
-        <Controllable name="Drive" id="23331" flags="" value="2.5750000476837158" parameter="0"/>
-        <Controllable name="Tape--Tube Blend" id="23332" flags="" value="10" parameter="1"/>
-      </Processor>
-      <Processor id="22559" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
-        <Controllable name="gaincontrol" id="22533" flags="GainLike" value="1"/>
-      </Processor>
-      <Processor id="22563" name="meter-Bus 1" active="1" user-latency="0" use-user-latency="0" type="meter"/>
-      <Processor id="22564" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="MB2- DRUMS" type="main-outs" role="Main">
+      <Processor id="34191" name="meter-Bus 1" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="34192" name="MB2: DRUMS" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="MB2- DRUMS" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="22548" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="22552" flags="" value="1"/>
-          <Controllable name="pan-elevation" id="22550" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="22554" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="22556" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="34176" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="34180" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="34178" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="34182" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="34184" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="22547" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="22549" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="22551" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="22553" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="22555" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="34175" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="34177" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="34179" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="34181" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="34183" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -6167,11 +5441,10 @@
     <Playlist id="16638" name="Floor Tom 2" type="audio" orig-track-id="16599" shared-with-ids="" frozen="0"/>
     <Playlist id="16694" name="Kick Drum (Inside)" type="audio" orig-track-id="16655" shared-with-ids="" frozen="0"/>
     <Playlist id="16750" name="Kick Drum (Outside)" type="audio" orig-track-id="16711" shared-with-ids="" frozen="0"/>
-    <Playlist id="16806" name="Out16(DrumGizmo).1" type="audio" orig-track-id="16767" shared-with-ids="" frozen="0"/>
   </Playlists>
   <UnusedPlaylists/>
   <RouteGroups>
-    <RouteGroup id="16822" rgba="3853021951" used-to-share-gain="0" name="DrumGizmo" hidden="0" active="1" relative="1" gain="0" mute="1" solo="1" recenable="1" select="1" route-active="1" color="1" monitoring="1" group-master-number="-1" routes="15927 15983 16039 16095 16151 16207 16263 16319 16375 16431 16487 16543 16599 16655 16711 16767 "/>
+    <RouteGroup id="16822" rgba="3853021951" used-to-share-gain="0" name="DrumGizmo" hidden="0" active="1" relative="1" gain="0" mute="1" solo="1" recenable="1" select="1" route-active="1" color="1" monitoring="1" group-master-number="-1" routes="15927 15983 16039 16095 16151 16207 16263 16319 16375 16431 16487 16543 16599 16655 16711 "/>
   </RouteGroups>
   <Click>
     <IO name="Click" id="58" direction="Output" default-type="audio">
@@ -6226,8 +5499,8 @@ General Midi Synth&#13;
     - routed to mixbus 1 (2 channels)&#13;
 &#13;
 DrumGizmo - CrocellKit&#13;
-    - routed to mixbus 2 (16 channels)
-    - all DG tracks are labelled with drum name
+    - routed to mixbus 2 (16 channels)&#13;
+    - all DG tracks are labelled with drum name&#13;
     - all DG tracks with Left/Right in the name are panned accordingly&#13;
 &#13;
 Usage:&#13;
