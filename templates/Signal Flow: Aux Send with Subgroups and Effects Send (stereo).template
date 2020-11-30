@@ -5633,7 +5633,7 @@ General Midi Synth&#13;
     - routed to mixbus 1 (2 channels)&#13;
 &#13;
 DrumGizmo - CrocellKit&#13;
-    - routed to mixbus 2 (16 channels)&#13;
+    - routed to mixbus 2 (2 channels)&#13;
     - all DG tracks are labelled with drum name&#13;
     - all DG tracks with Left/Right in the name are panned accordingly&#13;
 &#13;
