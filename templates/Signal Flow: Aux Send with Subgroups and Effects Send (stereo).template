@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="6000" id-counter="29440" name-counter="5" event-counter="31755" vca-counter="1">
+<Session version="6000" id-counter="35032" name-counter="5" event-counter="38609" vca-counter="1">
   <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
   <MIDIPorts>
     <Port name="MIDI Clock out" direction="output"/>
@@ -8,9 +8,7 @@
     <Port name="MTC out" direction="output"/>
     <Port name="Scene in" direction="input"/>
     <Port name="Scene out" direction="output"/>
-    <Port name="Virtual Keyboard" direction="output">
-      <Connection other="ardour:General Midi Synth/midi_in 1"/>
-    </Port>
+    <Port name="Virtual Keyboard" direction="output"/>
   </MIDIPorts>
   <Config>
     <Option name="use-region-fades" value="1"/>
@@ -66,7 +64,7 @@
   <Sources/>
   <Regions/>
   <Locations>
-    <Location id="29442" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1606696930"/>
+    <Location id="35034" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1606703590"/>
   </Locations>
   <Bundles/>
   <VCAManager/>
@@ -79,58 +77,26 @@
       <Controllable name="solo-safe" id="77" flags="Toggle" value="0" solo-safe="0"/>
       <IO name="Master" id="89" direction="Input" default-type="audio">
         <Port type="audio" name="Master/audio_in 1">
-          <Connection other="Ambient (Left)/audio_out 1"/>
-          <Connection other="Ambient (Right)/audio_out 1"/>
-          <Connection other="Floor Tom 1/audio_out 1"/>
-          <Connection other="Floor Tom 2/audio_out 1"/>
-          <Connection other="HiHat/audio_out 1"/>
-          <Connection other="Kick Drum (Inside)/audio_out 1"/>
-          <Connection other="Kick Drum (Outside)/audio_out 1"/>
+          <Connection other="MB- REVERB/audio_out 1"/>
           <Connection other="MB1- SYNTH/audio_out 1"/>
           <Connection other="MB2- DRUMS/audio_out 1"/>
-          <Connection other="MB; REVERB/audio_out 1"/>
           <Connection other="MixBus 3/audio_out 1"/>
           <Connection other="MixBus 4/audio_out 1"/>
           <Connection other="MixBus 5/audio_out 1"/>
           <Connection other="MixBus 6/audio_out 1"/>
           <Connection other="MixBus 7/audio_out 1"/>
           <Connection other="MixBus 8/audio_out 1"/>
-          <Connection other="Out16(DrumGizmo)/audio_out 1"/>
-          <Connection other="Overhead (Center)/audio_out 1"/>
-          <Connection other="Overhead (Left)/audio_out 1"/>
-          <Connection other="Overhead (Right)/audio_out 1"/>
-          <Connection other="Ride/audio_out 1"/>
-          <Connection other="Snare (Bottom)/audio_out 1"/>
-          <Connection other="Snare (Top)/audio_out 1"/>
-          <Connection other="Tom 1/audio_out 1"/>
-          <Connection other="Tom 2/audio_out 1"/>
         </Port>
         <Port type="audio" name="Master/audio_in 2">
-          <Connection other="Ambient (Left)/audio_out 2"/>
-          <Connection other="Ambient (Right)/audio_out 2"/>
-          <Connection other="Floor Tom 1/audio_out 2"/>
-          <Connection other="Floor Tom 2/audio_out 2"/>
-          <Connection other="HiHat/audio_out 2"/>
-          <Connection other="Kick Drum (Inside)/audio_out 2"/>
-          <Connection other="Kick Drum (Outside)/audio_out 2"/>
+          <Connection other="MB- REVERB/audio_out 2"/>
           <Connection other="MB1- SYNTH/audio_out 2"/>
           <Connection other="MB2- DRUMS/audio_out 2"/>
-          <Connection other="MB; REVERB/audio_out 2"/>
           <Connection other="MixBus 3/audio_out 2"/>
           <Connection other="MixBus 4/audio_out 2"/>
           <Connection other="MixBus 5/audio_out 2"/>
           <Connection other="MixBus 6/audio_out 2"/>
           <Connection other="MixBus 7/audio_out 2"/>
           <Connection other="MixBus 8/audio_out 2"/>
-          <Connection other="Out16(DrumGizmo)/audio_out 2"/>
-          <Connection other="Overhead (Center)/audio_out 2"/>
-          <Connection other="Overhead (Left)/audio_out 2"/>
-          <Connection other="Overhead (Right)/audio_out 2"/>
-          <Connection other="Ride/audio_out 2"/>
-          <Connection other="Snare (Bottom)/audio_out 2"/>
-          <Connection other="Snare (Top)/audio_out 2"/>
-          <Connection other="Tom 1/audio_out 2"/>
-          <Connection other="Tom 2/audio_out 2"/>
         </Port>
       </IO>
       <IO name="Master" id="90" direction="Output" default-type="audio">
@@ -183,7 +149,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state12">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state14">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -600,9 +566,7 @@
       <Controllable name="solo-iso" id="178" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="180" flags="Toggle" value="0" solo-safe="0"/>
       <IO name="General Midi Synth" id="192" direction="Input" default-type="midi">
-        <Port type="midi" name="General Midi Synth/midi_in 1">
-          <Connection other="Virtual Keyboard"/>
-        </Port>
+        <Port type="midi" name="General Midi Synth/midi_in 1"/>
       </IO>
       <IO name="General Midi Synth" id="193" direction="Output" default-type="midi">
         <Port type="audio" name="General Midi Synth/audio_out 1"/>
@@ -757,7 +721,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state11">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state13">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -1095,7 +1059,7 @@
         </OutputMap-0>
         <ThruMap/>
         <Processor id="734" name="SC MB1: SYNTH/ACE Compressor (stereo) 4" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="sidechain">
-          <IO name="TO BE RESET FROM XML" id="24789" direction="Input" default-type="audio" pretty-name="SC ACE Compressor (stereo)"/>
+          <IO name="TO BE RESET FROM XML" id="30307" direction="Input" default-type="audio" pretty-name="SC ACE Compressor (stereo)"/>
         </Processor>
         <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)">
           <Port symbol="att" value="10"/>
@@ -1230,7 +1194,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state12">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state14">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -1700,7 +1664,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state12">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state14">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -2170,7 +2134,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state13">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state15">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -2640,7 +2604,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state13">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state15">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -3110,7 +3074,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state14">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state16">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -3580,7 +3544,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state15">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state17">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -4108,7 +4072,7 @@
           <Channelmap type="audio" from="15" to="15"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state10">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state12">
           <Port symbol="lv2_freewheel" value="0"/>
         </lv2>
         <Controllable name="hidden" id="15918" flags="Toggle" value="0" parameter="0" symbol="lv2_freewheel"/>
@@ -4151,12 +4115,8 @@
         </Port>
       </IO>
       <IO name="Ambient (Left)" id="15956" direction="Output" default-type="audio">
-        <Port type="audio" name="Ambient (Left)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Ambient (Left)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Ambient (Left)/audio_out 1"/>
+        <Port type="audio" name="Ambient (Left)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="15937" flags="Toggle,RealTime" value="0"/>
@@ -4239,12 +4199,8 @@
         </Port>
       </IO>
       <IO name="Ambient (Right)" id="16012" direction="Output" default-type="audio">
-        <Port type="audio" name="Ambient (Right)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Ambient (Right)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Ambient (Right)/audio_out 1"/>
+        <Port type="audio" name="Ambient (Right)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="15993" flags="Toggle,RealTime" value="0"/>
@@ -4327,12 +4283,8 @@
         </Port>
       </IO>
       <IO name="Overhead (Left)" id="16068" direction="Output" default-type="audio">
-        <Port type="audio" name="Overhead (Left)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Overhead (Left)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Overhead (Left)/audio_out 1"/>
+        <Port type="audio" name="Overhead (Left)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16049" flags="Toggle,RealTime" value="0"/>
@@ -4415,12 +4367,8 @@
         </Port>
       </IO>
       <IO name="Overhead (Right)" id="16124" direction="Output" default-type="audio">
-        <Port type="audio" name="Overhead (Right)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Overhead (Right)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Overhead (Right)/audio_out 1"/>
+        <Port type="audio" name="Overhead (Right)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16105" flags="Toggle,RealTime" value="0"/>
@@ -4503,12 +4451,8 @@
         </Port>
       </IO>
       <IO name="Overhead (Center)" id="16180" direction="Output" default-type="audio">
-        <Port type="audio" name="Overhead (Center)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Overhead (Center)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Overhead (Center)/audio_out 1"/>
+        <Port type="audio" name="Overhead (Center)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16161" flags="Toggle,RealTime" value="0"/>
@@ -4591,12 +4535,8 @@
         </Port>
       </IO>
       <IO name="HiHat" id="16236" direction="Output" default-type="audio">
-        <Port type="audio" name="HiHat/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="HiHat/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="HiHat/audio_out 1"/>
+        <Port type="audio" name="HiHat/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16217" flags="Toggle,RealTime" value="0"/>
@@ -4679,12 +4619,8 @@
         </Port>
       </IO>
       <IO name="Ride" id="16292" direction="Output" default-type="audio">
-        <Port type="audio" name="Ride/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Ride/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Ride/audio_out 1"/>
+        <Port type="audio" name="Ride/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16273" flags="Toggle,RealTime" value="0"/>
@@ -4767,12 +4703,8 @@
         </Port>
       </IO>
       <IO name="Snare (Top)" id="16348" direction="Output" default-type="audio">
-        <Port type="audio" name="Snare (Top)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Snare (Top)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Snare (Top)/audio_out 1"/>
+        <Port type="audio" name="Snare (Top)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16329" flags="Toggle,RealTime" value="0"/>
@@ -4838,7 +4770,7 @@
             <AutomationList automation-id="pan-lfe" id="23589" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="29220" flags="GainLike,InlineControl" value="0.95000666379928589"/>
+        <Controllable name="gaincontrol" id="29220" flags="GainLike,InlineControl" value="0.95000565052032471"/>
       </Processor>
       <Processor id="16353" name="meter-Out8(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16354" name="Snare (Top)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Snare (Top)" type="main-outs" role="Main">
@@ -4875,28 +4807,24 @@
         </Port>
       </IO>
       <IO name="Snare (Bottom)" id="16404" direction="Output" default-type="audio">
-        <Port type="audio" name="Snare (Bottom)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Snare (Bottom)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Snare (Bottom)/audio_out 1"/>
+        <Port type="audio" name="Snare (Bottom)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16385" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16387" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="23616" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="23620" flags="" value="1"/>
-        <Controllable name="pan-elevation" id="23618" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="23622" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="23624" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="29229" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="29233" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="29231" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="29235" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="29237" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="23615" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="23617" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="23619" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="23621" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="23623" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="29228" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="29230" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="29232" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="29234" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="29236" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16413" name="recorder:Snare (Bottom)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -4913,17 +4841,17 @@
           <Panner uri="http://ardour.org/plugin/panner_vbap" type="VBAP 2D panner"/>
         </PannerShell>
         <Pannable>
-          <Controllable name="pan-azimuth" id="23616" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="23620" flags="" value="1"/>
-          <Controllable name="pan-elevation" id="23618" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="23622" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="23624" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="29229" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="29233" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="29231" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="29235" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="29237" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="23615" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="23617" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="23619" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="23621" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="23623" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="29228" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="29230" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="29232" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="29234" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="29236" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
         <Controllable name="gaincontrol" id="23368" flags="GainLike,InlineControl" value="0.95000666379928589"/>
@@ -4946,23 +4874,23 @@
             <AutomationList automation-id="pan-lfe" id="29236" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
-        <Controllable name="gaincontrol" id="29220" flags="GainLike,InlineControl" value="0.57699781656265259"/>
+        <Controllable name="gaincontrol" id="29220" flags="GainLike,InlineControl" value="0.76480090618133545"/>
       </Processor>
       <Processor id="16409" name="meter-Out9(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
       <Processor id="16410" name="Snare (Bottom)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Snare (Bottom)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="23616" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="23620" flags="" value="1"/>
-          <Controllable name="pan-elevation" id="23618" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="23622" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="23624" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="29229" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="29233" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="29231" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="29235" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="29237" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="23615" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="23617" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="23619" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="23621" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="23623" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="29228" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="29230" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="29232" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="29234" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="29236" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -4983,12 +4911,8 @@
         </Port>
       </IO>
       <IO name="Tom 1" id="16460" direction="Output" default-type="audio">
-        <Port type="audio" name="Tom 1/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Tom 1/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Tom 1/audio_out 1"/>
+        <Port type="audio" name="Tom 1/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16441" flags="Toggle,RealTime" value="0"/>
@@ -5071,12 +4995,8 @@
         </Port>
       </IO>
       <IO name="Tom 2" id="16516" direction="Output" default-type="audio">
-        <Port type="audio" name="Tom 2/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Tom 2/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Tom 2/audio_out 1"/>
+        <Port type="audio" name="Tom 2/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16497" flags="Toggle,RealTime" value="0"/>
@@ -5159,12 +5079,8 @@
         </Port>
       </IO>
       <IO name="Floor Tom 1" id="16572" direction="Output" default-type="audio">
-        <Port type="audio" name="Floor Tom 1/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Floor Tom 1/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Floor Tom 1/audio_out 1"/>
+        <Port type="audio" name="Floor Tom 1/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16553" flags="Toggle,RealTime" value="0"/>
@@ -5247,12 +5163,8 @@
         </Port>
       </IO>
       <IO name="Floor Tom 2" id="16628" direction="Output" default-type="audio">
-        <Port type="audio" name="Floor Tom 2/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Floor Tom 2/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Floor Tom 2/audio_out 1"/>
+        <Port type="audio" name="Floor Tom 2/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16609" flags="Toggle,RealTime" value="0"/>
@@ -5335,12 +5247,8 @@
         </Port>
       </IO>
       <IO name="Kick Drum (Inside)" id="16684" direction="Output" default-type="audio">
-        <Port type="audio" name="Kick Drum (Inside)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Kick Drum (Inside)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Kick Drum (Inside)/audio_out 1"/>
+        <Port type="audio" name="Kick Drum (Inside)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16665" flags="Toggle,RealTime" value="0"/>
@@ -5423,12 +5331,8 @@
         </Port>
       </IO>
       <IO name="Kick Drum (Outside)" id="16740" direction="Output" default-type="audio">
-        <Port type="audio" name="Kick Drum (Outside)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Kick Drum (Outside)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Kick Drum (Outside)/audio_out 1"/>
+        <Port type="audio" name="Kick Drum (Outside)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16721" flags="Toggle,RealTime" value="0"/>
@@ -5501,7 +5405,7 @@
     </Route>
     <Route version="6000" id="16767" name="Out16(DrumGizmo)" default-type="audio" strict-io="0" active="0" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16806" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="27" flags="AudioTrack,OrderSet" color="3856521471"/>
+      <PresentationInfo order="27" flags="AudioTrack,Hidden,OrderSet" color="3856521471"/>
       <Controllable name="solo" id="16775" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16781" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16783" flags="Toggle" value="0" solo-safe="0"/>
@@ -5511,12 +5415,8 @@
         </Port>
       </IO>
       <IO name="Out16(DrumGizmo)" id="16796" direction="Output" default-type="audio">
-        <Port type="audio" name="Out16(DrumGizmo)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Out16(DrumGizmo)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Out16(DrumGizmo)/audio_out 1"/>
+        <Port type="audio" name="Out16(DrumGizmo)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16777" flags="Toggle,RealTime" value="0"/>
@@ -5731,7 +5631,7 @@
           <Channelmap type="audio" from="1" to="15"/>
         </OutputMap-7>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state14">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)" state-dir="state16">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -6287,15 +6187,15 @@
       <Controllable name="solo" id="29048" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="29054" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="29056" flags="Toggle" value="0" solo-safe="0"/>
-      <IO name="MB: REVERB" id="29068" direction="Input" default-type="audio">
-        <Port type="audio" name="MB; REVERB/audio_in 1"/>
-        <Port type="audio" name="MB; REVERB/audio_in 2"/>
+      <IO name="MB- REVERB" id="29068" direction="Input" default-type="audio">
+        <Port type="audio" name="MB- REVERB/audio_in 1"/>
+        <Port type="audio" name="MB- REVERB/audio_in 2"/>
       </IO>
-      <IO name="MB: REVERB" id="29069" direction="Output" default-type="audio">
-        <Port type="audio" name="MB; REVERB/audio_out 1">
+      <IO name="MB- REVERB" id="29069" direction="Output" default-type="audio">
+        <Port type="audio" name="MB- REVERB/audio_out 1">
           <Connection other="Master/audio_in 1"/>
         </Port>
-        <Port type="audio" name="MB; REVERB/audio_out 2">
+        <Port type="audio" name="MB- REVERB/audio_out 2">
           <Connection other="Master/audio_in 2"/>
         </Port>
       </IO>
@@ -6346,15 +6246,15 @@
         <ThruMap/>
         <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Signal Flow: Aux Send with Subgroups and Effects Send (stereo)">
           <Port symbol="blend" value="1"/>
-          <Port symbol="roomsz" value="0.87113404273986816"/>
+          <Port symbol="roomsz" value="0.76030927896499634"/>
           <Port symbol="enable" value="1"/>
         </lv2>
         <Controllable name="Blend" id="29199" flags="" value="1" parameter="4" symbol="blend"/>
-        <Controllable name="Room Size" id="29201" flags="" value="0.87113404273986816" parameter="5" symbol="roomsz"/>
+        <Controllable name="Room Size" id="29201" flags="" value="0.76030927896499634" parameter="5" symbol="roomsz"/>
         <Controllable name="Enable" id="29203" flags="Toggle" value="1" parameter="6" symbol="enable"/>
       </Processor>
       <Processor id="29074" name="meter-MB: REVERB" active="1" user-latency="0" use-user-latency="0" type="meter"/>
-      <Processor id="29075" name="MB: REVERB" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="MB: REVERB" type="main-outs" role="Main">
+      <Processor id="29075" name="MB: REVERB" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="MB- REVERB" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
           <Controllable name="pan-azimuth" id="29059" flags="" value="0.5"/>

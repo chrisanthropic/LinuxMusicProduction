@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="6000" id-counter="23922" name-counter="5" event-counter="23535" vca-counter="1">
+<Session version="6000" id-counter="29039" name-counter="5" event-counter="26319" vca-counter="1">
   <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
   <MIDIPorts>
     <Port name="MIDI Clock out" direction="output"/>
@@ -9,7 +9,7 @@
     <Port name="Scene in" direction="input"/>
     <Port name="Scene out" direction="output"/>
     <Port name="Virtual Keyboard" direction="output">
-      <Connection other="ardour:General Midi Synth/midi_in 1"/>
+      <Connection other="ardour:DrumGizmo/midi_in 1"/>
     </Port>
   </MIDIPorts>
   <Config>
@@ -66,7 +66,7 @@
   <Sources/>
   <Regions/>
   <Locations>
-    <Location id="23924" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1606673957"/>
+    <Location id="29041" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1606703043"/>
   </Locations>
   <Bundles/>
   <VCAManager/>
@@ -79,13 +79,6 @@
       <Controllable name="solo-safe" id="77" flags="Toggle" value="0" solo-safe="0"/>
       <IO name="Master" id="89" direction="Input" default-type="audio">
         <Port type="audio" name="Master/audio_in 1">
-          <Connection other="Ambient (Left)/audio_out 1"/>
-          <Connection other="Ambient (Right)/audio_out 1"/>
-          <Connection other="Floor Tom 1/audio_out 1"/>
-          <Connection other="Floor Tom 2/audio_out 1"/>
-          <Connection other="HiHat/audio_out 1"/>
-          <Connection other="Kick Drum (Inside)/audio_out 1"/>
-          <Connection other="Kick Drum (Outside)/audio_out 1"/>
           <Connection other="MB1- SYNTH/audio_out 1"/>
           <Connection other="MB2- DRUMS/audio_out 1"/>
           <Connection other="MixBus 3/audio_out 1"/>
@@ -95,23 +88,8 @@
           <Connection other="MixBus 7/audio_out 1"/>
           <Connection other="MixBus 8/audio_out 1"/>
           <Connection other="Out16(DrumGizmo)/audio_out 1"/>
-          <Connection other="Overhead (Center)/audio_out 1"/>
-          <Connection other="Overhead (Left)/audio_out 1"/>
-          <Connection other="Overhead (Right)/audio_out 1"/>
-          <Connection other="Ride/audio_out 1"/>
-          <Connection other="Snare (Bottom)/audio_out 1"/>
-          <Connection other="Snare (Top)/audio_out 1"/>
-          <Connection other="Tom 1/audio_out 1"/>
-          <Connection other="Tom 2/audio_out 1"/>
         </Port>
         <Port type="audio" name="Master/audio_in 2">
-          <Connection other="Ambient (Left)/audio_out 2"/>
-          <Connection other="Ambient (Right)/audio_out 2"/>
-          <Connection other="Floor Tom 1/audio_out 2"/>
-          <Connection other="Floor Tom 2/audio_out 2"/>
-          <Connection other="HiHat/audio_out 2"/>
-          <Connection other="Kick Drum (Inside)/audio_out 2"/>
-          <Connection other="Kick Drum (Outside)/audio_out 2"/>
           <Connection other="MB1- SYNTH/audio_out 2"/>
           <Connection other="MB2- DRUMS/audio_out 2"/>
           <Connection other="MixBus 3/audio_out 2"/>
@@ -121,14 +99,6 @@
           <Connection other="MixBus 7/audio_out 2"/>
           <Connection other="MixBus 8/audio_out 2"/>
           <Connection other="Out16(DrumGizmo)/audio_out 2"/>
-          <Connection other="Overhead (Center)/audio_out 2"/>
-          <Connection other="Overhead (Left)/audio_out 2"/>
-          <Connection other="Overhead (Right)/audio_out 2"/>
-          <Connection other="Ride/audio_out 2"/>
-          <Connection other="Snare (Bottom)/audio_out 2"/>
-          <Connection other="Snare (Top)/audio_out 2"/>
-          <Connection other="Tom 1/audio_out 2"/>
-          <Connection other="Tom 2/audio_out 2"/>
         </Port>
       </IO>
       <IO name="Master" id="90" direction="Output" default-type="audio">
@@ -181,7 +151,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state10">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state12">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -598,9 +568,7 @@
       <Controllable name="solo-iso" id="178" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="180" flags="Toggle" value="0" solo-safe="0"/>
       <IO name="General Midi Synth" id="192" direction="Input" default-type="midi">
-        <Port type="midi" name="General Midi Synth/midi_in 1">
-          <Connection other="Virtual Keyboard"/>
-        </Port>
+        <Port type="midi" name="General Midi Synth/midi_in 1"/>
       </IO>
       <IO name="General Midi Synth" id="193" direction="Output" default-type="midi">
         <Port type="audio" name="General Midi Synth/audio_out 1"/>
@@ -755,7 +723,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state9">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state11">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -1086,7 +1054,6 @@
         <InputMap-0>
           <Channelmap type="audio" from="0" to="0"/>
           <Channelmap type="audio" from="1" to="1"/>
-          <Channelmap type="audio" from="2" to="2"/>
         </InputMap-0>
         <OutputMap-0>
           <Channelmap type="audio" from="0" to="0"/>
@@ -1094,9 +1061,7 @@
         </OutputMap-0>
         <ThruMap/>
         <Processor id="734" name="SC MB1: SYNTH/ACE Compressor (stereo) 4" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="sidechain">
-          <IO name="SC MB1- SYNTH/ACE Compressor (stereo) 4" id="735" direction="Input" default-type="audio" pretty-name="SC ACE Compressor (stereo)">
-            <Port type="audio" name="SC MB1- SYNTH/ACE Compressor (stereo) 4/audio_in 1"/>
-          </IO>
+          <IO name="TO BE RESET FROM XML" id="24789" direction="Input" default-type="audio" pretty-name="SC ACE Compressor (stereo)"/>
         </Processor>
         <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit">
           <Port symbol="att" value="10"/>
@@ -1231,7 +1196,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state10">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state12">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -1701,7 +1666,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state10">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state12">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -2171,7 +2136,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state11">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state13">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -2641,7 +2606,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state11">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state13">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -3111,7 +3076,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state12">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state14">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -3581,7 +3546,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state13">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state15">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -3999,6 +3964,7 @@
       <Controllable name="solo-safe" id="15815" flags="Toggle" value="0" solo-safe="0"/>
       <IO name="DrumGizmo" id="15827" direction="Input" default-type="midi">
         <Port type="midi" name="DrumGizmo/midi_in 1">
+          <Connection other="Virtual Keyboard"/>
           <Connection other="system:midi_capture_1"/>
         </Port>
       </IO>
@@ -4109,7 +4075,7 @@
           <Channelmap type="audio" from="15" to="15"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state7">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state10">
           <Port symbol="lv2_freewheel" value="0"/>
         </lv2>
         <Controllable name="hidden" id="15918" flags="Toggle" value="0" parameter="0" symbol="lv2_freewheel"/>
@@ -4152,12 +4118,8 @@
         </Port>
       </IO>
       <IO name="Ambient (Left)" id="15956" direction="Output" default-type="audio">
-        <Port type="audio" name="Ambient (Left)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Ambient (Left)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Ambient (Left)/audio_out 1"/>
+        <Port type="audio" name="Ambient (Left)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="15937" flags="Toggle,RealTime" value="0"/>
@@ -4240,28 +4202,24 @@
         </Port>
       </IO>
       <IO name="Ambient (Right)" id="16012" direction="Output" default-type="audio">
-        <Port type="audio" name="Ambient (Right)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Ambient (Right)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Ambient (Right)/audio_out 1"/>
+        <Port type="audio" name="Ambient (Right)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="15993" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="15995" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="16846" flags="" value="1"/>
-        <Controllable name="pan-width" id="16850" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="16848" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="16852" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="16854" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23378" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23382" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23380" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23384" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23386" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="16845" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="16847" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="16849" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="16851" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="16853" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23377" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23379" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23381" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23383" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23385" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16021" name="recorder:Ambient (Right)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -4297,17 +4255,17 @@
       <Processor id="16018" name="Ambient (Right)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Ambient (Right)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="16846" flags="" value="1"/>
-          <Controllable name="pan-width" id="16850" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="16848" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="16852" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="16854" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23378" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23382" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23380" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23384" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23386" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="16845" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="16847" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="16849" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="16851" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="16853" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23377" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23379" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23381" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23383" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23385" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -4328,28 +4286,24 @@
         </Port>
       </IO>
       <IO name="Overhead (Left)" id="16068" direction="Output" default-type="audio">
-        <Port type="audio" name="Overhead (Left)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Overhead (Left)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Overhead (Left)/audio_out 1"/>
+        <Port type="audio" name="Overhead (Left)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16049" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16051" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="16879" flags="" value="0"/>
-        <Controllable name="pan-width" id="16883" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="16881" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="16885" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="16887" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23412" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23416" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23414" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23418" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23420" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="16878" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="16880" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="16882" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="16884" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="16886" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23411" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23413" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23415" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23417" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23419" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16077" name="recorder:Overhead (Left)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -4385,17 +4339,17 @@
       <Processor id="16074" name="Overhead (Left)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Overhead (Left)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="16879" flags="" value="0"/>
-          <Controllable name="pan-width" id="16883" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="16881" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="16885" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="16887" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23412" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23416" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23414" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23418" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23420" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="16878" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="16880" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="16882" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="16884" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="16886" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23411" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23413" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23415" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23417" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23419" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -4416,28 +4370,24 @@
         </Port>
       </IO>
       <IO name="Overhead (Right)" id="16124" direction="Output" default-type="audio">
-        <Port type="audio" name="Overhead (Right)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Overhead (Right)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Overhead (Right)/audio_out 1"/>
+        <Port type="audio" name="Overhead (Right)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16105" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16107" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="16912" flags="" value="1"/>
-        <Controllable name="pan-width" id="16916" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="16914" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="16918" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="16920" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23446" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23450" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23448" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23452" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23454" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="16911" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="16913" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="16915" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="16917" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="16919" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23445" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23447" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23449" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23451" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23453" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16133" name="recorder:Overhead (Right)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -4473,17 +4423,17 @@
       <Processor id="16130" name="Overhead (Right)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Overhead (Right)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="16912" flags="" value="1"/>
-          <Controllable name="pan-width" id="16916" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="16914" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="16918" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="16920" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23446" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23450" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23448" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23452" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23454" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="16911" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="16913" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="16915" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="16917" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="16919" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23445" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23447" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23449" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23451" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23453" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -4504,28 +4454,24 @@
         </Port>
       </IO>
       <IO name="Overhead (Center)" id="16180" direction="Output" default-type="audio">
-        <Port type="audio" name="Overhead (Center)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Overhead (Center)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Overhead (Center)/audio_out 1"/>
+        <Port type="audio" name="Overhead (Center)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16161" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16163" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="16945" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="16949" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="16947" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="16951" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="16953" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23480" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23484" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23482" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23486" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23488" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="16944" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="16946" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="16948" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="16950" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="16952" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23479" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23481" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23483" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23485" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23487" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16189" name="recorder:Overhead (Center)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -4561,17 +4507,17 @@
       <Processor id="16186" name="Overhead (Center)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Overhead (Center)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="16945" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="16949" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="16947" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="16951" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="16953" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23480" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23484" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23482" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23486" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23488" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="16944" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="16946" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="16948" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="16950" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="16952" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23479" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23481" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23483" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23485" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23487" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -4592,28 +4538,24 @@
         </Port>
       </IO>
       <IO name="HiHat" id="16236" direction="Output" default-type="audio">
-        <Port type="audio" name="HiHat/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="HiHat/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="HiHat/audio_out 1"/>
+        <Port type="audio" name="HiHat/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16217" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16219" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="16978" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="16982" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="16980" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="16984" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="16986" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23514" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23518" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23516" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23520" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23522" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="16977" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="16979" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="16981" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="16983" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="16985" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23513" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23515" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23517" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23519" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23521" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16245" name="recorder:HiHat" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -4649,17 +4591,17 @@
       <Processor id="16242" name="HiHat" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="HiHat" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="16978" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="16982" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="16980" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="16984" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="16986" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23514" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23518" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23516" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23520" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23522" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="16977" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="16979" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="16981" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="16983" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="16985" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23513" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23515" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23517" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23519" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23521" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -4680,28 +4622,24 @@
         </Port>
       </IO>
       <IO name="Ride" id="16292" direction="Output" default-type="audio">
-        <Port type="audio" name="Ride/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Ride/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Ride/audio_out 1"/>
+        <Port type="audio" name="Ride/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16273" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16275" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="17011" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="17015" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="17013" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="17017" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="17019" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23548" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23552" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23550" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23554" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23556" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="17010" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="17012" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="17014" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="17016" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="17018" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23547" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23549" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23551" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23553" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23555" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16301" name="recorder:Ride" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -4737,17 +4675,17 @@
       <Processor id="16298" name="Ride" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Ride" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="17011" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="17015" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="17013" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="17017" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="17019" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23548" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23552" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23550" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23554" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23556" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="17010" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="17012" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="17014" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="17016" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="17018" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23547" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23549" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23551" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23553" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23555" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -4768,28 +4706,24 @@
         </Port>
       </IO>
       <IO name="Snare (Top)" id="16348" direction="Output" default-type="audio">
-        <Port type="audio" name="Snare (Top)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Snare (Top)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Snare (Top)/audio_out 1"/>
+        <Port type="audio" name="Snare (Top)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16329" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16331" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="17044" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="17048" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="17046" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="17050" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="17052" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23582" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23586" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23584" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23588" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23590" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="17043" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="17045" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="17047" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="17049" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="17051" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23581" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23583" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23585" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23587" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23589" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16357" name="recorder:Snare (Top)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -4825,17 +4759,17 @@
       <Processor id="16354" name="Snare (Top)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Snare (Top)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="17044" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="17048" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="17046" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="17050" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="17052" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23582" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23586" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23584" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23588" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23590" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="17043" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="17045" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="17047" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="17049" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="17051" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23581" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23583" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23585" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23587" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23589" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -4856,28 +4790,24 @@
         </Port>
       </IO>
       <IO name="Snare (Bottom)" id="16404" direction="Output" default-type="audio">
-        <Port type="audio" name="Snare (Bottom)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Snare (Bottom)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Snare (Bottom)/audio_out 1"/>
+        <Port type="audio" name="Snare (Bottom)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16385" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16387" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="17077" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="17081" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="17079" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="17083" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="17085" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23616" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23620" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23618" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23622" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23624" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="17076" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="17078" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="17080" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="17082" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="17084" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23615" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23617" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23619" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23621" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23623" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16413" name="recorder:Snare (Bottom)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -4913,17 +4843,17 @@
       <Processor id="16410" name="Snare (Bottom)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Snare (Bottom)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="17077" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="17081" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="17079" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="17083" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="17085" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23616" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23620" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23618" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23622" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23624" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="17076" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="17078" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="17080" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="17082" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="17084" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23615" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23617" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23619" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23621" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23623" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -4944,28 +4874,24 @@
         </Port>
       </IO>
       <IO name="Tom 1" id="16460" direction="Output" default-type="audio">
-        <Port type="audio" name="Tom 1/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Tom 1/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Tom 1/audio_out 1"/>
+        <Port type="audio" name="Tom 1/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16441" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16443" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="17110" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="17114" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="17112" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="17116" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="17118" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23650" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23654" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23652" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23656" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23658" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="17109" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="17111" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="17113" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="17115" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="17117" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23649" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23651" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23653" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23655" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23657" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16469" name="recorder:Tom 1" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -5001,17 +4927,17 @@
       <Processor id="16466" name="Tom 1" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Tom 1" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="17110" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="17114" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="17112" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="17116" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="17118" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23650" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23654" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23652" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23656" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23658" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="17109" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="17111" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="17113" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="17115" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="17117" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23649" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23651" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23653" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23655" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23657" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -5032,28 +4958,24 @@
         </Port>
       </IO>
       <IO name="Tom 2" id="16516" direction="Output" default-type="audio">
-        <Port type="audio" name="Tom 2/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Tom 2/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Tom 2/audio_out 1"/>
+        <Port type="audio" name="Tom 2/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16497" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16499" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="17143" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="17147" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="17145" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="17149" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="17151" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23684" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23688" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23686" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23690" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23692" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="17142" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="17144" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="17146" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="17148" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="17150" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23683" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23685" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23687" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23689" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23691" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16525" name="recorder:Tom 2" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -5089,17 +5011,17 @@
       <Processor id="16522" name="Tom 2" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Tom 2" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="17143" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="17147" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="17145" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="17149" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="17151" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23684" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23688" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23686" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23690" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23692" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="17142" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="17144" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="17146" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="17148" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="17150" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23683" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23685" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23687" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23689" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23691" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -5120,28 +5042,24 @@
         </Port>
       </IO>
       <IO name="Floor Tom 1" id="16572" direction="Output" default-type="audio">
-        <Port type="audio" name="Floor Tom 1/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Floor Tom 1/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Floor Tom 1/audio_out 1"/>
+        <Port type="audio" name="Floor Tom 1/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16553" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16555" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="17176" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="17180" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="17178" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="17182" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="17184" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23718" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23722" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23720" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23724" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23726" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="17175" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="17177" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="17179" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="17181" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="17183" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23717" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23719" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23721" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23723" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23725" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16581" name="recorder:Floor Tom 1" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -5177,17 +5095,17 @@
       <Processor id="16578" name="Floor Tom 1" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Floor Tom 1" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="17176" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="17180" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="17178" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="17182" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="17184" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23718" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23722" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23720" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23724" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23726" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="17175" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="17177" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="17179" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="17181" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="17183" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23717" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23719" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23721" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23723" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23725" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -5208,28 +5126,24 @@
         </Port>
       </IO>
       <IO name="Floor Tom 2" id="16628" direction="Output" default-type="audio">
-        <Port type="audio" name="Floor Tom 2/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Floor Tom 2/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Floor Tom 2/audio_out 1"/>
+        <Port type="audio" name="Floor Tom 2/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16609" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16611" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="17209" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="17213" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="17211" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="17215" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="17217" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23752" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23756" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23754" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23758" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23760" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="17208" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="17210" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="17212" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="17214" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="17216" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23751" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23753" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23755" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23757" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23759" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16637" name="recorder:Floor Tom 2" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -5265,17 +5179,17 @@
       <Processor id="16634" name="Floor Tom 2" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Floor Tom 2" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="17209" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="17213" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="17211" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="17215" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="17217" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23752" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23756" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23754" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23758" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23760" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="17208" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="17210" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="17212" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="17214" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="17216" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23751" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23753" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23755" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23757" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23759" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -5296,28 +5210,24 @@
         </Port>
       </IO>
       <IO name="Kick Drum (Inside)" id="16684" direction="Output" default-type="audio">
-        <Port type="audio" name="Kick Drum (Inside)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Kick Drum (Inside)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Kick Drum (Inside)/audio_out 1"/>
+        <Port type="audio" name="Kick Drum (Inside)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16665" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16667" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="17242" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="17246" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="17244" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="17248" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="17250" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23786" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23790" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23788" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23792" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23794" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="17241" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="17243" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="17245" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="17247" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="17249" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23785" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23787" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23789" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23791" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23793" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16693" name="recorder:Kick Drum (Inside)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -5353,17 +5263,17 @@
       <Processor id="16690" name="Kick Drum (Inside)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Kick Drum (Inside)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="17242" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="17246" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="17244" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="17248" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="17250" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23786" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23790" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23788" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23792" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23794" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="17241" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="17243" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="17245" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="17247" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="17249" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23785" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23787" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23789" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23791" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23793" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -5384,28 +5294,24 @@
         </Port>
       </IO>
       <IO name="Kick Drum (Outside)" id="16740" direction="Output" default-type="audio">
-        <Port type="audio" name="Kick Drum (Outside)/audio_out 1">
-          <Connection other="Master/audio_in 1"/>
-        </Port>
-        <Port type="audio" name="Kick Drum (Outside)/audio_out 2">
-          <Connection other="Master/audio_in 2"/>
-        </Port>
+        <Port type="audio" name="Kick Drum (Outside)/audio_out 1"/>
+        <Port type="audio" name="Kick Drum (Outside)/audio_out 2"/>
       </IO>
       <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
       <Controllable name="mute" id="16721" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16723" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="17275" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="17279" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="17277" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="17281" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="17283" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23820" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23824" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23822" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23826" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23828" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="17274" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="17276" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="17278" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="17280" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="17282" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23819" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23821" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23823" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23825" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23827" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16749" name="recorder:Kick Drum (Outside)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -5441,17 +5347,17 @@
       <Processor id="16746" name="Kick Drum (Outside)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Kick Drum (Outside)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="17275" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="17279" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="17277" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="17281" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="17283" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23820" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23824" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23822" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23826" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23828" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="17274" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="17276" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="17278" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="17280" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="17282" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23819" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23821" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23823" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23825" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23827" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -5462,7 +5368,7 @@
     </Route>
     <Route version="6000" id="16767" name="Out16(DrumGizmo)" default-type="audio" strict-io="0" active="0" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" route-group="DrumGizmo" audio-playlist="16806" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
       <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
-      <PresentationInfo order="24" flags="AudioTrack,OrderSet" color="3856521471"/>
+      <PresentationInfo order="24" flags="AudioTrack,Hidden,OrderSet" color="3856521471"/>
       <Controllable name="solo" id="16775" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
       <Controllable name="solo-iso" id="16781" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
       <Controllable name="solo-safe" id="16783" flags="Toggle" value="0" solo-safe="0"/>
@@ -5483,17 +5389,17 @@
       <Controllable name="mute" id="16777" flags="Toggle,RealTime" value="0"/>
       <Controllable name="phase" id="16779" flags="Toggle" value="0" phase-invert="0"/>
       <Pannable>
-        <Controllable name="pan-azimuth" id="17308" flags="" value="0.5"/>
-        <Controllable name="pan-width" id="17312" flags="" value="0"/>
-        <Controllable name="pan-elevation" id="17310" flags="" value="0"/>
-        <Controllable name="pan-frontback" id="17314" flags="" value="0"/>
-        <Controllable name="pan-lfe" id="17316" flags="" value="0"/>
+        <Controllable name="pan-azimuth" id="23854" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="23858" flags="" value="1"/>
+        <Controllable name="pan-elevation" id="23856" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="23860" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="23862" flags="" value="0"/>
         <Automation>
-          <AutomationList automation-id="pan-azimuth" id="17307" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-elevation" id="17309" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-width" id="17311" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-frontback" id="17313" interpolation-style="Linear" state="Off"/>
-          <AutomationList automation-id="pan-lfe" id="17315" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-azimuth" id="23853" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="23855" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="23857" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="23859" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="23861" interpolation-style="Linear" state="Off"/>
         </Automation>
       </Pannable>
       <Processor id="16805" name="Out16(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
@@ -5529,17 +5435,17 @@
       <Processor id="16802" name="Out16(DrumGizmo)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Out16(DrumGizmo)" type="main-outs" role="Main">
         <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
         <Pannable>
-          <Controllable name="pan-azimuth" id="17308" flags="" value="0.5"/>
-          <Controllable name="pan-width" id="17312" flags="" value="0"/>
-          <Controllable name="pan-elevation" id="17310" flags="" value="0"/>
-          <Controllable name="pan-frontback" id="17314" flags="" value="0"/>
-          <Controllable name="pan-lfe" id="17316" flags="" value="0"/>
+          <Controllable name="pan-azimuth" id="23854" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="23858" flags="" value="1"/>
+          <Controllable name="pan-elevation" id="23856" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="23860" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="23862" flags="" value="0"/>
           <Automation>
-            <AutomationList automation-id="pan-azimuth" id="17307" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-elevation" id="17309" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-width" id="17311" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-frontback" id="17313" interpolation-style="Linear" state="Off"/>
-            <AutomationList automation-id="pan-lfe" id="17315" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-azimuth" id="23853" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="23855" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="23857" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="23859" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="23861" interpolation-style="Linear" state="Off"/>
           </Automation>
         </Pannable>
       </Processor>
@@ -5692,7 +5598,7 @@
           <Channelmap type="audio" from="1" to="15"/>
         </OutputMap-7>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state12">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/MixBus Workflow + DG CrocellKit" state-dir="state14">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
