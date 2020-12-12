@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="6000" id-counter="3120" name-counter="2" event-counter="1419" vca-counter="1">
+<Session version="6000" id-counter="4077" name-counter="2" event-counter="1419" vca-counter="1">
   <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
   <MIDIPorts>
     <Port name="MIDI Clock out" direction="output"/>
@@ -66,7 +66,7 @@
   <Sources/>
   <Regions/>
   <Locations>
-    <Location id="3122" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1607807372"/>
+    <Location id="4079" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1607817441"/>
   </Locations>
   <Bundles/>
   <VCAManager/>
@@ -135,7 +135,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb added to the mixbus" state-dir="state4">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb" state-dir="state6">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -472,7 +472,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb added to the mixbus">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb">
           <Port symbol="att" value="10"/>
           <Port symbol="rel" value="80"/>
           <Port symbol="kn" value="0"/>
@@ -605,7 +605,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb added to the mixbus" state-dir="state5">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb" state-dir="state7">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -942,7 +942,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb added to the mixbus">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb">
           <Port symbol="att" value="10"/>
           <Port symbol="rel" value="80"/>
           <Port symbol="kn" value="0"/>
@@ -1012,7 +1012,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb added to the mixbus">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb">
           <Port symbol="blend" value="0.5"/>
           <Port symbol="roomsz" value="0.88917529582977295"/>
           <Port symbol="enable" value="1"/>
@@ -1100,7 +1100,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb added to the mixbus"/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus and inline reverb"/>
       </Processor>
       <Processor id="292" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
         <Controllable name="gaincontrol" id="266" flags="GainLike" value="1"/>
@@ -1438,20 +1438,22 @@
     <Videomonitor active="0"/>
   </Extra>
   <Script lua="Lua 5.3">c2NyaXB0cyA9IHt9IA==</Script>
-  <description>1 midi track&#13;
-  - with General Midi Synth&#13;
-  - with Aux Send to audio mixbus&#13;
-  &#13;
-1 Audio mixbus&#13;
-  - with ACE Reverb plugin&#13;
-  &#13;
-Plugins on every bus (including master):&#13;
-    - LSP Parametric EQ &#13;
-    - ACE Compressor&#13;
-    - TAP Tubewarmth&#13;
-&#13;
-Usage:&#13;
-    - use midi track send mixer to control level sent to the mixbus&#13;
-    - use midi track panning to control panning&#13;
+  <description>1 midi track
+  - with General Midi Synth
+  - with Aux Send to audio mixbus
+  
+1 Audio mixbus
+  - routed to master bus
+  - with ACE Reverb
+  
+Plugins on every bus (including master):
+    - LSP Parametric EQ 
+    - ACE Compressor
+    - TAP Tubewarmth
+
+Usage:
+    - volume: midi track aux send mixer
+    - panning: midi track panning
+    - reverb: reverb plugin
     - enable eq/compressor/saturation as desired and adjust as needed</description>
 </Session>

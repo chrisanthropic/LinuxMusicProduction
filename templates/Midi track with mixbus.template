@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session version="6000" id-counter="2145" name-counter="2" event-counter="427" vca-counter="1">
+<Session version="6000" id-counter="3084" name-counter="2" event-counter="427" vca-counter="1">
   <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
   <MIDIPorts>
     <Port name="MIDI Clock out" direction="output"/>
@@ -66,7 +66,7 @@
   <Sources/>
   <Regions/>
   <Locations>
-    <Location id="2147" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1607803974"/>
+    <Location id="3086" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1607816886"/>
   </Locations>
   <Bundles/>
   <VCAManager/>
@@ -135,7 +135,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus" state-dir="state2">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus" state-dir="state4">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -605,7 +605,7 @@
           <Channelmap type="audio" from="1" to="1"/>
         </OutputMap-0>
         <ThruMap/>
-        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus" state-dir="state3">
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus" state-dir="state5">
           <Port symbol="enabled" value="0"/>
           <Port symbol="g_in" value="1"/>
           <Port symbol="g_out" value="1"/>
@@ -1162,6 +1162,180 @@
     <Protocol name="WebSockets Server (Experimental)" active="0" session-state="0"/>
   </ControlProtocols>
   <Extra>
+    <UI>
+      <Window name="key-editor" visible="0" x-off="156" y-off="243" x-size="595" y-size="475"/>
+      <Window name="session-options-editor" visible="0" x-off="0" y-off="367" x-size="746" y-size="362"/>
+      <Window name="speaker-config" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="about" visible="0" x-off="0" y-off="0" x-size="424" y-size="608"/>
+      <Window name="add-routes" visible="0" x-off="-1" y-off="-1" x-size="728" y-size="502"/>
+      <Window name="add-video" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="inspector" visible="0" x-off="17" y-off="27" x-size="620" y-size="864"/>
+      <Window name="audio-midi-setup" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="video-export" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="script-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="bundle-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="locations" visible="0" x-off="279" y-off="21" x-size="828" y-size="473"/>
+      <Window name="big-clock" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="big-transport" visible="0" x-off="271" y-off="298" x-size="231" y-size="41"/>
+      <Window name="virtual-keyboard" visible="0" x-off="30" y-off="438" x-size="750" y-size="188"/>
+      <Window name="audio-connection-manager" visible="0" x-off="339" y-off="281" x-size="518" y-size="408"/>
+      <Window name="midi-connection-manager" visible="0" x-off="110" y-off="244" x-size="409" y-size="341"/>
+      <Window name="idle-o-meter" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="plugin-dsp-load" visible="0" x-off="624" y-off="371" x-size="598" y-size="98"/>
+      <Window name="transport-masters" visible="0" x-off="11" y-off="197" x-size="1077" y-size="271"/>
+      <Window name="RPM-61" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="RPM-262" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="RPM-164" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="P-61-411" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="P-61-2095" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="P-61-2099" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="PM-61-411" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="PM-61-2095" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="PM-61-2099" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="P-262-338" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="PM-262-338" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="P-164-1360" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="P-164-2056" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="P-164-2119" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="PM-164-1360" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="PM-164-2056" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="PM-164-2119" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <GUIObjectState>
+        <Object id="rtav 61" height="66" visible="1"/>
+        <Object id="automation 65" height="66" visible="0"/>
+        <Object id="automation 67" height="66" visible="0"/>
+        <Object id="automation 61 12/0/0" height="66" visible="0"/>
+        <Object id="automation 80" height="66" visible="0"/>
+        <Object id="rtav 262" height="66" visible="1" midnam-custom-device-mode="" color-mode="MeterColors" note-range-min="60" note-range-max="71"/>
+        <Object id="automation 266" height="66" visible="0"/>
+        <Object id="automation 262 12/0/0" height="66" visible="0"/>
+        <Object id="automation 281" height="66" visible="0"/>
+        <Object id="rtav 164" height="66" visible="1"/>
+        <Object id="automation 168" height="66" visible="0"/>
+        <Object id="automation 170" height="66" visible="0"/>
+        <Object id="automation 164 12/0/0" height="66" visible="0"/>
+        <Object id="automation 183" height="66" visible="0"/>
+        <Object id="strip 61" visible="1">
+          <Object id="processor 411">
+            <Object id="control 413" visible="0"/>
+            <Object id="control 415" visible="0"/>
+            <Object id="control 417" visible="0"/>
+            <Object id="control 419" visible="0"/>
+            <Object id="control 421" visible="0"/>
+            <Object id="control 423" visible="0"/>
+            <Object id="control 425" visible="0"/>
+            <Object id="control 427" visible="0"/>
+            <Object id="control 429" visible="0"/>
+            <Object id="control 431" visible="0"/>
+            <Object id="control 433" visible="0"/>
+            <Object id="control 435" visible="0"/>
+            <Object id="control 437" visible="0"/>
+            <Object id="control 439" visible="0"/>
+            <Object id="control 441" visible="0"/>
+            <Object id="control 443" visible="0"/>
+            <Object id="control 445" visible="0"/>
+            <Object id="control 447" visible="0"/>
+            <Object id="control 449" visible="0"/>
+            <Object id="control 451" visible="0"/>
+            <Object id="control 453" visible="0"/>
+            <Object id="control 455" visible="0"/>
+            <Object id="control 457" visible="0"/>
+            <Object id="control 459" visible="0"/>
+            <Object id="control 461" visible="0"/>
+            <Object id="control 463" visible="0"/>
+            <Object id="control 465" visible="0"/>
+            <Object id="control 467" visible="0"/>
+            <Object id="control 469" visible="0"/>
+            <Object id="control 471" visible="0"/>
+            <Object id="control 473" visible="0"/>
+            <Object id="control 475" visible="0"/>
+            <Object id="InlineDisplay" visible="1"/>
+          </Object>
+          <Object id="processor 2095">
+            <Object id="control 2078" visible="0"/>
+            <Object id="control 2079" visible="0"/>
+            <Object id="control 2080" visible="0"/>
+            <Object id="control 2081" visible="0"/>
+            <Object id="control 2082" visible="0"/>
+            <Object id="control 2083" visible="0"/>
+            <Object id="control 2084" visible="0"/>
+            <Object id="control 2085" visible="0"/>
+            <Object id="InlineDisplay" visible="1"/>
+          </Object>
+          <Object id="processor 2099">
+            <Object id="control 2101" visible="0"/>
+            <Object id="control 2103" visible="0"/>
+          </Object>
+          <Object id="processor 91">
+            <Object id="control 65" visible="0"/>
+          </Object>
+        </Object>
+        <Object id="strip 262" visible="1">
+          <Object id="processor 338"/>
+          <Object id="processor 292">
+            <Object id="control 266" visible="0"/>
+          </Object>
+          <Object id="processor 343">
+            <Object id="control 357" visible="1"/>
+          </Object>
+        </Object>
+        <Object id="strip 164" visible="1">
+          <Object id="processor 1360">
+            <Object id="control 1045" visible="0"/>
+            <Object id="control 1046" visible="0"/>
+            <Object id="control 1047" visible="0"/>
+            <Object id="control 1048" visible="0"/>
+            <Object id="control 1049" visible="0"/>
+            <Object id="control 1050" visible="0"/>
+            <Object id="control 1051" visible="0"/>
+            <Object id="control 1052" visible="0"/>
+            <Object id="control 1053" visible="0"/>
+            <Object id="control 1054" visible="0"/>
+            <Object id="control 1055" visible="0"/>
+            <Object id="control 1056" visible="0"/>
+            <Object id="control 1057" visible="0"/>
+            <Object id="control 1058" visible="0"/>
+            <Object id="control 1059" visible="0"/>
+            <Object id="control 1060" visible="0"/>
+            <Object id="control 1061" visible="0"/>
+            <Object id="control 1062" visible="0"/>
+            <Object id="control 1063" visible="0"/>
+            <Object id="control 1064" visible="0"/>
+            <Object id="control 1065" visible="0"/>
+            <Object id="control 1066" visible="0"/>
+            <Object id="control 1067" visible="0"/>
+            <Object id="control 1068" visible="0"/>
+            <Object id="control 1069" visible="0"/>
+            <Object id="control 1070" visible="0"/>
+            <Object id="control 1071" visible="0"/>
+            <Object id="control 1072" visible="0"/>
+            <Object id="control 1073" visible="0"/>
+            <Object id="control 1074" visible="0"/>
+            <Object id="control 1075" visible="0"/>
+            <Object id="control 1076" visible="0"/>
+            <Object id="InlineDisplay" visible="1"/>
+          </Object>
+          <Object id="processor 2056">
+            <Object id="control 2039" visible="0"/>
+            <Object id="control 2040" visible="0"/>
+            <Object id="control 2041" visible="0"/>
+            <Object id="control 2042" visible="0"/>
+            <Object id="control 2043" visible="0"/>
+            <Object id="control 2044" visible="0"/>
+            <Object id="control 2045" visible="0"/>
+            <Object id="control 2046" visible="0"/>
+            <Object id="InlineDisplay" visible="1"/>
+          </Object>
+          <Object id="processor 2119">
+            <Object id="control 2114" visible="0"/>
+            <Object id="control 2115" visible="0"/>
+          </Object>
+          <Object id="processor 194">
+            <Object id="control 168" visible="0"/>
+          </Object>
+        </Object>
+      </GUIObjectState>
+    </UI>
     <Videomonitor active="0"/>
   </Extra>
   <Script lua="Lua 5.3">c2NyaXB0cyA9IHt9IA==</Script>
@@ -1170,7 +1344,7 @@
   - with Aux Send to audio mixbus
   
 1 Audio mixbus
-  - with Aux Send to REVERB mixbus
+  - routed to master bus
   
 Plugins on every bus (including master):
     - LSP Parametric EQ 
@@ -1178,7 +1352,7 @@ Plugins on every bus (including master):
     - TAP Tubewarmth
 
 Usage:
-    - use midi track send mixer to control level sent to the mixbus
-    - use midi track panning to control panning
+    - volume: midi track send mixer
+    - panning: midi track panning
     - enable eq/compressor/saturation as desired and adjust as needed</description>
 </Session>
