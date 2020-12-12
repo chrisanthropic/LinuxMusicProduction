@@ -1,0 +1,2252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session version="6000" id-counter="6093" name-counter="2" event-counter="4714" vca-counter="1">
+  <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
+  <MIDIPorts>
+    <Port name="MIDI Clock out" direction="output"/>
+    <Port name="MMC in" direction="input"/>
+    <Port name="MMC out" direction="output"/>
+    <Port name="MTC out" direction="output"/>
+    <Port name="Scene in" direction="input"/>
+    <Port name="Scene out" direction="output"/>
+    <Port name="Virtual Keyboard" direction="output">
+      <Connection other="ardour:General MIDI Synth/midi_in 1"/>
+    </Port>
+  </MIDIPorts>
+  <Config>
+    <Option name="use-region-fades" value="1"/>
+    <Option name="use-transport-fades" value="1"/>
+    <Option name="use-monitor-fades" value="1"/>
+    <Option name="native-file-data-format" value="FormatFloat"/>
+    <Option name="native-file-header-format" value="WAVE"/>
+    <Option name="auto-play" value="0"/>
+    <Option name="auto-return" value="0"/>
+    <Option name="auto-input" value="1"/>
+    <Option name="punch-in" value="0"/>
+    <Option name="punch-out" value="0"/>
+    <Option name="count-in" value="0"/>
+    <Option name="session-monitoring" value=""/>
+    <Option name="layered-record-mode" value="0"/>
+    <Option name="subframes-per-frame" value="100"/>
+    <Option name="timecode-format" value="timecode_30"/>
+    <Option name="minitimeline-span" value="120"/>
+    <Option name="track-name-number" value="0"/>
+    <Option name="track-name-take" value="0"/>
+    <Option name="take-name" value="Take1"/>
+    <Option name="jack-time-master" value="1"/>
+    <Option name="use-video-sync" value="0"/>
+    <Option name="video-pullup" value="0"/>
+    <Option name="external-sync" value="0"/>
+    <Option name="insert-merge-policy" value="InsertMergeReplace"/>
+    <Option name="timecode-offset" value="0"/>
+    <Option name="timecode-offset-negative" value="1"/>
+    <Option name="slave-timecode-offset" value=" 00:00:00:00"/>
+    <Option name="timecode-generator-offset" value=" 00:00:00:00"/>
+    <Option name="glue-new-markers-to-bars-and-beats" value="0"/>
+    <Option name="midi-copy-is-fork" value="1"/>
+    <Option name="glue-new-regions-to-bars-and-beats" value="0"/>
+    <Option name="realtime-export" value="0"/>
+    <Option name="use-video-file-fps" value="0"/>
+    <Option name="videotimeline-pullup" value="1"/>
+    <Option name="wave-amplitude-zoom" value="0"/>
+    <Option name="wave-zoom-factor" value="2"/>
+    <Option name="show-summary" value="1"/>
+    <Option name="show-group-tabs" value="1"/>
+    <Option name="show-region-fades" value="1"/>
+    <Option name="show-busses-on-meterbridge" value="0"/>
+    <Option name="show-master-on-meterbridge" value="1"/>
+    <Option name="show-midi-on-meterbridge" value="1"/>
+    <Option name="show-rec-on-meterbridge" value="1"/>
+    <Option name="show-mute-on-meterbridge" value="0"/>
+    <Option name="show-solo-on-meterbridge" value="0"/>
+    <Option name="show-monitor-on-meterbridge" value="0"/>
+    <Option name="show-name-on-meterbridge" value="1"/>
+    <Option name="meterbridge-label-height" value="0"/>
+  </Config>
+  <Metadata/>
+  <Sources/>
+  <Regions/>
+  <Locations>
+    <Location id="6095" name="session" start="0" end="0" flags="IsSessionRange" locked="0" position-lock-style="AudioTime" timestamp="1607805174"/>
+  </Locations>
+  <Bundles/>
+  <VCAManager/>
+  <Routes>
+    <Route version="6000" id="61" name="Master" default-type="audio" strict-io="1" volume-applies-to-output="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterK14">
+      <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
+      <PresentationInfo order="0" flags="MasterOut,OrderSet" color="3849876223"/>
+      <Controllable name="solo" id="69" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="75" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="77" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Master" id="89" direction="Input" default-type="audio">
+        <Port type="audio" name="Master/audio_in 1">
+          <Connection other="DISTORTION/audio_out 1"/>
+          <Connection other="Mixbus/audio_out 1"/>
+          <Connection other="REVERB/audio_out 1"/>
+        </Port>
+        <Port type="audio" name="Master/audio_in 2">
+          <Connection other="DISTORTION/audio_out 2"/>
+          <Connection other="Mixbus/audio_out 2"/>
+          <Connection other="REVERB/audio_out 2"/>
+        </Port>
+      </IO>
+      <IO name="Master" id="90" direction="Output" default-type="audio">
+        <Port type="audio" name="Master/audio_out 1">
+          <Connection other="system:playback_1"/>
+        </Port>
+        <Port type="audio" name="Master/audio_out 2">
+          <Connection other="system:playback_2"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+      <Controllable name="mute" id="71" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="73" flags="Toggle" value="0" phase-invert="00"/>
+      <Controllable name="mastervolume" id="97" flags="GainLike,NotAutomatable" value="1"/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="80" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="84" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="82" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="86" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="88" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="79" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="81" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="83" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="85" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="87" interpolation-style="Linear" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="92" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="93" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="67" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="411" name="LSP Parametric Equalizer x16 Stereo" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://lsp-plug.in/plugins/lv2/para_equalizer_x16_stereo" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="2"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion" state-dir="state6">
+          <Port symbol="enabled" value="0"/>
+          <Port symbol="g_in" value="1"/>
+          <Port symbol="g_out" value="1"/>
+          <Port symbol="mode" value="0"/>
+          <Port symbol="fft" value="0"/>
+          <Port symbol="react" value="0.20000000298023224"/>
+          <Port symbol="shift" value="1"/>
+          <Port symbol="zoom" value="1"/>
+          <Port symbol="fsel" value="0"/>
+          <Port symbol="bal" value="0"/>
+          <Port symbol="frqs" value="0"/>
+          <Port symbol="fftv_l" value="1"/>
+          <Port symbol="fftv_r" value="1"/>
+          <Port symbol="ft_0" value="0"/>
+          <Port symbol="fm_0" value="0"/>
+          <Port symbol="s_0" value="0"/>
+          <Port symbol="xs_0" value="0"/>
+          <Port symbol="xm_0" value="0"/>
+          <Port symbol="f_0" value="16"/>
+          <Port symbol="g_0" value="1"/>
+          <Port symbol="q_0" value="0"/>
+          <Port symbol="hue_0" value="0"/>
+          <Port symbol="ft_1" value="0"/>
+          <Port symbol="fm_1" value="0"/>
+          <Port symbol="s_1" value="0"/>
+          <Port symbol="xs_1" value="0"/>
+          <Port symbol="xm_1" value="0"/>
+          <Port symbol="f_1" value="25"/>
+          <Port symbol="g_1" value="1"/>
+          <Port symbol="q_1" value="0"/>
+          <Port symbol="hue_1" value="0.0625"/>
+          <Port symbol="ft_2" value="0"/>
+          <Port symbol="fm_2" value="0"/>
+          <Port symbol="s_2" value="0"/>
+          <Port symbol="xs_2" value="0"/>
+          <Port symbol="xm_2" value="0"/>
+          <Port symbol="f_2" value="40"/>
+          <Port symbol="g_2" value="1"/>
+          <Port symbol="q_2" value="0"/>
+          <Port symbol="hue_2" value="0.125"/>
+          <Port symbol="ft_3" value="0"/>
+          <Port symbol="fm_3" value="0"/>
+          <Port symbol="s_3" value="0"/>
+          <Port symbol="xs_3" value="0"/>
+          <Port symbol="xm_3" value="0"/>
+          <Port symbol="f_3" value="63"/>
+          <Port symbol="g_3" value="1"/>
+          <Port symbol="q_3" value="0"/>
+          <Port symbol="hue_3" value="0.1875"/>
+          <Port symbol="ft_4" value="0"/>
+          <Port symbol="fm_4" value="0"/>
+          <Port symbol="s_4" value="0"/>
+          <Port symbol="xs_4" value="0"/>
+          <Port symbol="xm_4" value="0"/>
+          <Port symbol="f_4" value="100"/>
+          <Port symbol="g_4" value="1"/>
+          <Port symbol="q_4" value="0"/>
+          <Port symbol="hue_4" value="0.25"/>
+          <Port symbol="ft_5" value="0"/>
+          <Port symbol="fm_5" value="0"/>
+          <Port symbol="s_5" value="0"/>
+          <Port symbol="xs_5" value="0"/>
+          <Port symbol="xm_5" value="0"/>
+          <Port symbol="f_5" value="160"/>
+          <Port symbol="g_5" value="1"/>
+          <Port symbol="q_5" value="0"/>
+          <Port symbol="hue_5" value="0.3125"/>
+          <Port symbol="ft_6" value="0"/>
+          <Port symbol="fm_6" value="0"/>
+          <Port symbol="s_6" value="0"/>
+          <Port symbol="xs_6" value="0"/>
+          <Port symbol="xm_6" value="0"/>
+          <Port symbol="f_6" value="250"/>
+          <Port symbol="g_6" value="1"/>
+          <Port symbol="q_6" value="0"/>
+          <Port symbol="hue_6" value="0.375"/>
+          <Port symbol="ft_7" value="0"/>
+          <Port symbol="fm_7" value="0"/>
+          <Port symbol="s_7" value="0"/>
+          <Port symbol="xs_7" value="0"/>
+          <Port symbol="xm_7" value="0"/>
+          <Port symbol="f_7" value="400"/>
+          <Port symbol="g_7" value="1"/>
+          <Port symbol="q_7" value="0"/>
+          <Port symbol="hue_7" value="0.4375"/>
+          <Port symbol="ft_8" value="0"/>
+          <Port symbol="fm_8" value="0"/>
+          <Port symbol="s_8" value="0"/>
+          <Port symbol="xs_8" value="0"/>
+          <Port symbol="xm_8" value="0"/>
+          <Port symbol="f_8" value="630"/>
+          <Port symbol="g_8" value="1"/>
+          <Port symbol="q_8" value="0"/>
+          <Port symbol="hue_8" value="0.5"/>
+          <Port symbol="ft_9" value="0"/>
+          <Port symbol="fm_9" value="0"/>
+          <Port symbol="s_9" value="0"/>
+          <Port symbol="xs_9" value="0"/>
+          <Port symbol="xm_9" value="0"/>
+          <Port symbol="f_9" value="1000"/>
+          <Port symbol="g_9" value="1"/>
+          <Port symbol="q_9" value="0"/>
+          <Port symbol="hue_9" value="0.5625"/>
+          <Port symbol="ft_10" value="0"/>
+          <Port symbol="fm_10" value="0"/>
+          <Port symbol="s_10" value="0"/>
+          <Port symbol="xs_10" value="0"/>
+          <Port symbol="xm_10" value="0"/>
+          <Port symbol="f_10" value="1600"/>
+          <Port symbol="g_10" value="1"/>
+          <Port symbol="q_10" value="0"/>
+          <Port symbol="hue_10" value="0.625"/>
+          <Port symbol="ft_11" value="0"/>
+          <Port symbol="fm_11" value="0"/>
+          <Port symbol="s_11" value="0"/>
+          <Port symbol="xs_11" value="0"/>
+          <Port symbol="xm_11" value="0"/>
+          <Port symbol="f_11" value="2500"/>
+          <Port symbol="g_11" value="1"/>
+          <Port symbol="q_11" value="0"/>
+          <Port symbol="hue_11" value="0.6875"/>
+          <Port symbol="ft_12" value="0"/>
+          <Port symbol="fm_12" value="0"/>
+          <Port symbol="s_12" value="0"/>
+          <Port symbol="xs_12" value="0"/>
+          <Port symbol="xm_12" value="0"/>
+          <Port symbol="f_12" value="4000"/>
+          <Port symbol="g_12" value="1"/>
+          <Port symbol="q_12" value="0"/>
+          <Port symbol="hue_12" value="0.75"/>
+          <Port symbol="ft_13" value="0"/>
+          <Port symbol="fm_13" value="0"/>
+          <Port symbol="s_13" value="0"/>
+          <Port symbol="xs_13" value="0"/>
+          <Port symbol="xm_13" value="0"/>
+          <Port symbol="f_13" value="6300"/>
+          <Port symbol="g_13" value="1"/>
+          <Port symbol="q_13" value="0"/>
+          <Port symbol="hue_13" value="0.8125"/>
+          <Port symbol="ft_14" value="0"/>
+          <Port symbol="fm_14" value="0"/>
+          <Port symbol="s_14" value="0"/>
+          <Port symbol="xs_14" value="0"/>
+          <Port symbol="xm_14" value="0"/>
+          <Port symbol="f_14" value="10000"/>
+          <Port symbol="g_14" value="1"/>
+          <Port symbol="q_14" value="0"/>
+          <Port symbol="hue_14" value="0.875"/>
+          <Port symbol="ft_15" value="0"/>
+          <Port symbol="fm_15" value="0"/>
+          <Port symbol="s_15" value="0"/>
+          <Port symbol="xs_15" value="0"/>
+          <Port symbol="xm_15" value="0"/>
+          <Port symbol="f_15" value="16000"/>
+          <Port symbol="g_15" value="1"/>
+          <Port symbol="q_15" value="0"/>
+          <Port symbol="hue_15" value="0.9375"/>
+        </lv2>
+        <Controllable name="Enabled" id="413" flags="Toggle" value="0" parameter="4" symbol="enabled"/>
+        <Controllable name="Input gain" id="415" flags="" value="1" parameter="5" symbol="g_in"/>
+        <Controllable name="Output gain" id="417" flags="" value="1" parameter="6" symbol="g_out"/>
+        <Controllable name="Equalizer mode" id="419" flags="" value="0" parameter="7" symbol="mode"/>
+        <Controllable name="FFT analysis" id="421" flags="" value="0" parameter="8" symbol="fft"/>
+        <Controllable name="FFT reactivity" id="423" flags="" value="0.20000000298023224" parameter="9" symbol="react"/>
+        <Controllable name="Shift gain" id="425" flags="" value="1" parameter="10" symbol="shift"/>
+        <Controllable name="Graph zoom" id="427" flags="" value="1" parameter="11" symbol="zoom"/>
+        <Controllable name="Filter select" id="429" flags="" value="0" parameter="12" symbol="fsel"/>
+        <Controllable name="Output balance" id="431" flags="" value="0" parameter="13" symbol="bal"/>
+        <Controllable name="Frequency shift" id="433" flags="" value="0" parameter="14" symbol="frqs"/>
+        <Controllable name="FFT visibility Left" id="435" flags="Toggle" value="1" parameter="17" symbol="fftv_l"/>
+        <Controllable name="FFT visibility Right" id="437" flags="Toggle" value="1" parameter="20" symbol="fftv_r"/>
+        <Controllable name="Filter type 0" id="439" flags="" value="0" parameter="21" symbol="ft_0"/>
+        <Controllable name="Filter mode 0" id="441" flags="" value="0" parameter="22" symbol="fm_0"/>
+        <Controllable name="Filter slope 0" id="443" flags="" value="0" parameter="23" symbol="s_0"/>
+        <Controllable name="Filter solo 0" id="445" flags="Toggle" value="0" parameter="24" symbol="xs_0"/>
+        <Controllable name="Filter mute 0" id="447" flags="Toggle" value="0" parameter="25" symbol="xm_0"/>
+        <Controllable name="Frequency 0" id="449" flags="" value="16" parameter="26" symbol="f_0"/>
+        <Controllable name="Gain 0" id="451" flags="" value="1" parameter="27" symbol="g_0"/>
+        <Controllable name="Quality factor 0" id="453" flags="" value="0" parameter="28" symbol="q_0"/>
+        <Controllable name="Hue 0" id="455" flags="" value="0" parameter="29" symbol="hue_0"/>
+        <Controllable name="Filter type 1" id="457" flags="" value="0" parameter="31" symbol="ft_1"/>
+        <Controllable name="Filter mode 1" id="459" flags="" value="0" parameter="32" symbol="fm_1"/>
+        <Controllable name="Filter slope 1" id="461" flags="" value="0" parameter="33" symbol="s_1"/>
+        <Controllable name="Filter solo 1" id="463" flags="Toggle" value="0" parameter="34" symbol="xs_1"/>
+        <Controllable name="Filter mute 1" id="465" flags="Toggle" value="0" parameter="35" symbol="xm_1"/>
+        <Controllable name="Frequency 1" id="467" flags="" value="25" parameter="36" symbol="f_1"/>
+        <Controllable name="Gain 1" id="469" flags="" value="1" parameter="37" symbol="g_1"/>
+        <Controllable name="Quality factor 1" id="471" flags="" value="0" parameter="38" symbol="q_1"/>
+        <Controllable name="Hue 1" id="473" flags="" value="0.0625" parameter="39" symbol="hue_1"/>
+        <Controllable name="Filter type 2" id="475" flags="" value="0" parameter="41" symbol="ft_2"/>
+        <Controllable name="Filter mode 2" id="477" flags="" value="0" parameter="42" symbol="fm_2"/>
+        <Controllable name="Filter slope 2" id="479" flags="" value="0" parameter="43" symbol="s_2"/>
+        <Controllable name="Filter solo 2" id="481" flags="Toggle" value="0" parameter="44" symbol="xs_2"/>
+        <Controllable name="Filter mute 2" id="483" flags="Toggle" value="0" parameter="45" symbol="xm_2"/>
+        <Controllable name="Frequency 2" id="485" flags="" value="40" parameter="46" symbol="f_2"/>
+        <Controllable name="Gain 2" id="487" flags="" value="1" parameter="47" symbol="g_2"/>
+        <Controllable name="Quality factor 2" id="489" flags="" value="0" parameter="48" symbol="q_2"/>
+        <Controllable name="Hue 2" id="491" flags="" value="0.125" parameter="49" symbol="hue_2"/>
+        <Controllable name="Filter type 3" id="493" flags="" value="0" parameter="51" symbol="ft_3"/>
+        <Controllable name="Filter mode 3" id="495" flags="" value="0" parameter="52" symbol="fm_3"/>
+        <Controllable name="Filter slope 3" id="497" flags="" value="0" parameter="53" symbol="s_3"/>
+        <Controllable name="Filter solo 3" id="499" flags="Toggle" value="0" parameter="54" symbol="xs_3"/>
+        <Controllable name="Filter mute 3" id="501" flags="Toggle" value="0" parameter="55" symbol="xm_3"/>
+        <Controllable name="Frequency 3" id="503" flags="" value="63" parameter="56" symbol="f_3"/>
+        <Controllable name="Gain 3" id="505" flags="" value="1" parameter="57" symbol="g_3"/>
+        <Controllable name="Quality factor 3" id="507" flags="" value="0" parameter="58" symbol="q_3"/>
+        <Controllable name="Hue 3" id="509" flags="" value="0.1875" parameter="59" symbol="hue_3"/>
+        <Controllable name="Filter type 4" id="511" flags="" value="0" parameter="61" symbol="ft_4"/>
+        <Controllable name="Filter mode 4" id="513" flags="" value="0" parameter="62" symbol="fm_4"/>
+        <Controllable name="Filter slope 4" id="515" flags="" value="0" parameter="63" symbol="s_4"/>
+        <Controllable name="Filter solo 4" id="517" flags="Toggle" value="0" parameter="64" symbol="xs_4"/>
+        <Controllable name="Filter mute 4" id="519" flags="Toggle" value="0" parameter="65" symbol="xm_4"/>
+        <Controllable name="Frequency 4" id="521" flags="" value="100" parameter="66" symbol="f_4"/>
+        <Controllable name="Gain 4" id="523" flags="" value="1" parameter="67" symbol="g_4"/>
+        <Controllable name="Quality factor 4" id="525" flags="" value="0" parameter="68" symbol="q_4"/>
+        <Controllable name="Hue 4" id="527" flags="" value="0.25" parameter="69" symbol="hue_4"/>
+        <Controllable name="Filter type 5" id="529" flags="" value="0" parameter="71" symbol="ft_5"/>
+        <Controllable name="Filter mode 5" id="531" flags="" value="0" parameter="72" symbol="fm_5"/>
+        <Controllable name="Filter slope 5" id="533" flags="" value="0" parameter="73" symbol="s_5"/>
+        <Controllable name="Filter solo 5" id="535" flags="Toggle" value="0" parameter="74" symbol="xs_5"/>
+        <Controllable name="Filter mute 5" id="537" flags="Toggle" value="0" parameter="75" symbol="xm_5"/>
+        <Controllable name="Frequency 5" id="539" flags="" value="160" parameter="76" symbol="f_5"/>
+        <Controllable name="Gain 5" id="541" flags="" value="1" parameter="77" symbol="g_5"/>
+        <Controllable name="Quality factor 5" id="543" flags="" value="0" parameter="78" symbol="q_5"/>
+        <Controllable name="Hue 5" id="545" flags="" value="0.3125" parameter="79" symbol="hue_5"/>
+        <Controllable name="Filter type 6" id="547" flags="" value="0" parameter="81" symbol="ft_6"/>
+        <Controllable name="Filter mode 6" id="549" flags="" value="0" parameter="82" symbol="fm_6"/>
+        <Controllable name="Filter slope 6" id="551" flags="" value="0" parameter="83" symbol="s_6"/>
+        <Controllable name="Filter solo 6" id="553" flags="Toggle" value="0" parameter="84" symbol="xs_6"/>
+        <Controllable name="Filter mute 6" id="555" flags="Toggle" value="0" parameter="85" symbol="xm_6"/>
+        <Controllable name="Frequency 6" id="557" flags="" value="250" parameter="86" symbol="f_6"/>
+        <Controllable name="Gain 6" id="559" flags="" value="1" parameter="87" symbol="g_6"/>
+        <Controllable name="Quality factor 6" id="561" flags="" value="0" parameter="88" symbol="q_6"/>
+        <Controllable name="Hue 6" id="563" flags="" value="0.375" parameter="89" symbol="hue_6"/>
+        <Controllable name="Filter type 7" id="565" flags="" value="0" parameter="91" symbol="ft_7"/>
+        <Controllable name="Filter mode 7" id="567" flags="" value="0" parameter="92" symbol="fm_7"/>
+        <Controllable name="Filter slope 7" id="569" flags="" value="0" parameter="93" symbol="s_7"/>
+        <Controllable name="Filter solo 7" id="571" flags="Toggle" value="0" parameter="94" symbol="xs_7"/>
+        <Controllable name="Filter mute 7" id="573" flags="Toggle" value="0" parameter="95" symbol="xm_7"/>
+        <Controllable name="Frequency 7" id="575" flags="" value="400" parameter="96" symbol="f_7"/>
+        <Controllable name="Gain 7" id="577" flags="" value="1" parameter="97" symbol="g_7"/>
+        <Controllable name="Quality factor 7" id="579" flags="" value="0" parameter="98" symbol="q_7"/>
+        <Controllable name="Hue 7" id="581" flags="" value="0.4375" parameter="99" symbol="hue_7"/>
+        <Controllable name="Filter type 8" id="583" flags="" value="0" parameter="101" symbol="ft_8"/>
+        <Controllable name="Filter mode 8" id="585" flags="" value="0" parameter="102" symbol="fm_8"/>
+        <Controllable name="Filter slope 8" id="587" flags="" value="0" parameter="103" symbol="s_8"/>
+        <Controllable name="Filter solo 8" id="589" flags="Toggle" value="0" parameter="104" symbol="xs_8"/>
+        <Controllable name="Filter mute 8" id="591" flags="Toggle" value="0" parameter="105" symbol="xm_8"/>
+        <Controllable name="Frequency 8" id="593" flags="" value="630" parameter="106" symbol="f_8"/>
+        <Controllable name="Gain 8" id="595" flags="" value="1" parameter="107" symbol="g_8"/>
+        <Controllable name="Quality factor 8" id="597" flags="" value="0" parameter="108" symbol="q_8"/>
+        <Controllable name="Hue 8" id="599" flags="" value="0.5" parameter="109" symbol="hue_8"/>
+        <Controllable name="Filter type 9" id="601" flags="" value="0" parameter="111" symbol="ft_9"/>
+        <Controllable name="Filter mode 9" id="603" flags="" value="0" parameter="112" symbol="fm_9"/>
+        <Controllable name="Filter slope 9" id="605" flags="" value="0" parameter="113" symbol="s_9"/>
+        <Controllable name="Filter solo 9" id="607" flags="Toggle" value="0" parameter="114" symbol="xs_9"/>
+        <Controllable name="Filter mute 9" id="609" flags="Toggle" value="0" parameter="115" symbol="xm_9"/>
+        <Controllable name="Frequency 9" id="611" flags="" value="1000" parameter="116" symbol="f_9"/>
+        <Controllable name="Gain 9" id="613" flags="" value="1" parameter="117" symbol="g_9"/>
+        <Controllable name="Quality factor 9" id="615" flags="" value="0" parameter="118" symbol="q_9"/>
+        <Controllable name="Hue 9" id="617" flags="" value="0.5625" parameter="119" symbol="hue_9"/>
+        <Controllable name="Filter type 10" id="619" flags="" value="0" parameter="121" symbol="ft_10"/>
+        <Controllable name="Filter mode 10" id="621" flags="" value="0" parameter="122" symbol="fm_10"/>
+        <Controllable name="Filter slope 10" id="623" flags="" value="0" parameter="123" symbol="s_10"/>
+        <Controllable name="Filter solo 10" id="625" flags="Toggle" value="0" parameter="124" symbol="xs_10"/>
+        <Controllable name="Filter mute 10" id="627" flags="Toggle" value="0" parameter="125" symbol="xm_10"/>
+        <Controllable name="Frequency 10" id="629" flags="" value="1600" parameter="126" symbol="f_10"/>
+        <Controllable name="Gain 10" id="631" flags="" value="1" parameter="127" symbol="g_10"/>
+        <Controllable name="Quality factor 10" id="633" flags="" value="0" parameter="128" symbol="q_10"/>
+        <Controllable name="Hue 10" id="635" flags="" value="0.625" parameter="129" symbol="hue_10"/>
+        <Controllable name="Filter type 11" id="637" flags="" value="0" parameter="131" symbol="ft_11"/>
+        <Controllable name="Filter mode 11" id="639" flags="" value="0" parameter="132" symbol="fm_11"/>
+        <Controllable name="Filter slope 11" id="641" flags="" value="0" parameter="133" symbol="s_11"/>
+        <Controllable name="Filter solo 11" id="643" flags="Toggle" value="0" parameter="134" symbol="xs_11"/>
+        <Controllable name="Filter mute 11" id="645" flags="Toggle" value="0" parameter="135" symbol="xm_11"/>
+        <Controllable name="Frequency 11" id="647" flags="" value="2500" parameter="136" symbol="f_11"/>
+        <Controllable name="Gain 11" id="649" flags="" value="1" parameter="137" symbol="g_11"/>
+        <Controllable name="Quality factor 11" id="651" flags="" value="0" parameter="138" symbol="q_11"/>
+        <Controllable name="Hue 11" id="653" flags="" value="0.6875" parameter="139" symbol="hue_11"/>
+        <Controllable name="Filter type 12" id="655" flags="" value="0" parameter="141" symbol="ft_12"/>
+        <Controllable name="Filter mode 12" id="657" flags="" value="0" parameter="142" symbol="fm_12"/>
+        <Controllable name="Filter slope 12" id="659" flags="" value="0" parameter="143" symbol="s_12"/>
+        <Controllable name="Filter solo 12" id="661" flags="Toggle" value="0" parameter="144" symbol="xs_12"/>
+        <Controllable name="Filter mute 12" id="663" flags="Toggle" value="0" parameter="145" symbol="xm_12"/>
+        <Controllable name="Frequency 12" id="665" flags="" value="4000" parameter="146" symbol="f_12"/>
+        <Controllable name="Gain 12" id="667" flags="" value="1" parameter="147" symbol="g_12"/>
+        <Controllable name="Quality factor 12" id="669" flags="" value="0" parameter="148" symbol="q_12"/>
+        <Controllable name="Hue 12" id="671" flags="" value="0.75" parameter="149" symbol="hue_12"/>
+        <Controllable name="Filter type 13" id="673" flags="" value="0" parameter="151" symbol="ft_13"/>
+        <Controllable name="Filter mode 13" id="675" flags="" value="0" parameter="152" symbol="fm_13"/>
+        <Controllable name="Filter slope 13" id="677" flags="" value="0" parameter="153" symbol="s_13"/>
+        <Controllable name="Filter solo 13" id="679" flags="Toggle" value="0" parameter="154" symbol="xs_13"/>
+        <Controllable name="Filter mute 13" id="681" flags="Toggle" value="0" parameter="155" symbol="xm_13"/>
+        <Controllable name="Frequency 13" id="683" flags="" value="6300" parameter="156" symbol="f_13"/>
+        <Controllable name="Gain 13" id="685" flags="" value="1" parameter="157" symbol="g_13"/>
+        <Controllable name="Quality factor 13" id="687" flags="" value="0" parameter="158" symbol="q_13"/>
+        <Controllable name="Hue 13" id="689" flags="" value="0.8125" parameter="159" symbol="hue_13"/>
+        <Controllable name="Filter type 14" id="691" flags="" value="0" parameter="161" symbol="ft_14"/>
+        <Controllable name="Filter mode 14" id="693" flags="" value="0" parameter="162" symbol="fm_14"/>
+        <Controllable name="Filter slope 14" id="695" flags="" value="0" parameter="163" symbol="s_14"/>
+        <Controllable name="Filter solo 14" id="697" flags="Toggle" value="0" parameter="164" symbol="xs_14"/>
+        <Controllable name="Filter mute 14" id="699" flags="Toggle" value="0" parameter="165" symbol="xm_14"/>
+        <Controllable name="Frequency 14" id="701" flags="" value="10000" parameter="166" symbol="f_14"/>
+        <Controllable name="Gain 14" id="703" flags="" value="1" parameter="167" symbol="g_14"/>
+        <Controllable name="Quality factor 14" id="705" flags="" value="0" parameter="168" symbol="q_14"/>
+        <Controllable name="Hue 14" id="707" flags="" value="0.875" parameter="169" symbol="hue_14"/>
+        <Controllable name="Filter type 15" id="709" flags="" value="0" parameter="171" symbol="ft_15"/>
+        <Controllable name="Filter mode 15" id="711" flags="" value="0" parameter="172" symbol="fm_15"/>
+        <Controllable name="Filter slope 15" id="713" flags="" value="0" parameter="173" symbol="s_15"/>
+        <Controllable name="Filter solo 15" id="715" flags="Toggle" value="0" parameter="174" symbol="xs_15"/>
+        <Controllable name="Filter mute 15" id="717" flags="Toggle" value="0" parameter="175" symbol="xm_15"/>
+        <Controllable name="Frequency 15" id="719" flags="" value="16000" parameter="176" symbol="f_15"/>
+        <Controllable name="Gain 15" id="721" flags="" value="1" parameter="177" symbol="g_15"/>
+        <Controllable name="Quality factor 15" id="723" flags="" value="0" parameter="178" symbol="q_15"/>
+        <Controllable name="Hue 15" id="725" flags="" value="0.9375" parameter="179" symbol="hue_15"/>
+      </Processor>
+      <Processor id="2095" name="ACE Compressor (stereo)" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="urn:ardour:a-comp#stereo" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="3"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion">
+          <Port symbol="att" value="10"/>
+          <Port symbol="rel" value="80"/>
+          <Port symbol="kn" value="0"/>
+          <Port symbol="rat" value="4"/>
+          <Port symbol="thr" value="0"/>
+          <Port symbol="mak" value="0"/>
+          <Port symbol="sidech" value="0"/>
+          <Port symbol="enable" value="0"/>
+        </lv2>
+        <Controllable name="Attack" id="2078" flags="" value="10" parameter="0" symbol="att"/>
+        <Controllable name="Release" id="2079" flags="" value="80" parameter="1" symbol="rel"/>
+        <Controllable name="Knee" id="2080" flags="" value="0" parameter="2" symbol="kn"/>
+        <Controllable name="Ratio" id="2081" flags="" value="4" parameter="3" symbol="rat"/>
+        <Controllable name="Threshold" id="2082" flags="" value="0" parameter="4" symbol="thr"/>
+        <Controllable name="Makeup" id="2083" flags="" value="0" parameter="5" symbol="mak"/>
+        <Controllable name="Sidechain" id="2084" flags="Toggle" value="0" parameter="9" symbol="sidech"/>
+        <Controllable name="Enable" id="2085" flags="Toggle" value="0" parameter="10" symbol="enable"/>
+      </Processor>
+      <Processor id="2099" name="TAP TubeWarmth" active="0" user-latency="0" use-user-latency="0" type="ladspa" unique-id="2158" count="2" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="1"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+        </OutputMap-0>
+        <InputMap-1>
+          <Channelmap type="audio" from="0" to="1"/>
+        </InputMap-1>
+        <OutputMap-1>
+          <Channelmap type="audio" from="0" to="1"/>
+        </OutputMap-1>
+        <ThruMap/>
+        <ladspa last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0">
+          <Port number="0" value="2.5750000476837158"/>
+          <Port number="1" value="10"/>
+        </ladspa>
+        <Controllable name="Drive" id="2101" flags="" value="2.5750000476837158" parameter="0"/>
+        <Controllable name="Tape--Tube Blend" id="2103" flags="" value="10" parameter="1"/>
+      </Processor>
+      <Processor id="91" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="65" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="94" name="meter-Master" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="95" name="Master" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Master" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+        <Pannable>
+          <Controllable name="pan-azimuth" id="80" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="84" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="82" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="86" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="88" flags="" value="0"/>
+          <Automation>
+            <AutomationList automation-id="pan-azimuth" id="79" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="81" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="83" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="85" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="87" interpolation-style="Linear" state="Off"/>
+          </Automation>
+        </Pannable>
+      </Processor>
+      <Slavable/>
+    </Route>
+    <Route version="6000" id="164" name="Mixbus" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
+      <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
+      <PresentationInfo order="2" flags="AudioBus,OrderSet" color="1956898303"/>
+      <Controllable name="solo" id="172" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="178" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="180" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Mixbus" id="192" direction="Input" default-type="audio">
+        <Port type="audio" name="Mixbus/audio_in 1"/>
+        <Port type="audio" name="Mixbus/audio_in 2"/>
+      </IO>
+      <IO name="Mixbus" id="193" direction="Output" default-type="audio">
+        <Port type="audio" name="Mixbus/audio_out 1">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port type="audio" name="Mixbus/audio_out 2">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+      <Controllable name="mute" id="174" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="176" flags="Toggle" value="0" phase-invert="00"/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="183" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="187" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="185" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="189" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="191" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="182" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="184" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="186" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="188" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="190" interpolation-style="Linear" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="202" name="return 2" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intreturn" bitslot="1"/>
+      <Processor id="195" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="197" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="170" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="1360" name="LSP Parametric Equalizer x16 Stereo" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://lsp-plug.in/plugins/lv2/para_equalizer_x16_stereo" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="2"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion" state-dir="state7">
+          <Port symbol="enabled" value="0"/>
+          <Port symbol="g_in" value="1"/>
+          <Port symbol="g_out" value="1"/>
+          <Port symbol="mode" value="0"/>
+          <Port symbol="fft" value="0"/>
+          <Port symbol="react" value="0.20000000298023224"/>
+          <Port symbol="shift" value="1"/>
+          <Port symbol="zoom" value="1"/>
+          <Port symbol="fsel" value="0"/>
+          <Port symbol="bal" value="0"/>
+          <Port symbol="frqs" value="0"/>
+          <Port symbol="fftv_l" value="1"/>
+          <Port symbol="fftv_r" value="1"/>
+          <Port symbol="ft_0" value="0"/>
+          <Port symbol="fm_0" value="0"/>
+          <Port symbol="s_0" value="0"/>
+          <Port symbol="xs_0" value="0"/>
+          <Port symbol="xm_0" value="0"/>
+          <Port symbol="f_0" value="16"/>
+          <Port symbol="g_0" value="1"/>
+          <Port symbol="q_0" value="0"/>
+          <Port symbol="hue_0" value="0"/>
+          <Port symbol="ft_1" value="0"/>
+          <Port symbol="fm_1" value="0"/>
+          <Port symbol="s_1" value="0"/>
+          <Port symbol="xs_1" value="0"/>
+          <Port symbol="xm_1" value="0"/>
+          <Port symbol="f_1" value="25"/>
+          <Port symbol="g_1" value="1"/>
+          <Port symbol="q_1" value="0"/>
+          <Port symbol="hue_1" value="0.0625"/>
+          <Port symbol="ft_2" value="0"/>
+          <Port symbol="fm_2" value="0"/>
+          <Port symbol="s_2" value="0"/>
+          <Port symbol="xs_2" value="0"/>
+          <Port symbol="xm_2" value="0"/>
+          <Port symbol="f_2" value="40"/>
+          <Port symbol="g_2" value="1"/>
+          <Port symbol="q_2" value="0"/>
+          <Port symbol="hue_2" value="0.125"/>
+          <Port symbol="ft_3" value="0"/>
+          <Port symbol="fm_3" value="0"/>
+          <Port symbol="s_3" value="0"/>
+          <Port symbol="xs_3" value="0"/>
+          <Port symbol="xm_3" value="0"/>
+          <Port symbol="f_3" value="63"/>
+          <Port symbol="g_3" value="1"/>
+          <Port symbol="q_3" value="0"/>
+          <Port symbol="hue_3" value="0.1875"/>
+          <Port symbol="ft_4" value="0"/>
+          <Port symbol="fm_4" value="0"/>
+          <Port symbol="s_4" value="0"/>
+          <Port symbol="xs_4" value="0"/>
+          <Port symbol="xm_4" value="0"/>
+          <Port symbol="f_4" value="100"/>
+          <Port symbol="g_4" value="1"/>
+          <Port symbol="q_4" value="0"/>
+          <Port symbol="hue_4" value="0.25"/>
+          <Port symbol="ft_5" value="0"/>
+          <Port symbol="fm_5" value="0"/>
+          <Port symbol="s_5" value="0"/>
+          <Port symbol="xs_5" value="0"/>
+          <Port symbol="xm_5" value="0"/>
+          <Port symbol="f_5" value="160"/>
+          <Port symbol="g_5" value="1"/>
+          <Port symbol="q_5" value="0"/>
+          <Port symbol="hue_5" value="0.3125"/>
+          <Port symbol="ft_6" value="0"/>
+          <Port symbol="fm_6" value="0"/>
+          <Port symbol="s_6" value="0"/>
+          <Port symbol="xs_6" value="0"/>
+          <Port symbol="xm_6" value="0"/>
+          <Port symbol="f_6" value="250"/>
+          <Port symbol="g_6" value="1"/>
+          <Port symbol="q_6" value="0"/>
+          <Port symbol="hue_6" value="0.375"/>
+          <Port symbol="ft_7" value="0"/>
+          <Port symbol="fm_7" value="0"/>
+          <Port symbol="s_7" value="0"/>
+          <Port symbol="xs_7" value="0"/>
+          <Port symbol="xm_7" value="0"/>
+          <Port symbol="f_7" value="400"/>
+          <Port symbol="g_7" value="1"/>
+          <Port symbol="q_7" value="0"/>
+          <Port symbol="hue_7" value="0.4375"/>
+          <Port symbol="ft_8" value="0"/>
+          <Port symbol="fm_8" value="0"/>
+          <Port symbol="s_8" value="0"/>
+          <Port symbol="xs_8" value="0"/>
+          <Port symbol="xm_8" value="0"/>
+          <Port symbol="f_8" value="630"/>
+          <Port symbol="g_8" value="1"/>
+          <Port symbol="q_8" value="0"/>
+          <Port symbol="hue_8" value="0.5"/>
+          <Port symbol="ft_9" value="0"/>
+          <Port symbol="fm_9" value="0"/>
+          <Port symbol="s_9" value="0"/>
+          <Port symbol="xs_9" value="0"/>
+          <Port symbol="xm_9" value="0"/>
+          <Port symbol="f_9" value="1000"/>
+          <Port symbol="g_9" value="1"/>
+          <Port symbol="q_9" value="0"/>
+          <Port symbol="hue_9" value="0.5625"/>
+          <Port symbol="ft_10" value="0"/>
+          <Port symbol="fm_10" value="0"/>
+          <Port symbol="s_10" value="0"/>
+          <Port symbol="xs_10" value="0"/>
+          <Port symbol="xm_10" value="0"/>
+          <Port symbol="f_10" value="1600"/>
+          <Port symbol="g_10" value="1"/>
+          <Port symbol="q_10" value="0"/>
+          <Port symbol="hue_10" value="0.625"/>
+          <Port symbol="ft_11" value="0"/>
+          <Port symbol="fm_11" value="0"/>
+          <Port symbol="s_11" value="0"/>
+          <Port symbol="xs_11" value="0"/>
+          <Port symbol="xm_11" value="0"/>
+          <Port symbol="f_11" value="2500"/>
+          <Port symbol="g_11" value="1"/>
+          <Port symbol="q_11" value="0"/>
+          <Port symbol="hue_11" value="0.6875"/>
+          <Port symbol="ft_12" value="0"/>
+          <Port symbol="fm_12" value="0"/>
+          <Port symbol="s_12" value="0"/>
+          <Port symbol="xs_12" value="0"/>
+          <Port symbol="xm_12" value="0"/>
+          <Port symbol="f_12" value="4000"/>
+          <Port symbol="g_12" value="1"/>
+          <Port symbol="q_12" value="0"/>
+          <Port symbol="hue_12" value="0.75"/>
+          <Port symbol="ft_13" value="0"/>
+          <Port symbol="fm_13" value="0"/>
+          <Port symbol="s_13" value="0"/>
+          <Port symbol="xs_13" value="0"/>
+          <Port symbol="xm_13" value="0"/>
+          <Port symbol="f_13" value="6300"/>
+          <Port symbol="g_13" value="1"/>
+          <Port symbol="q_13" value="0"/>
+          <Port symbol="hue_13" value="0.8125"/>
+          <Port symbol="ft_14" value="0"/>
+          <Port symbol="fm_14" value="0"/>
+          <Port symbol="s_14" value="0"/>
+          <Port symbol="xs_14" value="0"/>
+          <Port symbol="xm_14" value="0"/>
+          <Port symbol="f_14" value="10000"/>
+          <Port symbol="g_14" value="1"/>
+          <Port symbol="q_14" value="0"/>
+          <Port symbol="hue_14" value="0.875"/>
+          <Port symbol="ft_15" value="0"/>
+          <Port symbol="fm_15" value="0"/>
+          <Port symbol="s_15" value="0"/>
+          <Port symbol="xs_15" value="0"/>
+          <Port symbol="xm_15" value="0"/>
+          <Port symbol="f_15" value="16000"/>
+          <Port symbol="g_15" value="1"/>
+          <Port symbol="q_15" value="0"/>
+          <Port symbol="hue_15" value="0.9375"/>
+        </lv2>
+        <Controllable name="Enabled" id="1045" flags="Toggle" value="0" parameter="4" symbol="enabled"/>
+        <Controllable name="Input gain" id="1046" flags="" value="1" parameter="5" symbol="g_in"/>
+        <Controllable name="Output gain" id="1047" flags="" value="1" parameter="6" symbol="g_out"/>
+        <Controllable name="Equalizer mode" id="1048" flags="" value="0" parameter="7" symbol="mode"/>
+        <Controllable name="FFT analysis" id="1049" flags="" value="0" parameter="8" symbol="fft"/>
+        <Controllable name="FFT reactivity" id="1050" flags="" value="0.20000000298023224" parameter="9" symbol="react"/>
+        <Controllable name="Shift gain" id="1051" flags="" value="1" parameter="10" symbol="shift"/>
+        <Controllable name="Graph zoom" id="1052" flags="" value="1" parameter="11" symbol="zoom"/>
+        <Controllable name="Filter select" id="1053" flags="" value="0" parameter="12" symbol="fsel"/>
+        <Controllable name="Output balance" id="1054" flags="" value="0" parameter="13" symbol="bal"/>
+        <Controllable name="Frequency shift" id="1055" flags="" value="0" parameter="14" symbol="frqs"/>
+        <Controllable name="FFT visibility Left" id="1056" flags="Toggle" value="1" parameter="17" symbol="fftv_l"/>
+        <Controllable name="FFT visibility Right" id="1057" flags="Toggle" value="1" parameter="20" symbol="fftv_r"/>
+        <Controllable name="Filter type 0" id="1058" flags="" value="0" parameter="21" symbol="ft_0"/>
+        <Controllable name="Filter mode 0" id="1059" flags="" value="0" parameter="22" symbol="fm_0"/>
+        <Controllable name="Filter slope 0" id="1060" flags="" value="0" parameter="23" symbol="s_0"/>
+        <Controllable name="Filter solo 0" id="1061" flags="Toggle" value="0" parameter="24" symbol="xs_0"/>
+        <Controllable name="Filter mute 0" id="1062" flags="Toggle" value="0" parameter="25" symbol="xm_0"/>
+        <Controllable name="Frequency 0" id="1063" flags="" value="16" parameter="26" symbol="f_0"/>
+        <Controllable name="Gain 0" id="1064" flags="" value="1" parameter="27" symbol="g_0"/>
+        <Controllable name="Quality factor 0" id="1065" flags="" value="0" parameter="28" symbol="q_0"/>
+        <Controllable name="Hue 0" id="1066" flags="" value="0" parameter="29" symbol="hue_0"/>
+        <Controllable name="Filter type 1" id="1067" flags="" value="0" parameter="31" symbol="ft_1"/>
+        <Controllable name="Filter mode 1" id="1068" flags="" value="0" parameter="32" symbol="fm_1"/>
+        <Controllable name="Filter slope 1" id="1069" flags="" value="0" parameter="33" symbol="s_1"/>
+        <Controllable name="Filter solo 1" id="1070" flags="Toggle" value="0" parameter="34" symbol="xs_1"/>
+        <Controllable name="Filter mute 1" id="1071" flags="Toggle" value="0" parameter="35" symbol="xm_1"/>
+        <Controllable name="Frequency 1" id="1072" flags="" value="25" parameter="36" symbol="f_1"/>
+        <Controllable name="Gain 1" id="1073" flags="" value="1" parameter="37" symbol="g_1"/>
+        <Controllable name="Quality factor 1" id="1074" flags="" value="0" parameter="38" symbol="q_1"/>
+        <Controllable name="Hue 1" id="1075" flags="" value="0.0625" parameter="39" symbol="hue_1"/>
+        <Controllable name="Filter type 2" id="1076" flags="" value="0" parameter="41" symbol="ft_2"/>
+        <Controllable name="Filter mode 2" id="1077" flags="" value="0" parameter="42" symbol="fm_2"/>
+        <Controllable name="Filter slope 2" id="1078" flags="" value="0" parameter="43" symbol="s_2"/>
+        <Controllable name="Filter solo 2" id="1079" flags="Toggle" value="0" parameter="44" symbol="xs_2"/>
+        <Controllable name="Filter mute 2" id="1080" flags="Toggle" value="0" parameter="45" symbol="xm_2"/>
+        <Controllable name="Frequency 2" id="1081" flags="" value="40" parameter="46" symbol="f_2"/>
+        <Controllable name="Gain 2" id="1082" flags="" value="1" parameter="47" symbol="g_2"/>
+        <Controllable name="Quality factor 2" id="1083" flags="" value="0" parameter="48" symbol="q_2"/>
+        <Controllable name="Hue 2" id="1084" flags="" value="0.125" parameter="49" symbol="hue_2"/>
+        <Controllable name="Filter type 3" id="1085" flags="" value="0" parameter="51" symbol="ft_3"/>
+        <Controllable name="Filter mode 3" id="1086" flags="" value="0" parameter="52" symbol="fm_3"/>
+        <Controllable name="Filter slope 3" id="1087" flags="" value="0" parameter="53" symbol="s_3"/>
+        <Controllable name="Filter solo 3" id="1088" flags="Toggle" value="0" parameter="54" symbol="xs_3"/>
+        <Controllable name="Filter mute 3" id="1089" flags="Toggle" value="0" parameter="55" symbol="xm_3"/>
+        <Controllable name="Frequency 3" id="1090" flags="" value="63" parameter="56" symbol="f_3"/>
+        <Controllable name="Gain 3" id="1091" flags="" value="1" parameter="57" symbol="g_3"/>
+        <Controllable name="Quality factor 3" id="1092" flags="" value="0" parameter="58" symbol="q_3"/>
+        <Controllable name="Hue 3" id="1093" flags="" value="0.1875" parameter="59" symbol="hue_3"/>
+        <Controllable name="Filter type 4" id="1094" flags="" value="0" parameter="61" symbol="ft_4"/>
+        <Controllable name="Filter mode 4" id="1095" flags="" value="0" parameter="62" symbol="fm_4"/>
+        <Controllable name="Filter slope 4" id="1096" flags="" value="0" parameter="63" symbol="s_4"/>
+        <Controllable name="Filter solo 4" id="1097" flags="Toggle" value="0" parameter="64" symbol="xs_4"/>
+        <Controllable name="Filter mute 4" id="1098" flags="Toggle" value="0" parameter="65" symbol="xm_4"/>
+        <Controllable name="Frequency 4" id="1099" flags="" value="100" parameter="66" symbol="f_4"/>
+        <Controllable name="Gain 4" id="1100" flags="" value="1" parameter="67" symbol="g_4"/>
+        <Controllable name="Quality factor 4" id="1101" flags="" value="0" parameter="68" symbol="q_4"/>
+        <Controllable name="Hue 4" id="1102" flags="" value="0.25" parameter="69" symbol="hue_4"/>
+        <Controllable name="Filter type 5" id="1103" flags="" value="0" parameter="71" symbol="ft_5"/>
+        <Controllable name="Filter mode 5" id="1104" flags="" value="0" parameter="72" symbol="fm_5"/>
+        <Controllable name="Filter slope 5" id="1105" flags="" value="0" parameter="73" symbol="s_5"/>
+        <Controllable name="Filter solo 5" id="1106" flags="Toggle" value="0" parameter="74" symbol="xs_5"/>
+        <Controllable name="Filter mute 5" id="1107" flags="Toggle" value="0" parameter="75" symbol="xm_5"/>
+        <Controllable name="Frequency 5" id="1108" flags="" value="160" parameter="76" symbol="f_5"/>
+        <Controllable name="Gain 5" id="1109" flags="" value="1" parameter="77" symbol="g_5"/>
+        <Controllable name="Quality factor 5" id="1110" flags="" value="0" parameter="78" symbol="q_5"/>
+        <Controllable name="Hue 5" id="1111" flags="" value="0.3125" parameter="79" symbol="hue_5"/>
+        <Controllable name="Filter type 6" id="1112" flags="" value="0" parameter="81" symbol="ft_6"/>
+        <Controllable name="Filter mode 6" id="1113" flags="" value="0" parameter="82" symbol="fm_6"/>
+        <Controllable name="Filter slope 6" id="1114" flags="" value="0" parameter="83" symbol="s_6"/>
+        <Controllable name="Filter solo 6" id="1115" flags="Toggle" value="0" parameter="84" symbol="xs_6"/>
+        <Controllable name="Filter mute 6" id="1116" flags="Toggle" value="0" parameter="85" symbol="xm_6"/>
+        <Controllable name="Frequency 6" id="1117" flags="" value="250" parameter="86" symbol="f_6"/>
+        <Controllable name="Gain 6" id="1118" flags="" value="1" parameter="87" symbol="g_6"/>
+        <Controllable name="Quality factor 6" id="1119" flags="" value="0" parameter="88" symbol="q_6"/>
+        <Controllable name="Hue 6" id="1120" flags="" value="0.375" parameter="89" symbol="hue_6"/>
+        <Controllable name="Filter type 7" id="1121" flags="" value="0" parameter="91" symbol="ft_7"/>
+        <Controllable name="Filter mode 7" id="1122" flags="" value="0" parameter="92" symbol="fm_7"/>
+        <Controllable name="Filter slope 7" id="1123" flags="" value="0" parameter="93" symbol="s_7"/>
+        <Controllable name="Filter solo 7" id="1124" flags="Toggle" value="0" parameter="94" symbol="xs_7"/>
+        <Controllable name="Filter mute 7" id="1125" flags="Toggle" value="0" parameter="95" symbol="xm_7"/>
+        <Controllable name="Frequency 7" id="1126" flags="" value="400" parameter="96" symbol="f_7"/>
+        <Controllable name="Gain 7" id="1127" flags="" value="1" parameter="97" symbol="g_7"/>
+        <Controllable name="Quality factor 7" id="1128" flags="" value="0" parameter="98" symbol="q_7"/>
+        <Controllable name="Hue 7" id="1129" flags="" value="0.4375" parameter="99" symbol="hue_7"/>
+        <Controllable name="Filter type 8" id="1130" flags="" value="0" parameter="101" symbol="ft_8"/>
+        <Controllable name="Filter mode 8" id="1131" flags="" value="0" parameter="102" symbol="fm_8"/>
+        <Controllable name="Filter slope 8" id="1132" flags="" value="0" parameter="103" symbol="s_8"/>
+        <Controllable name="Filter solo 8" id="1133" flags="Toggle" value="0" parameter="104" symbol="xs_8"/>
+        <Controllable name="Filter mute 8" id="1134" flags="Toggle" value="0" parameter="105" symbol="xm_8"/>
+        <Controllable name="Frequency 8" id="1135" flags="" value="630" parameter="106" symbol="f_8"/>
+        <Controllable name="Gain 8" id="1136" flags="" value="1" parameter="107" symbol="g_8"/>
+        <Controllable name="Quality factor 8" id="1137" flags="" value="0" parameter="108" symbol="q_8"/>
+        <Controllable name="Hue 8" id="1138" flags="" value="0.5" parameter="109" symbol="hue_8"/>
+        <Controllable name="Filter type 9" id="1139" flags="" value="0" parameter="111" symbol="ft_9"/>
+        <Controllable name="Filter mode 9" id="1140" flags="" value="0" parameter="112" symbol="fm_9"/>
+        <Controllable name="Filter slope 9" id="1141" flags="" value="0" parameter="113" symbol="s_9"/>
+        <Controllable name="Filter solo 9" id="1142" flags="Toggle" value="0" parameter="114" symbol="xs_9"/>
+        <Controllable name="Filter mute 9" id="1143" flags="Toggle" value="0" parameter="115" symbol="xm_9"/>
+        <Controllable name="Frequency 9" id="1144" flags="" value="1000" parameter="116" symbol="f_9"/>
+        <Controllable name="Gain 9" id="1145" flags="" value="1" parameter="117" symbol="g_9"/>
+        <Controllable name="Quality factor 9" id="1146" flags="" value="0" parameter="118" symbol="q_9"/>
+        <Controllable name="Hue 9" id="1147" flags="" value="0.5625" parameter="119" symbol="hue_9"/>
+        <Controllable name="Filter type 10" id="1148" flags="" value="0" parameter="121" symbol="ft_10"/>
+        <Controllable name="Filter mode 10" id="1149" flags="" value="0" parameter="122" symbol="fm_10"/>
+        <Controllable name="Filter slope 10" id="1150" flags="" value="0" parameter="123" symbol="s_10"/>
+        <Controllable name="Filter solo 10" id="1151" flags="Toggle" value="0" parameter="124" symbol="xs_10"/>
+        <Controllable name="Filter mute 10" id="1152" flags="Toggle" value="0" parameter="125" symbol="xm_10"/>
+        <Controllable name="Frequency 10" id="1153" flags="" value="1600" parameter="126" symbol="f_10"/>
+        <Controllable name="Gain 10" id="1154" flags="" value="1" parameter="127" symbol="g_10"/>
+        <Controllable name="Quality factor 10" id="1155" flags="" value="0" parameter="128" symbol="q_10"/>
+        <Controllable name="Hue 10" id="1156" flags="" value="0.625" parameter="129" symbol="hue_10"/>
+        <Controllable name="Filter type 11" id="1157" flags="" value="0" parameter="131" symbol="ft_11"/>
+        <Controllable name="Filter mode 11" id="1158" flags="" value="0" parameter="132" symbol="fm_11"/>
+        <Controllable name="Filter slope 11" id="1159" flags="" value="0" parameter="133" symbol="s_11"/>
+        <Controllable name="Filter solo 11" id="1160" flags="Toggle" value="0" parameter="134" symbol="xs_11"/>
+        <Controllable name="Filter mute 11" id="1161" flags="Toggle" value="0" parameter="135" symbol="xm_11"/>
+        <Controllable name="Frequency 11" id="1162" flags="" value="2500" parameter="136" symbol="f_11"/>
+        <Controllable name="Gain 11" id="1163" flags="" value="1" parameter="137" symbol="g_11"/>
+        <Controllable name="Quality factor 11" id="1164" flags="" value="0" parameter="138" symbol="q_11"/>
+        <Controllable name="Hue 11" id="1165" flags="" value="0.6875" parameter="139" symbol="hue_11"/>
+        <Controllable name="Filter type 12" id="1166" flags="" value="0" parameter="141" symbol="ft_12"/>
+        <Controllable name="Filter mode 12" id="1167" flags="" value="0" parameter="142" symbol="fm_12"/>
+        <Controllable name="Filter slope 12" id="1168" flags="" value="0" parameter="143" symbol="s_12"/>
+        <Controllable name="Filter solo 12" id="1169" flags="Toggle" value="0" parameter="144" symbol="xs_12"/>
+        <Controllable name="Filter mute 12" id="1170" flags="Toggle" value="0" parameter="145" symbol="xm_12"/>
+        <Controllable name="Frequency 12" id="1171" flags="" value="4000" parameter="146" symbol="f_12"/>
+        <Controllable name="Gain 12" id="1172" flags="" value="1" parameter="147" symbol="g_12"/>
+        <Controllable name="Quality factor 12" id="1173" flags="" value="0" parameter="148" symbol="q_12"/>
+        <Controllable name="Hue 12" id="1174" flags="" value="0.75" parameter="149" symbol="hue_12"/>
+        <Controllable name="Filter type 13" id="1175" flags="" value="0" parameter="151" symbol="ft_13"/>
+        <Controllable name="Filter mode 13" id="1176" flags="" value="0" parameter="152" symbol="fm_13"/>
+        <Controllable name="Filter slope 13" id="1177" flags="" value="0" parameter="153" symbol="s_13"/>
+        <Controllable name="Filter solo 13" id="1178" flags="Toggle" value="0" parameter="154" symbol="xs_13"/>
+        <Controllable name="Filter mute 13" id="1179" flags="Toggle" value="0" parameter="155" symbol="xm_13"/>
+        <Controllable name="Frequency 13" id="1180" flags="" value="6300" parameter="156" symbol="f_13"/>
+        <Controllable name="Gain 13" id="1181" flags="" value="1" parameter="157" symbol="g_13"/>
+        <Controllable name="Quality factor 13" id="1182" flags="" value="0" parameter="158" symbol="q_13"/>
+        <Controllable name="Hue 13" id="1183" flags="" value="0.8125" parameter="159" symbol="hue_13"/>
+        <Controllable name="Filter type 14" id="1184" flags="" value="0" parameter="161" symbol="ft_14"/>
+        <Controllable name="Filter mode 14" id="1185" flags="" value="0" parameter="162" symbol="fm_14"/>
+        <Controllable name="Filter slope 14" id="1186" flags="" value="0" parameter="163" symbol="s_14"/>
+        <Controllable name="Filter solo 14" id="1187" flags="Toggle" value="0" parameter="164" symbol="xs_14"/>
+        <Controllable name="Filter mute 14" id="1188" flags="Toggle" value="0" parameter="165" symbol="xm_14"/>
+        <Controllable name="Frequency 14" id="1189" flags="" value="10000" parameter="166" symbol="f_14"/>
+        <Controllable name="Gain 14" id="1190" flags="" value="1" parameter="167" symbol="g_14"/>
+        <Controllable name="Quality factor 14" id="1191" flags="" value="0" parameter="168" symbol="q_14"/>
+        <Controllable name="Hue 14" id="1192" flags="" value="0.875" parameter="169" symbol="hue_14"/>
+        <Controllable name="Filter type 15" id="1193" flags="" value="0" parameter="171" symbol="ft_15"/>
+        <Controllable name="Filter mode 15" id="1194" flags="" value="0" parameter="172" symbol="fm_15"/>
+        <Controllable name="Filter slope 15" id="1195" flags="" value="0" parameter="173" symbol="s_15"/>
+        <Controllable name="Filter solo 15" id="1196" flags="Toggle" value="0" parameter="174" symbol="xs_15"/>
+        <Controllable name="Filter mute 15" id="1197" flags="Toggle" value="0" parameter="175" symbol="xm_15"/>
+        <Controllable name="Frequency 15" id="1198" flags="" value="16000" parameter="176" symbol="f_15"/>
+        <Controllable name="Gain 15" id="1199" flags="" value="1" parameter="177" symbol="g_15"/>
+        <Controllable name="Quality factor 15" id="1200" flags="" value="0" parameter="178" symbol="q_15"/>
+        <Controllable name="Hue 15" id="1201" flags="" value="0.9375" parameter="179" symbol="hue_15"/>
+      </Processor>
+      <Processor id="2056" name="ACE Compressor (stereo)" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="urn:ardour:a-comp#stereo" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="3"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion">
+          <Port symbol="att" value="10"/>
+          <Port symbol="rel" value="80"/>
+          <Port symbol="kn" value="0"/>
+          <Port symbol="rat" value="4"/>
+          <Port symbol="thr" value="0"/>
+          <Port symbol="mak" value="0"/>
+          <Port symbol="sidech" value="0"/>
+          <Port symbol="enable" value="0"/>
+        </lv2>
+        <Controllable name="Attack" id="2039" flags="" value="10" parameter="0" symbol="att"/>
+        <Controllable name="Release" id="2040" flags="" value="80" parameter="1" symbol="rel"/>
+        <Controllable name="Knee" id="2041" flags="" value="0" parameter="2" symbol="kn"/>
+        <Controllable name="Ratio" id="2042" flags="" value="4" parameter="3" symbol="rat"/>
+        <Controllable name="Threshold" id="2043" flags="" value="0" parameter="4" symbol="thr"/>
+        <Controllable name="Makeup" id="2044" flags="" value="0" parameter="5" symbol="mak"/>
+        <Controllable name="Sidechain" id="2045" flags="Toggle" value="0" parameter="9" symbol="sidech"/>
+        <Controllable name="Enable" id="2046" flags="Toggle" value="0" parameter="10" symbol="enable"/>
+      </Processor>
+      <Processor id="2119" name="TAP TubeWarmth" active="0" user-latency="0" use-user-latency="0" type="ladspa" unique-id="2158" count="2" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="1"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+        </OutputMap-0>
+        <InputMap-1>
+          <Channelmap type="audio" from="0" to="1"/>
+        </InputMap-1>
+        <OutputMap-1>
+          <Channelmap type="audio" from="0" to="1"/>
+        </OutputMap-1>
+        <ThruMap/>
+        <ladspa last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0">
+          <Port number="0" value="2.5750000476837158"/>
+          <Port number="1" value="10"/>
+        </ladspa>
+        <Controllable name="Drive" id="2114" flags="" value="2.5750000476837158" parameter="0"/>
+        <Controllable name="Tape--Tube Blend" id="2115" flags="" value="10" parameter="1"/>
+      </Processor>
+      <Processor id="194" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="168" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="364" name="REVERB" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="2" selfdestruct="0" target="213" allow-feedback="0">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1">
+          <Panner uri="http://ardour.org/plugin/panner_balance" type="Stereo Balance"/>
+        </PannerShell>
+        <Pannable>
+          <Controllable name="pan-azimuth" id="183" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="187" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="185" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="189" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="191" flags="" value="0"/>
+          <Automation>
+            <AutomationList automation-id="pan-azimuth" id="182" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="184" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="186" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="188" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="190" interpolation-style="Linear" state="Off"/>
+          </Automation>
+        </Pannable>
+        <Controllable name="gaincontrol" id="378" flags="GainLike,InlineControl" value="0.99039626121520996"/>
+      </Processor>
+      <Processor id="3560" name="DISTORTION" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="3" selfdestruct="0" target="3512" allow-feedback="0">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1">
+          <Panner uri="http://ardour.org/plugin/panner_balance" type="Stereo Balance"/>
+        </PannerShell>
+        <Pannable>
+          <Controllable name="pan-azimuth" id="183" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="187" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="185" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="189" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="191" flags="" value="0"/>
+          <Automation>
+            <AutomationList automation-id="pan-azimuth" id="182" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="184" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="186" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="188" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="190" interpolation-style="Linear" state="Off"/>
+          </Automation>
+        </Pannable>
+        <Controllable name="gaincontrol" id="3574" flags="GainLike,InlineControl" value="0.32330825924873352"/>
+      </Processor>
+      <Processor id="198" name="meter-Mixbus" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="199" name="Mixbus" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Mixbus" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+        <Pannable>
+          <Controllable name="pan-azimuth" id="183" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="187" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="185" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="189" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="191" flags="" value="0"/>
+          <Automation>
+            <AutomationList automation-id="pan-azimuth" id="182" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="184" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="186" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="188" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="190" interpolation-style="Linear" state="Off"/>
+          </Automation>
+        </Pannable>
+      </Processor>
+      <Slavable/>
+    </Route>
+    <Route version="6000" id="213" name="REVERB" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
+      <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
+      <PresentationInfo order="3" flags="AudioBus,OrderSet" color="3303397375"/>
+      <Controllable name="solo" id="221" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="227" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="229" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="REVERB" id="241" direction="Input" default-type="audio">
+        <Port type="audio" name="REVERB/audio_in 1"/>
+        <Port type="audio" name="REVERB/audio_in 2"/>
+      </IO>
+      <IO name="REVERB" id="242" direction="Output" default-type="audio">
+        <Port type="audio" name="REVERB/audio_out 1">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port type="audio" name="REVERB/audio_out 2">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+      <Controllable name="mute" id="223" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="225" flags="Toggle" value="0" phase-invert="00"/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="232" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="236" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="234" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="238" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="240" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="231" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="233" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="235" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="237" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="239" interpolation-style="Linear" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="251" name="return 3" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intreturn" bitslot="2"/>
+      <Processor id="244" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="246" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="219" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="386" name="ACE Reverb" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="urn:ardour:a-reverb" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="2"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion">
+          <Port symbol="blend" value="1"/>
+          <Port symbol="roomsz" value="0.87886595726013184"/>
+          <Port symbol="enable" value="1"/>
+        </lv2>
+        <Controllable name="Blend" id="388" flags="" value="1" parameter="4" symbol="blend"/>
+        <Controllable name="Room Size" id="390" flags="" value="0.87886595726013184" parameter="5" symbol="roomsz"/>
+        <Controllable name="Enable" id="392" flags="Toggle" value="1" parameter="6" symbol="enable"/>
+      </Processor>
+      <Processor id="1995" name="LSP Parametric Equalizer x16 Stereo" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://lsp-plug.in/plugins/lv2/para_equalizer_x16_stereo" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="2"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion" state-dir="state8">
+          <Port symbol="enabled" value="0"/>
+          <Port symbol="g_in" value="1"/>
+          <Port symbol="g_out" value="1"/>
+          <Port symbol="mode" value="0"/>
+          <Port symbol="fft" value="0"/>
+          <Port symbol="react" value="0.20000000298023224"/>
+          <Port symbol="shift" value="1"/>
+          <Port symbol="zoom" value="1"/>
+          <Port symbol="fsel" value="0"/>
+          <Port symbol="bal" value="0"/>
+          <Port symbol="frqs" value="0"/>
+          <Port symbol="fftv_l" value="1"/>
+          <Port symbol="fftv_r" value="1"/>
+          <Port symbol="ft_0" value="0"/>
+          <Port symbol="fm_0" value="0"/>
+          <Port symbol="s_0" value="0"/>
+          <Port symbol="xs_0" value="0"/>
+          <Port symbol="xm_0" value="0"/>
+          <Port symbol="f_0" value="16"/>
+          <Port symbol="g_0" value="1"/>
+          <Port symbol="q_0" value="0"/>
+          <Port symbol="hue_0" value="0"/>
+          <Port symbol="ft_1" value="0"/>
+          <Port symbol="fm_1" value="0"/>
+          <Port symbol="s_1" value="0"/>
+          <Port symbol="xs_1" value="0"/>
+          <Port symbol="xm_1" value="0"/>
+          <Port symbol="f_1" value="25"/>
+          <Port symbol="g_1" value="1"/>
+          <Port symbol="q_1" value="0"/>
+          <Port symbol="hue_1" value="0.0625"/>
+          <Port symbol="ft_2" value="0"/>
+          <Port symbol="fm_2" value="0"/>
+          <Port symbol="s_2" value="0"/>
+          <Port symbol="xs_2" value="0"/>
+          <Port symbol="xm_2" value="0"/>
+          <Port symbol="f_2" value="40"/>
+          <Port symbol="g_2" value="1"/>
+          <Port symbol="q_2" value="0"/>
+          <Port symbol="hue_2" value="0.125"/>
+          <Port symbol="ft_3" value="0"/>
+          <Port symbol="fm_3" value="0"/>
+          <Port symbol="s_3" value="0"/>
+          <Port symbol="xs_3" value="0"/>
+          <Port symbol="xm_3" value="0"/>
+          <Port symbol="f_3" value="63"/>
+          <Port symbol="g_3" value="1"/>
+          <Port symbol="q_3" value="0"/>
+          <Port symbol="hue_3" value="0.1875"/>
+          <Port symbol="ft_4" value="0"/>
+          <Port symbol="fm_4" value="0"/>
+          <Port symbol="s_4" value="0"/>
+          <Port symbol="xs_4" value="0"/>
+          <Port symbol="xm_4" value="0"/>
+          <Port symbol="f_4" value="100"/>
+          <Port symbol="g_4" value="1"/>
+          <Port symbol="q_4" value="0"/>
+          <Port symbol="hue_4" value="0.25"/>
+          <Port symbol="ft_5" value="0"/>
+          <Port symbol="fm_5" value="0"/>
+          <Port symbol="s_5" value="0"/>
+          <Port symbol="xs_5" value="0"/>
+          <Port symbol="xm_5" value="0"/>
+          <Port symbol="f_5" value="160"/>
+          <Port symbol="g_5" value="1"/>
+          <Port symbol="q_5" value="0"/>
+          <Port symbol="hue_5" value="0.3125"/>
+          <Port symbol="ft_6" value="0"/>
+          <Port symbol="fm_6" value="0"/>
+          <Port symbol="s_6" value="0"/>
+          <Port symbol="xs_6" value="0"/>
+          <Port symbol="xm_6" value="0"/>
+          <Port symbol="f_6" value="250"/>
+          <Port symbol="g_6" value="1"/>
+          <Port symbol="q_6" value="0"/>
+          <Port symbol="hue_6" value="0.375"/>
+          <Port symbol="ft_7" value="0"/>
+          <Port symbol="fm_7" value="0"/>
+          <Port symbol="s_7" value="0"/>
+          <Port symbol="xs_7" value="0"/>
+          <Port symbol="xm_7" value="0"/>
+          <Port symbol="f_7" value="400"/>
+          <Port symbol="g_7" value="1"/>
+          <Port symbol="q_7" value="0"/>
+          <Port symbol="hue_7" value="0.4375"/>
+          <Port symbol="ft_8" value="0"/>
+          <Port symbol="fm_8" value="0"/>
+          <Port symbol="s_8" value="0"/>
+          <Port symbol="xs_8" value="0"/>
+          <Port symbol="xm_8" value="0"/>
+          <Port symbol="f_8" value="630"/>
+          <Port symbol="g_8" value="1"/>
+          <Port symbol="q_8" value="0"/>
+          <Port symbol="hue_8" value="0.5"/>
+          <Port symbol="ft_9" value="0"/>
+          <Port symbol="fm_9" value="0"/>
+          <Port symbol="s_9" value="0"/>
+          <Port symbol="xs_9" value="0"/>
+          <Port symbol="xm_9" value="0"/>
+          <Port symbol="f_9" value="1000"/>
+          <Port symbol="g_9" value="1"/>
+          <Port symbol="q_9" value="0"/>
+          <Port symbol="hue_9" value="0.5625"/>
+          <Port symbol="ft_10" value="0"/>
+          <Port symbol="fm_10" value="0"/>
+          <Port symbol="s_10" value="0"/>
+          <Port symbol="xs_10" value="0"/>
+          <Port symbol="xm_10" value="0"/>
+          <Port symbol="f_10" value="1600"/>
+          <Port symbol="g_10" value="1"/>
+          <Port symbol="q_10" value="0"/>
+          <Port symbol="hue_10" value="0.625"/>
+          <Port symbol="ft_11" value="0"/>
+          <Port symbol="fm_11" value="0"/>
+          <Port symbol="s_11" value="0"/>
+          <Port symbol="xs_11" value="0"/>
+          <Port symbol="xm_11" value="0"/>
+          <Port symbol="f_11" value="2500"/>
+          <Port symbol="g_11" value="1"/>
+          <Port symbol="q_11" value="0"/>
+          <Port symbol="hue_11" value="0.6875"/>
+          <Port symbol="ft_12" value="0"/>
+          <Port symbol="fm_12" value="0"/>
+          <Port symbol="s_12" value="0"/>
+          <Port symbol="xs_12" value="0"/>
+          <Port symbol="xm_12" value="0"/>
+          <Port symbol="f_12" value="4000"/>
+          <Port symbol="g_12" value="1"/>
+          <Port symbol="q_12" value="0"/>
+          <Port symbol="hue_12" value="0.75"/>
+          <Port symbol="ft_13" value="0"/>
+          <Port symbol="fm_13" value="0"/>
+          <Port symbol="s_13" value="0"/>
+          <Port symbol="xs_13" value="0"/>
+          <Port symbol="xm_13" value="0"/>
+          <Port symbol="f_13" value="6300"/>
+          <Port symbol="g_13" value="1"/>
+          <Port symbol="q_13" value="0"/>
+          <Port symbol="hue_13" value="0.8125"/>
+          <Port symbol="ft_14" value="0"/>
+          <Port symbol="fm_14" value="0"/>
+          <Port symbol="s_14" value="0"/>
+          <Port symbol="xs_14" value="0"/>
+          <Port symbol="xm_14" value="0"/>
+          <Port symbol="f_14" value="10000"/>
+          <Port symbol="g_14" value="1"/>
+          <Port symbol="q_14" value="0"/>
+          <Port symbol="hue_14" value="0.875"/>
+          <Port symbol="ft_15" value="0"/>
+          <Port symbol="fm_15" value="0"/>
+          <Port symbol="s_15" value="0"/>
+          <Port symbol="xs_15" value="0"/>
+          <Port symbol="xm_15" value="0"/>
+          <Port symbol="f_15" value="16000"/>
+          <Port symbol="g_15" value="1"/>
+          <Port symbol="q_15" value="0"/>
+          <Port symbol="hue_15" value="0.9375"/>
+        </lv2>
+        <Controllable name="Enabled" id="1680" flags="Toggle" value="0" parameter="4" symbol="enabled"/>
+        <Controllable name="Input gain" id="1681" flags="" value="1" parameter="5" symbol="g_in"/>
+        <Controllable name="Output gain" id="1682" flags="" value="1" parameter="6" symbol="g_out"/>
+        <Controllable name="Equalizer mode" id="1683" flags="" value="0" parameter="7" symbol="mode"/>
+        <Controllable name="FFT analysis" id="1684" flags="" value="0" parameter="8" symbol="fft"/>
+        <Controllable name="FFT reactivity" id="1685" flags="" value="0.20000000298023224" parameter="9" symbol="react"/>
+        <Controllable name="Shift gain" id="1686" flags="" value="1" parameter="10" symbol="shift"/>
+        <Controllable name="Graph zoom" id="1687" flags="" value="1" parameter="11" symbol="zoom"/>
+        <Controllable name="Filter select" id="1688" flags="" value="0" parameter="12" symbol="fsel"/>
+        <Controllable name="Output balance" id="1689" flags="" value="0" parameter="13" symbol="bal"/>
+        <Controllable name="Frequency shift" id="1690" flags="" value="0" parameter="14" symbol="frqs"/>
+        <Controllable name="FFT visibility Left" id="1691" flags="Toggle" value="1" parameter="17" symbol="fftv_l"/>
+        <Controllable name="FFT visibility Right" id="1692" flags="Toggle" value="1" parameter="20" symbol="fftv_r"/>
+        <Controllable name="Filter type 0" id="1693" flags="" value="0" parameter="21" symbol="ft_0"/>
+        <Controllable name="Filter mode 0" id="1694" flags="" value="0" parameter="22" symbol="fm_0"/>
+        <Controllable name="Filter slope 0" id="1695" flags="" value="0" parameter="23" symbol="s_0"/>
+        <Controllable name="Filter solo 0" id="1696" flags="Toggle" value="0" parameter="24" symbol="xs_0"/>
+        <Controllable name="Filter mute 0" id="1697" flags="Toggle" value="0" parameter="25" symbol="xm_0"/>
+        <Controllable name="Frequency 0" id="1698" flags="" value="16" parameter="26" symbol="f_0"/>
+        <Controllable name="Gain 0" id="1699" flags="" value="1" parameter="27" symbol="g_0"/>
+        <Controllable name="Quality factor 0" id="1700" flags="" value="0" parameter="28" symbol="q_0"/>
+        <Controllable name="Hue 0" id="1701" flags="" value="0" parameter="29" symbol="hue_0"/>
+        <Controllable name="Filter type 1" id="1702" flags="" value="0" parameter="31" symbol="ft_1"/>
+        <Controllable name="Filter mode 1" id="1703" flags="" value="0" parameter="32" symbol="fm_1"/>
+        <Controllable name="Filter slope 1" id="1704" flags="" value="0" parameter="33" symbol="s_1"/>
+        <Controllable name="Filter solo 1" id="1705" flags="Toggle" value="0" parameter="34" symbol="xs_1"/>
+        <Controllable name="Filter mute 1" id="1706" flags="Toggle" value="0" parameter="35" symbol="xm_1"/>
+        <Controllable name="Frequency 1" id="1707" flags="" value="25" parameter="36" symbol="f_1"/>
+        <Controllable name="Gain 1" id="1708" flags="" value="1" parameter="37" symbol="g_1"/>
+        <Controllable name="Quality factor 1" id="1709" flags="" value="0" parameter="38" symbol="q_1"/>
+        <Controllable name="Hue 1" id="1710" flags="" value="0.0625" parameter="39" symbol="hue_1"/>
+        <Controllable name="Filter type 2" id="1711" flags="" value="0" parameter="41" symbol="ft_2"/>
+        <Controllable name="Filter mode 2" id="1712" flags="" value="0" parameter="42" symbol="fm_2"/>
+        <Controllable name="Filter slope 2" id="1713" flags="" value="0" parameter="43" symbol="s_2"/>
+        <Controllable name="Filter solo 2" id="1714" flags="Toggle" value="0" parameter="44" symbol="xs_2"/>
+        <Controllable name="Filter mute 2" id="1715" flags="Toggle" value="0" parameter="45" symbol="xm_2"/>
+        <Controllable name="Frequency 2" id="1716" flags="" value="40" parameter="46" symbol="f_2"/>
+        <Controllable name="Gain 2" id="1717" flags="" value="1" parameter="47" symbol="g_2"/>
+        <Controllable name="Quality factor 2" id="1718" flags="" value="0" parameter="48" symbol="q_2"/>
+        <Controllable name="Hue 2" id="1719" flags="" value="0.125" parameter="49" symbol="hue_2"/>
+        <Controllable name="Filter type 3" id="1720" flags="" value="0" parameter="51" symbol="ft_3"/>
+        <Controllable name="Filter mode 3" id="1721" flags="" value="0" parameter="52" symbol="fm_3"/>
+        <Controllable name="Filter slope 3" id="1722" flags="" value="0" parameter="53" symbol="s_3"/>
+        <Controllable name="Filter solo 3" id="1723" flags="Toggle" value="0" parameter="54" symbol="xs_3"/>
+        <Controllable name="Filter mute 3" id="1724" flags="Toggle" value="0" parameter="55" symbol="xm_3"/>
+        <Controllable name="Frequency 3" id="1725" flags="" value="63" parameter="56" symbol="f_3"/>
+        <Controllable name="Gain 3" id="1726" flags="" value="1" parameter="57" symbol="g_3"/>
+        <Controllable name="Quality factor 3" id="1727" flags="" value="0" parameter="58" symbol="q_3"/>
+        <Controllable name="Hue 3" id="1728" flags="" value="0.1875" parameter="59" symbol="hue_3"/>
+        <Controllable name="Filter type 4" id="1729" flags="" value="0" parameter="61" symbol="ft_4"/>
+        <Controllable name="Filter mode 4" id="1730" flags="" value="0" parameter="62" symbol="fm_4"/>
+        <Controllable name="Filter slope 4" id="1731" flags="" value="0" parameter="63" symbol="s_4"/>
+        <Controllable name="Filter solo 4" id="1732" flags="Toggle" value="0" parameter="64" symbol="xs_4"/>
+        <Controllable name="Filter mute 4" id="1733" flags="Toggle" value="0" parameter="65" symbol="xm_4"/>
+        <Controllable name="Frequency 4" id="1734" flags="" value="100" parameter="66" symbol="f_4"/>
+        <Controllable name="Gain 4" id="1735" flags="" value="1" parameter="67" symbol="g_4"/>
+        <Controllable name="Quality factor 4" id="1736" flags="" value="0" parameter="68" symbol="q_4"/>
+        <Controllable name="Hue 4" id="1737" flags="" value="0.25" parameter="69" symbol="hue_4"/>
+        <Controllable name="Filter type 5" id="1738" flags="" value="0" parameter="71" symbol="ft_5"/>
+        <Controllable name="Filter mode 5" id="1739" flags="" value="0" parameter="72" symbol="fm_5"/>
+        <Controllable name="Filter slope 5" id="1740" flags="" value="0" parameter="73" symbol="s_5"/>
+        <Controllable name="Filter solo 5" id="1741" flags="Toggle" value="0" parameter="74" symbol="xs_5"/>
+        <Controllable name="Filter mute 5" id="1742" flags="Toggle" value="0" parameter="75" symbol="xm_5"/>
+        <Controllable name="Frequency 5" id="1743" flags="" value="160" parameter="76" symbol="f_5"/>
+        <Controllable name="Gain 5" id="1744" flags="" value="1" parameter="77" symbol="g_5"/>
+        <Controllable name="Quality factor 5" id="1745" flags="" value="0" parameter="78" symbol="q_5"/>
+        <Controllable name="Hue 5" id="1746" flags="" value="0.3125" parameter="79" symbol="hue_5"/>
+        <Controllable name="Filter type 6" id="1747" flags="" value="0" parameter="81" symbol="ft_6"/>
+        <Controllable name="Filter mode 6" id="1748" flags="" value="0" parameter="82" symbol="fm_6"/>
+        <Controllable name="Filter slope 6" id="1749" flags="" value="0" parameter="83" symbol="s_6"/>
+        <Controllable name="Filter solo 6" id="1750" flags="Toggle" value="0" parameter="84" symbol="xs_6"/>
+        <Controllable name="Filter mute 6" id="1751" flags="Toggle" value="0" parameter="85" symbol="xm_6"/>
+        <Controllable name="Frequency 6" id="1752" flags="" value="250" parameter="86" symbol="f_6"/>
+        <Controllable name="Gain 6" id="1753" flags="" value="1" parameter="87" symbol="g_6"/>
+        <Controllable name="Quality factor 6" id="1754" flags="" value="0" parameter="88" symbol="q_6"/>
+        <Controllable name="Hue 6" id="1755" flags="" value="0.375" parameter="89" symbol="hue_6"/>
+        <Controllable name="Filter type 7" id="1756" flags="" value="0" parameter="91" symbol="ft_7"/>
+        <Controllable name="Filter mode 7" id="1757" flags="" value="0" parameter="92" symbol="fm_7"/>
+        <Controllable name="Filter slope 7" id="1758" flags="" value="0" parameter="93" symbol="s_7"/>
+        <Controllable name="Filter solo 7" id="1759" flags="Toggle" value="0" parameter="94" symbol="xs_7"/>
+        <Controllable name="Filter mute 7" id="1760" flags="Toggle" value="0" parameter="95" symbol="xm_7"/>
+        <Controllable name="Frequency 7" id="1761" flags="" value="400" parameter="96" symbol="f_7"/>
+        <Controllable name="Gain 7" id="1762" flags="" value="1" parameter="97" symbol="g_7"/>
+        <Controllable name="Quality factor 7" id="1763" flags="" value="0" parameter="98" symbol="q_7"/>
+        <Controllable name="Hue 7" id="1764" flags="" value="0.4375" parameter="99" symbol="hue_7"/>
+        <Controllable name="Filter type 8" id="1765" flags="" value="0" parameter="101" symbol="ft_8"/>
+        <Controllable name="Filter mode 8" id="1766" flags="" value="0" parameter="102" symbol="fm_8"/>
+        <Controllable name="Filter slope 8" id="1767" flags="" value="0" parameter="103" symbol="s_8"/>
+        <Controllable name="Filter solo 8" id="1768" flags="Toggle" value="0" parameter="104" symbol="xs_8"/>
+        <Controllable name="Filter mute 8" id="1769" flags="Toggle" value="0" parameter="105" symbol="xm_8"/>
+        <Controllable name="Frequency 8" id="1770" flags="" value="630" parameter="106" symbol="f_8"/>
+        <Controllable name="Gain 8" id="1771" flags="" value="1" parameter="107" symbol="g_8"/>
+        <Controllable name="Quality factor 8" id="1772" flags="" value="0" parameter="108" symbol="q_8"/>
+        <Controllable name="Hue 8" id="1773" flags="" value="0.5" parameter="109" symbol="hue_8"/>
+        <Controllable name="Filter type 9" id="1774" flags="" value="0" parameter="111" symbol="ft_9"/>
+        <Controllable name="Filter mode 9" id="1775" flags="" value="0" parameter="112" symbol="fm_9"/>
+        <Controllable name="Filter slope 9" id="1776" flags="" value="0" parameter="113" symbol="s_9"/>
+        <Controllable name="Filter solo 9" id="1777" flags="Toggle" value="0" parameter="114" symbol="xs_9"/>
+        <Controllable name="Filter mute 9" id="1778" flags="Toggle" value="0" parameter="115" symbol="xm_9"/>
+        <Controllable name="Frequency 9" id="1779" flags="" value="1000" parameter="116" symbol="f_9"/>
+        <Controllable name="Gain 9" id="1780" flags="" value="1" parameter="117" symbol="g_9"/>
+        <Controllable name="Quality factor 9" id="1781" flags="" value="0" parameter="118" symbol="q_9"/>
+        <Controllable name="Hue 9" id="1782" flags="" value="0.5625" parameter="119" symbol="hue_9"/>
+        <Controllable name="Filter type 10" id="1783" flags="" value="0" parameter="121" symbol="ft_10"/>
+        <Controllable name="Filter mode 10" id="1784" flags="" value="0" parameter="122" symbol="fm_10"/>
+        <Controllable name="Filter slope 10" id="1785" flags="" value="0" parameter="123" symbol="s_10"/>
+        <Controllable name="Filter solo 10" id="1786" flags="Toggle" value="0" parameter="124" symbol="xs_10"/>
+        <Controllable name="Filter mute 10" id="1787" flags="Toggle" value="0" parameter="125" symbol="xm_10"/>
+        <Controllable name="Frequency 10" id="1788" flags="" value="1600" parameter="126" symbol="f_10"/>
+        <Controllable name="Gain 10" id="1789" flags="" value="1" parameter="127" symbol="g_10"/>
+        <Controllable name="Quality factor 10" id="1790" flags="" value="0" parameter="128" symbol="q_10"/>
+        <Controllable name="Hue 10" id="1791" flags="" value="0.625" parameter="129" symbol="hue_10"/>
+        <Controllable name="Filter type 11" id="1792" flags="" value="0" parameter="131" symbol="ft_11"/>
+        <Controllable name="Filter mode 11" id="1793" flags="" value="0" parameter="132" symbol="fm_11"/>
+        <Controllable name="Filter slope 11" id="1794" flags="" value="0" parameter="133" symbol="s_11"/>
+        <Controllable name="Filter solo 11" id="1795" flags="Toggle" value="0" parameter="134" symbol="xs_11"/>
+        <Controllable name="Filter mute 11" id="1796" flags="Toggle" value="0" parameter="135" symbol="xm_11"/>
+        <Controllable name="Frequency 11" id="1797" flags="" value="2500" parameter="136" symbol="f_11"/>
+        <Controllable name="Gain 11" id="1798" flags="" value="1" parameter="137" symbol="g_11"/>
+        <Controllable name="Quality factor 11" id="1799" flags="" value="0" parameter="138" symbol="q_11"/>
+        <Controllable name="Hue 11" id="1800" flags="" value="0.6875" parameter="139" symbol="hue_11"/>
+        <Controllable name="Filter type 12" id="1801" flags="" value="0" parameter="141" symbol="ft_12"/>
+        <Controllable name="Filter mode 12" id="1802" flags="" value="0" parameter="142" symbol="fm_12"/>
+        <Controllable name="Filter slope 12" id="1803" flags="" value="0" parameter="143" symbol="s_12"/>
+        <Controllable name="Filter solo 12" id="1804" flags="Toggle" value="0" parameter="144" symbol="xs_12"/>
+        <Controllable name="Filter mute 12" id="1805" flags="Toggle" value="0" parameter="145" symbol="xm_12"/>
+        <Controllable name="Frequency 12" id="1806" flags="" value="4000" parameter="146" symbol="f_12"/>
+        <Controllable name="Gain 12" id="1807" flags="" value="1" parameter="147" symbol="g_12"/>
+        <Controllable name="Quality factor 12" id="1808" flags="" value="0" parameter="148" symbol="q_12"/>
+        <Controllable name="Hue 12" id="1809" flags="" value="0.75" parameter="149" symbol="hue_12"/>
+        <Controllable name="Filter type 13" id="1810" flags="" value="0" parameter="151" symbol="ft_13"/>
+        <Controllable name="Filter mode 13" id="1811" flags="" value="0" parameter="152" symbol="fm_13"/>
+        <Controllable name="Filter slope 13" id="1812" flags="" value="0" parameter="153" symbol="s_13"/>
+        <Controllable name="Filter solo 13" id="1813" flags="Toggle" value="0" parameter="154" symbol="xs_13"/>
+        <Controllable name="Filter mute 13" id="1814" flags="Toggle" value="0" parameter="155" symbol="xm_13"/>
+        <Controllable name="Frequency 13" id="1815" flags="" value="6300" parameter="156" symbol="f_13"/>
+        <Controllable name="Gain 13" id="1816" flags="" value="1" parameter="157" symbol="g_13"/>
+        <Controllable name="Quality factor 13" id="1817" flags="" value="0" parameter="158" symbol="q_13"/>
+        <Controllable name="Hue 13" id="1818" flags="" value="0.8125" parameter="159" symbol="hue_13"/>
+        <Controllable name="Filter type 14" id="1819" flags="" value="0" parameter="161" symbol="ft_14"/>
+        <Controllable name="Filter mode 14" id="1820" flags="" value="0" parameter="162" symbol="fm_14"/>
+        <Controllable name="Filter slope 14" id="1821" flags="" value="0" parameter="163" symbol="s_14"/>
+        <Controllable name="Filter solo 14" id="1822" flags="Toggle" value="0" parameter="164" symbol="xs_14"/>
+        <Controllable name="Filter mute 14" id="1823" flags="Toggle" value="0" parameter="165" symbol="xm_14"/>
+        <Controllable name="Frequency 14" id="1824" flags="" value="10000" parameter="166" symbol="f_14"/>
+        <Controllable name="Gain 14" id="1825" flags="" value="1" parameter="167" symbol="g_14"/>
+        <Controllable name="Quality factor 14" id="1826" flags="" value="0" parameter="168" symbol="q_14"/>
+        <Controllable name="Hue 14" id="1827" flags="" value="0.875" parameter="169" symbol="hue_14"/>
+        <Controllable name="Filter type 15" id="1828" flags="" value="0" parameter="171" symbol="ft_15"/>
+        <Controllable name="Filter mode 15" id="1829" flags="" value="0" parameter="172" symbol="fm_15"/>
+        <Controllable name="Filter slope 15" id="1830" flags="" value="0" parameter="173" symbol="s_15"/>
+        <Controllable name="Filter solo 15" id="1831" flags="Toggle" value="0" parameter="174" symbol="xs_15"/>
+        <Controllable name="Filter mute 15" id="1832" flags="Toggle" value="0" parameter="175" symbol="xm_15"/>
+        <Controllable name="Frequency 15" id="1833" flags="" value="16000" parameter="176" symbol="f_15"/>
+        <Controllable name="Gain 15" id="1834" flags="" value="1" parameter="177" symbol="g_15"/>
+        <Controllable name="Quality factor 15" id="1835" flags="" value="0" parameter="178" symbol="q_15"/>
+        <Controllable name="Hue 15" id="1836" flags="" value="0.9375" parameter="179" symbol="hue_15"/>
+      </Processor>
+      <Processor id="1999" name="ACE Compressor (stereo)" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="urn:ardour:a-comp#stereo" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="3"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+          <Channelmap type="audio" from="2" to="2"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <Processor id="2016" name="SC REVERB/ACE Compressor (stereo) 1" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="sidechain">
+          <IO name="SC REVERB/ACE Compressor (stereo) 1" id="2017" direction="Input" default-type="audio" pretty-name="SC ACE Compressor (stereo)">
+            <Port type="audio" name="SC REVERB/ACE Compressor (stereo) 1/audio_in 1"/>
+          </IO>
+        </Processor>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion">
+          <Port symbol="att" value="10"/>
+          <Port symbol="rel" value="80"/>
+          <Port symbol="kn" value="0"/>
+          <Port symbol="rat" value="4"/>
+          <Port symbol="thr" value="0"/>
+          <Port symbol="mak" value="0"/>
+          <Port symbol="sidech" value="0"/>
+          <Port symbol="enable" value="0"/>
+        </lv2>
+        <Controllable name="Attack" id="2001" flags="" value="10" parameter="0" symbol="att"/>
+        <Controllable name="Release" id="2003" flags="" value="80" parameter="1" symbol="rel"/>
+        <Controllable name="Knee" id="2005" flags="" value="0" parameter="2" symbol="kn"/>
+        <Controllable name="Ratio" id="2007" flags="" value="4" parameter="3" symbol="rat"/>
+        <Controllable name="Threshold" id="2009" flags="" value="0" parameter="4" symbol="thr"/>
+        <Controllable name="Makeup" id="2011" flags="" value="0" parameter="5" symbol="mak"/>
+        <Controllable name="Sidechain" id="2013" flags="Toggle" value="0" parameter="9" symbol="sidech"/>
+        <Controllable name="Enable" id="2015" flags="Toggle" value="0" parameter="10" symbol="enable"/>
+      </Processor>
+      <Processor id="2135" name="TAP TubeWarmth" active="0" user-latency="0" use-user-latency="0" type="ladspa" unique-id="2158" count="2" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="1"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+        </OutputMap-0>
+        <InputMap-1>
+          <Channelmap type="audio" from="0" to="1"/>
+        </InputMap-1>
+        <OutputMap-1>
+          <Channelmap type="audio" from="0" to="1"/>
+        </OutputMap-1>
+        <ThruMap/>
+        <ladspa last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0">
+          <Port number="0" value="2.5750000476837158"/>
+          <Port number="1" value="10"/>
+        </ladspa>
+        <Controllable name="Drive" id="2130" flags="" value="2.5750000476837158" parameter="0"/>
+        <Controllable name="Tape--Tube Blend" id="2131" flags="" value="10" parameter="1"/>
+      </Processor>
+      <Processor id="243" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="217" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="247" name="meter-REVERB" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="248" name="REVERB" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="REVERB" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+        <Pannable>
+          <Controllable name="pan-azimuth" id="232" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="236" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="234" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="238" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="240" flags="" value="0"/>
+          <Automation>
+            <AutomationList automation-id="pan-azimuth" id="231" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="233" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="235" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="237" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="239" interpolation-style="Linear" state="Off"/>
+          </Automation>
+        </Pannable>
+      </Processor>
+      <Slavable/>
+    </Route>
+    <Route version="6000" id="262" name="General MIDI Synth" default-type="midi" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" midi-playlist="301" saved-meter-point="MeterPostFader" alignment-choice="Automatic" playback-channel-mode="AllChannels" capture-channel-mode="AllChannels" playback-channel-mask="0xffff" capture-channel-mask="0xffff" note-mode="Sustained" step-editing="0" input-active="1">
+      <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
+      <PresentationInfo order="1" flags="MidiTrack,OrderSet" color="3856825855"/>
+      <Controllable name="solo" id="270" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="276" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="278" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="General MIDI Synth" id="290" direction="Input" default-type="midi">
+        <Port type="midi" name="General MIDI Synth/midi_in 1">
+          <Connection other="Virtual Keyboard"/>
+        </Port>
+      </IO>
+      <IO name="General MIDI Synth" id="291" direction="Output" default-type="midi">
+        <Port type="audio" name="General MIDI Synth/audio_out 1"/>
+        <Port type="audio" name="General MIDI Synth/audio_out 2"/>
+        <Port type="midi" name="General MIDI Synth/midi_out 1"/>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+      <Controllable name="mute" id="272" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="274" flags="Toggle" value="0" phase-invert=""/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="281" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="285" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="283" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="287" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="289" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="280" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="282" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="284" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="286" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="288" interpolation-style="Linear" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="300" name="General MIDI Synth" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="no"/>
+      <Processor id="299" name="General MIDI Synth" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+      <Processor id="293" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="338" name="General MIDI Synth" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://gareus.org/oss/lv2/gmsynth" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="midi" count="1"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="midi" count="1"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+          <Channels type="midi" count="1"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="midi" from="0" to="0"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion"/>
+      </Processor>
+      <Processor id="292" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="266" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="343" name="Mixbus" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intsend" role="Aux" bitslot="1" selfdestruct="0" target="164" allow-feedback="0">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1">
+          <Panner uri="http://ardour.org/plugin/panner_balance" type="Stereo Balance"/>
+        </PannerShell>
+        <Pannable>
+          <Controllable name="pan-azimuth" id="281" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="285" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="283" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="287" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="289" flags="" value="0"/>
+          <Automation>
+            <AutomationList automation-id="pan-azimuth" id="280" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="282" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="284" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="286" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="288" interpolation-style="Linear" state="Off"/>
+          </Automation>
+        </Pannable>
+        <Controllable name="gaincontrol" id="357" flags="GainLike,InlineControl" value="0.99039691686630249"/>
+      </Processor>
+      <Processor id="296" name="meter-General MIDI Synth" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="297" name="General MIDI Synth" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="General MIDI Synth" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+        <Pannable>
+          <Controllable name="pan-azimuth" id="281" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="285" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="283" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="287" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="289" flags="" value="0"/>
+          <Automation>
+            <AutomationList automation-id="pan-azimuth" id="280" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="282" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="284" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="286" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="288" interpolation-style="Linear" state="Off"/>
+          </Automation>
+        </Pannable>
+      </Processor>
+      <Slavable/>
+      <Controllable name="monitor" id="310" flags="RealTime" value="0" monitoring=""/>
+      <Controllable name="rec-safe" id="308" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="rec-enable" id="306" flags="Toggle,RealTime" value="0"/>
+    </Route>
+    <Route version="6000" id="3512" name="DISTORTION" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak">
+      <ProgramVersion created-with="Ardour 6.5" modified-with="Ardour 6.5"/>
+      <PresentationInfo order="4" flags="AudioBus,OrderSet" color="3849502207"/>
+      <Controllable name="solo" id="3520" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="3526" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="3528" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="DISTORTION" id="3540" direction="Input" default-type="audio">
+        <Port type="audio" name="DISTORTION/audio_in 1"/>
+        <Port type="audio" name="DISTORTION/audio_in 2"/>
+      </IO>
+      <IO name="DISTORTION" id="3541" direction="Output" default-type="audio">
+        <Port type="audio" name="DISTORTION/audio_out 1">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port type="audio" name="DISTORTION/audio_out 2">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+      <Controllable name="mute" id="3522" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="3524" flags="Toggle" value="0" phase-invert="00"/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="3531" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="3535" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="3533" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="3537" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="3539" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="3530" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="3532" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-width" id="3534" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="3536" interpolation-style="Linear" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="3538" interpolation-style="Linear" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="3550" name="return 4" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="1" type="intreturn" bitslot="3"/>
+      <Processor id="3543" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="3545" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="3518" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="3582" name="kpp_distruction" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="https://faustlv2.bitbucket.io/kpp_distruction" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="2"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion">
+          <Port symbol="_9_bypass_0" value="0"/>
+          <Port symbol="bass_1" value="5.4000000953674316"/>
+          <Port symbol="drive_2" value="92"/>
+          <Port symbol="middle_3" value="-3"/>
+          <Port symbol="treble_4" value="15"/>
+          <Port symbol="voice_5" value="0.47999998927116394"/>
+          <Port symbol="volume_6" value="0.61000001430511475"/>
+        </lv2>
+        <Controllable name="99_bypass" id="3584" flags="Toggle" value="0" parameter="0" symbol="_9_bypass_0"/>
+        <Controllable name="bass" id="3586" flags="" value="5.4000000953674316" parameter="1" symbol="bass_1"/>
+        <Controllable name="drive" id="3588" flags="" value="92" parameter="2" symbol="drive_2"/>
+        <Controllable name="middle" id="3590" flags="" value="-3" parameter="3" symbol="middle_3"/>
+        <Controllable name="treble" id="3592" flags="" value="15" parameter="4" symbol="treble_4"/>
+        <Controllable name="voice" id="3594" flags="" value="0.47999998927116394" parameter="5" symbol="voice_5"/>
+        <Controllable name="volume" id="3596" flags="" value="0.61000001430511475" parameter="6" symbol="volume_6"/>
+      </Processor>
+      <Processor id="4232" name="LSP Parametric Equalizer x16 Stereo" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://lsp-plug.in/plugins/lv2/para_equalizer_x16_stereo" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="2"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion" state-dir="state9">
+          <Port symbol="enabled" value="0"/>
+          <Port symbol="g_in" value="1"/>
+          <Port symbol="g_out" value="1"/>
+          <Port symbol="mode" value="0"/>
+          <Port symbol="fft" value="0"/>
+          <Port symbol="react" value="0.20000000298023224"/>
+          <Port symbol="shift" value="1"/>
+          <Port symbol="zoom" value="1"/>
+          <Port symbol="fsel" value="0"/>
+          <Port symbol="bal" value="0"/>
+          <Port symbol="frqs" value="0"/>
+          <Port symbol="fftv_l" value="1"/>
+          <Port symbol="fftv_r" value="1"/>
+          <Port symbol="ft_0" value="0"/>
+          <Port symbol="fm_0" value="0"/>
+          <Port symbol="s_0" value="0"/>
+          <Port symbol="xs_0" value="0"/>
+          <Port symbol="xm_0" value="0"/>
+          <Port symbol="f_0" value="16"/>
+          <Port symbol="g_0" value="1"/>
+          <Port symbol="q_0" value="0"/>
+          <Port symbol="hue_0" value="0"/>
+          <Port symbol="ft_1" value="0"/>
+          <Port symbol="fm_1" value="0"/>
+          <Port symbol="s_1" value="0"/>
+          <Port symbol="xs_1" value="0"/>
+          <Port symbol="xm_1" value="0"/>
+          <Port symbol="f_1" value="25"/>
+          <Port symbol="g_1" value="1"/>
+          <Port symbol="q_1" value="0"/>
+          <Port symbol="hue_1" value="0.0625"/>
+          <Port symbol="ft_2" value="0"/>
+          <Port symbol="fm_2" value="0"/>
+          <Port symbol="s_2" value="0"/>
+          <Port symbol="xs_2" value="0"/>
+          <Port symbol="xm_2" value="0"/>
+          <Port symbol="f_2" value="40"/>
+          <Port symbol="g_2" value="1"/>
+          <Port symbol="q_2" value="0"/>
+          <Port symbol="hue_2" value="0.125"/>
+          <Port symbol="ft_3" value="0"/>
+          <Port symbol="fm_3" value="0"/>
+          <Port symbol="s_3" value="0"/>
+          <Port symbol="xs_3" value="0"/>
+          <Port symbol="xm_3" value="0"/>
+          <Port symbol="f_3" value="63"/>
+          <Port symbol="g_3" value="1"/>
+          <Port symbol="q_3" value="0"/>
+          <Port symbol="hue_3" value="0.1875"/>
+          <Port symbol="ft_4" value="0"/>
+          <Port symbol="fm_4" value="0"/>
+          <Port symbol="s_4" value="0"/>
+          <Port symbol="xs_4" value="0"/>
+          <Port symbol="xm_4" value="0"/>
+          <Port symbol="f_4" value="100"/>
+          <Port symbol="g_4" value="1"/>
+          <Port symbol="q_4" value="0"/>
+          <Port symbol="hue_4" value="0.25"/>
+          <Port symbol="ft_5" value="0"/>
+          <Port symbol="fm_5" value="0"/>
+          <Port symbol="s_5" value="0"/>
+          <Port symbol="xs_5" value="0"/>
+          <Port symbol="xm_5" value="0"/>
+          <Port symbol="f_5" value="160"/>
+          <Port symbol="g_5" value="1"/>
+          <Port symbol="q_5" value="0"/>
+          <Port symbol="hue_5" value="0.3125"/>
+          <Port symbol="ft_6" value="0"/>
+          <Port symbol="fm_6" value="0"/>
+          <Port symbol="s_6" value="0"/>
+          <Port symbol="xs_6" value="0"/>
+          <Port symbol="xm_6" value="0"/>
+          <Port symbol="f_6" value="250"/>
+          <Port symbol="g_6" value="1"/>
+          <Port symbol="q_6" value="0"/>
+          <Port symbol="hue_6" value="0.375"/>
+          <Port symbol="ft_7" value="0"/>
+          <Port symbol="fm_7" value="0"/>
+          <Port symbol="s_7" value="0"/>
+          <Port symbol="xs_7" value="0"/>
+          <Port symbol="xm_7" value="0"/>
+          <Port symbol="f_7" value="400"/>
+          <Port symbol="g_7" value="1"/>
+          <Port symbol="q_7" value="0"/>
+          <Port symbol="hue_7" value="0.4375"/>
+          <Port symbol="ft_8" value="0"/>
+          <Port symbol="fm_8" value="0"/>
+          <Port symbol="s_8" value="0"/>
+          <Port symbol="xs_8" value="0"/>
+          <Port symbol="xm_8" value="0"/>
+          <Port symbol="f_8" value="630"/>
+          <Port symbol="g_8" value="1"/>
+          <Port symbol="q_8" value="0"/>
+          <Port symbol="hue_8" value="0.5"/>
+          <Port symbol="ft_9" value="0"/>
+          <Port symbol="fm_9" value="0"/>
+          <Port symbol="s_9" value="0"/>
+          <Port symbol="xs_9" value="0"/>
+          <Port symbol="xm_9" value="0"/>
+          <Port symbol="f_9" value="1000"/>
+          <Port symbol="g_9" value="1"/>
+          <Port symbol="q_9" value="0"/>
+          <Port symbol="hue_9" value="0.5625"/>
+          <Port symbol="ft_10" value="0"/>
+          <Port symbol="fm_10" value="0"/>
+          <Port symbol="s_10" value="0"/>
+          <Port symbol="xs_10" value="0"/>
+          <Port symbol="xm_10" value="0"/>
+          <Port symbol="f_10" value="1600"/>
+          <Port symbol="g_10" value="1"/>
+          <Port symbol="q_10" value="0"/>
+          <Port symbol="hue_10" value="0.625"/>
+          <Port symbol="ft_11" value="0"/>
+          <Port symbol="fm_11" value="0"/>
+          <Port symbol="s_11" value="0"/>
+          <Port symbol="xs_11" value="0"/>
+          <Port symbol="xm_11" value="0"/>
+          <Port symbol="f_11" value="2500"/>
+          <Port symbol="g_11" value="1"/>
+          <Port symbol="q_11" value="0"/>
+          <Port symbol="hue_11" value="0.6875"/>
+          <Port symbol="ft_12" value="0"/>
+          <Port symbol="fm_12" value="0"/>
+          <Port symbol="s_12" value="0"/>
+          <Port symbol="xs_12" value="0"/>
+          <Port symbol="xm_12" value="0"/>
+          <Port symbol="f_12" value="4000"/>
+          <Port symbol="g_12" value="1"/>
+          <Port symbol="q_12" value="0"/>
+          <Port symbol="hue_12" value="0.75"/>
+          <Port symbol="ft_13" value="0"/>
+          <Port symbol="fm_13" value="0"/>
+          <Port symbol="s_13" value="0"/>
+          <Port symbol="xs_13" value="0"/>
+          <Port symbol="xm_13" value="0"/>
+          <Port symbol="f_13" value="6300"/>
+          <Port symbol="g_13" value="1"/>
+          <Port symbol="q_13" value="0"/>
+          <Port symbol="hue_13" value="0.8125"/>
+          <Port symbol="ft_14" value="0"/>
+          <Port symbol="fm_14" value="0"/>
+          <Port symbol="s_14" value="0"/>
+          <Port symbol="xs_14" value="0"/>
+          <Port symbol="xm_14" value="0"/>
+          <Port symbol="f_14" value="10000"/>
+          <Port symbol="g_14" value="1"/>
+          <Port symbol="q_14" value="0"/>
+          <Port symbol="hue_14" value="0.875"/>
+          <Port symbol="ft_15" value="0"/>
+          <Port symbol="fm_15" value="0"/>
+          <Port symbol="s_15" value="0"/>
+          <Port symbol="xs_15" value="0"/>
+          <Port symbol="xm_15" value="0"/>
+          <Port symbol="f_15" value="16000"/>
+          <Port symbol="g_15" value="1"/>
+          <Port symbol="q_15" value="0"/>
+          <Port symbol="hue_15" value="0.9375"/>
+        </lv2>
+        <Controllable name="Enabled" id="3917" flags="Toggle" value="0" parameter="4" symbol="enabled"/>
+        <Controllable name="Input gain" id="3918" flags="" value="1" parameter="5" symbol="g_in"/>
+        <Controllable name="Output gain" id="3919" flags="" value="1" parameter="6" symbol="g_out"/>
+        <Controllable name="Equalizer mode" id="3920" flags="" value="0" parameter="7" symbol="mode"/>
+        <Controllable name="FFT analysis" id="3921" flags="" value="0" parameter="8" symbol="fft"/>
+        <Controllable name="FFT reactivity" id="3922" flags="" value="0.20000000298023224" parameter="9" symbol="react"/>
+        <Controllable name="Shift gain" id="3923" flags="" value="1" parameter="10" symbol="shift"/>
+        <Controllable name="Graph zoom" id="3924" flags="" value="1" parameter="11" symbol="zoom"/>
+        <Controllable name="Filter select" id="3925" flags="" value="0" parameter="12" symbol="fsel"/>
+        <Controllable name="Output balance" id="3926" flags="" value="0" parameter="13" symbol="bal"/>
+        <Controllable name="Frequency shift" id="3927" flags="" value="0" parameter="14" symbol="frqs"/>
+        <Controllable name="FFT visibility Left" id="3928" flags="Toggle" value="1" parameter="17" symbol="fftv_l"/>
+        <Controllable name="FFT visibility Right" id="3929" flags="Toggle" value="1" parameter="20" symbol="fftv_r"/>
+        <Controllable name="Filter type 0" id="3930" flags="" value="0" parameter="21" symbol="ft_0"/>
+        <Controllable name="Filter mode 0" id="3931" flags="" value="0" parameter="22" symbol="fm_0"/>
+        <Controllable name="Filter slope 0" id="3932" flags="" value="0" parameter="23" symbol="s_0"/>
+        <Controllable name="Filter solo 0" id="3933" flags="Toggle" value="0" parameter="24" symbol="xs_0"/>
+        <Controllable name="Filter mute 0" id="3934" flags="Toggle" value="0" parameter="25" symbol="xm_0"/>
+        <Controllable name="Frequency 0" id="3935" flags="" value="16" parameter="26" symbol="f_0"/>
+        <Controllable name="Gain 0" id="3936" flags="" value="1" parameter="27" symbol="g_0"/>
+        <Controllable name="Quality factor 0" id="3937" flags="" value="0" parameter="28" symbol="q_0"/>
+        <Controllable name="Hue 0" id="3938" flags="" value="0" parameter="29" symbol="hue_0"/>
+        <Controllable name="Filter type 1" id="3939" flags="" value="0" parameter="31" symbol="ft_1"/>
+        <Controllable name="Filter mode 1" id="3940" flags="" value="0" parameter="32" symbol="fm_1"/>
+        <Controllable name="Filter slope 1" id="3941" flags="" value="0" parameter="33" symbol="s_1"/>
+        <Controllable name="Filter solo 1" id="3942" flags="Toggle" value="0" parameter="34" symbol="xs_1"/>
+        <Controllable name="Filter mute 1" id="3943" flags="Toggle" value="0" parameter="35" symbol="xm_1"/>
+        <Controllable name="Frequency 1" id="3944" flags="" value="25" parameter="36" symbol="f_1"/>
+        <Controllable name="Gain 1" id="3945" flags="" value="1" parameter="37" symbol="g_1"/>
+        <Controllable name="Quality factor 1" id="3946" flags="" value="0" parameter="38" symbol="q_1"/>
+        <Controllable name="Hue 1" id="3947" flags="" value="0.0625" parameter="39" symbol="hue_1"/>
+        <Controllable name="Filter type 2" id="3948" flags="" value="0" parameter="41" symbol="ft_2"/>
+        <Controllable name="Filter mode 2" id="3949" flags="" value="0" parameter="42" symbol="fm_2"/>
+        <Controllable name="Filter slope 2" id="3950" flags="" value="0" parameter="43" symbol="s_2"/>
+        <Controllable name="Filter solo 2" id="3951" flags="Toggle" value="0" parameter="44" symbol="xs_2"/>
+        <Controllable name="Filter mute 2" id="3952" flags="Toggle" value="0" parameter="45" symbol="xm_2"/>
+        <Controllable name="Frequency 2" id="3953" flags="" value="40" parameter="46" symbol="f_2"/>
+        <Controllable name="Gain 2" id="3954" flags="" value="1" parameter="47" symbol="g_2"/>
+        <Controllable name="Quality factor 2" id="3955" flags="" value="0" parameter="48" symbol="q_2"/>
+        <Controllable name="Hue 2" id="3956" flags="" value="0.125" parameter="49" symbol="hue_2"/>
+        <Controllable name="Filter type 3" id="3957" flags="" value="0" parameter="51" symbol="ft_3"/>
+        <Controllable name="Filter mode 3" id="3958" flags="" value="0" parameter="52" symbol="fm_3"/>
+        <Controllable name="Filter slope 3" id="3959" flags="" value="0" parameter="53" symbol="s_3"/>
+        <Controllable name="Filter solo 3" id="3960" flags="Toggle" value="0" parameter="54" symbol="xs_3"/>
+        <Controllable name="Filter mute 3" id="3961" flags="Toggle" value="0" parameter="55" symbol="xm_3"/>
+        <Controllable name="Frequency 3" id="3962" flags="" value="63" parameter="56" symbol="f_3"/>
+        <Controllable name="Gain 3" id="3963" flags="" value="1" parameter="57" symbol="g_3"/>
+        <Controllable name="Quality factor 3" id="3964" flags="" value="0" parameter="58" symbol="q_3"/>
+        <Controllable name="Hue 3" id="3965" flags="" value="0.1875" parameter="59" symbol="hue_3"/>
+        <Controllable name="Filter type 4" id="3966" flags="" value="0" parameter="61" symbol="ft_4"/>
+        <Controllable name="Filter mode 4" id="3967" flags="" value="0" parameter="62" symbol="fm_4"/>
+        <Controllable name="Filter slope 4" id="3968" flags="" value="0" parameter="63" symbol="s_4"/>
+        <Controllable name="Filter solo 4" id="3969" flags="Toggle" value="0" parameter="64" symbol="xs_4"/>
+        <Controllable name="Filter mute 4" id="3970" flags="Toggle" value="0" parameter="65" symbol="xm_4"/>
+        <Controllable name="Frequency 4" id="3971" flags="" value="100" parameter="66" symbol="f_4"/>
+        <Controllable name="Gain 4" id="3972" flags="" value="1" parameter="67" symbol="g_4"/>
+        <Controllable name="Quality factor 4" id="3973" flags="" value="0" parameter="68" symbol="q_4"/>
+        <Controllable name="Hue 4" id="3974" flags="" value="0.25" parameter="69" symbol="hue_4"/>
+        <Controllable name="Filter type 5" id="3975" flags="" value="0" parameter="71" symbol="ft_5"/>
+        <Controllable name="Filter mode 5" id="3976" flags="" value="0" parameter="72" symbol="fm_5"/>
+        <Controllable name="Filter slope 5" id="3977" flags="" value="0" parameter="73" symbol="s_5"/>
+        <Controllable name="Filter solo 5" id="3978" flags="Toggle" value="0" parameter="74" symbol="xs_5"/>
+        <Controllable name="Filter mute 5" id="3979" flags="Toggle" value="0" parameter="75" symbol="xm_5"/>
+        <Controllable name="Frequency 5" id="3980" flags="" value="160" parameter="76" symbol="f_5"/>
+        <Controllable name="Gain 5" id="3981" flags="" value="1" parameter="77" symbol="g_5"/>
+        <Controllable name="Quality factor 5" id="3982" flags="" value="0" parameter="78" symbol="q_5"/>
+        <Controllable name="Hue 5" id="3983" flags="" value="0.3125" parameter="79" symbol="hue_5"/>
+        <Controllable name="Filter type 6" id="3984" flags="" value="0" parameter="81" symbol="ft_6"/>
+        <Controllable name="Filter mode 6" id="3985" flags="" value="0" parameter="82" symbol="fm_6"/>
+        <Controllable name="Filter slope 6" id="3986" flags="" value="0" parameter="83" symbol="s_6"/>
+        <Controllable name="Filter solo 6" id="3987" flags="Toggle" value="0" parameter="84" symbol="xs_6"/>
+        <Controllable name="Filter mute 6" id="3988" flags="Toggle" value="0" parameter="85" symbol="xm_6"/>
+        <Controllable name="Frequency 6" id="3989" flags="" value="250" parameter="86" symbol="f_6"/>
+        <Controllable name="Gain 6" id="3990" flags="" value="1" parameter="87" symbol="g_6"/>
+        <Controllable name="Quality factor 6" id="3991" flags="" value="0" parameter="88" symbol="q_6"/>
+        <Controllable name="Hue 6" id="3992" flags="" value="0.375" parameter="89" symbol="hue_6"/>
+        <Controllable name="Filter type 7" id="3993" flags="" value="0" parameter="91" symbol="ft_7"/>
+        <Controllable name="Filter mode 7" id="3994" flags="" value="0" parameter="92" symbol="fm_7"/>
+        <Controllable name="Filter slope 7" id="3995" flags="" value="0" parameter="93" symbol="s_7"/>
+        <Controllable name="Filter solo 7" id="3996" flags="Toggle" value="0" parameter="94" symbol="xs_7"/>
+        <Controllable name="Filter mute 7" id="3997" flags="Toggle" value="0" parameter="95" symbol="xm_7"/>
+        <Controllable name="Frequency 7" id="3998" flags="" value="400" parameter="96" symbol="f_7"/>
+        <Controllable name="Gain 7" id="3999" flags="" value="1" parameter="97" symbol="g_7"/>
+        <Controllable name="Quality factor 7" id="4000" flags="" value="0" parameter="98" symbol="q_7"/>
+        <Controllable name="Hue 7" id="4001" flags="" value="0.4375" parameter="99" symbol="hue_7"/>
+        <Controllable name="Filter type 8" id="4002" flags="" value="0" parameter="101" symbol="ft_8"/>
+        <Controllable name="Filter mode 8" id="4003" flags="" value="0" parameter="102" symbol="fm_8"/>
+        <Controllable name="Filter slope 8" id="4004" flags="" value="0" parameter="103" symbol="s_8"/>
+        <Controllable name="Filter solo 8" id="4005" flags="Toggle" value="0" parameter="104" symbol="xs_8"/>
+        <Controllable name="Filter mute 8" id="4006" flags="Toggle" value="0" parameter="105" symbol="xm_8"/>
+        <Controllable name="Frequency 8" id="4007" flags="" value="630" parameter="106" symbol="f_8"/>
+        <Controllable name="Gain 8" id="4008" flags="" value="1" parameter="107" symbol="g_8"/>
+        <Controllable name="Quality factor 8" id="4009" flags="" value="0" parameter="108" symbol="q_8"/>
+        <Controllable name="Hue 8" id="4010" flags="" value="0.5" parameter="109" symbol="hue_8"/>
+        <Controllable name="Filter type 9" id="4011" flags="" value="0" parameter="111" symbol="ft_9"/>
+        <Controllable name="Filter mode 9" id="4012" flags="" value="0" parameter="112" symbol="fm_9"/>
+        <Controllable name="Filter slope 9" id="4013" flags="" value="0" parameter="113" symbol="s_9"/>
+        <Controllable name="Filter solo 9" id="4014" flags="Toggle" value="0" parameter="114" symbol="xs_9"/>
+        <Controllable name="Filter mute 9" id="4015" flags="Toggle" value="0" parameter="115" symbol="xm_9"/>
+        <Controllable name="Frequency 9" id="4016" flags="" value="1000" parameter="116" symbol="f_9"/>
+        <Controllable name="Gain 9" id="4017" flags="" value="1" parameter="117" symbol="g_9"/>
+        <Controllable name="Quality factor 9" id="4018" flags="" value="0" parameter="118" symbol="q_9"/>
+        <Controllable name="Hue 9" id="4019" flags="" value="0.5625" parameter="119" symbol="hue_9"/>
+        <Controllable name="Filter type 10" id="4020" flags="" value="0" parameter="121" symbol="ft_10"/>
+        <Controllable name="Filter mode 10" id="4021" flags="" value="0" parameter="122" symbol="fm_10"/>
+        <Controllable name="Filter slope 10" id="4022" flags="" value="0" parameter="123" symbol="s_10"/>
+        <Controllable name="Filter solo 10" id="4023" flags="Toggle" value="0" parameter="124" symbol="xs_10"/>
+        <Controllable name="Filter mute 10" id="4024" flags="Toggle" value="0" parameter="125" symbol="xm_10"/>
+        <Controllable name="Frequency 10" id="4025" flags="" value="1600" parameter="126" symbol="f_10"/>
+        <Controllable name="Gain 10" id="4026" flags="" value="1" parameter="127" symbol="g_10"/>
+        <Controllable name="Quality factor 10" id="4027" flags="" value="0" parameter="128" symbol="q_10"/>
+        <Controllable name="Hue 10" id="4028" flags="" value="0.625" parameter="129" symbol="hue_10"/>
+        <Controllable name="Filter type 11" id="4029" flags="" value="0" parameter="131" symbol="ft_11"/>
+        <Controllable name="Filter mode 11" id="4030" flags="" value="0" parameter="132" symbol="fm_11"/>
+        <Controllable name="Filter slope 11" id="4031" flags="" value="0" parameter="133" symbol="s_11"/>
+        <Controllable name="Filter solo 11" id="4032" flags="Toggle" value="0" parameter="134" symbol="xs_11"/>
+        <Controllable name="Filter mute 11" id="4033" flags="Toggle" value="0" parameter="135" symbol="xm_11"/>
+        <Controllable name="Frequency 11" id="4034" flags="" value="2500" parameter="136" symbol="f_11"/>
+        <Controllable name="Gain 11" id="4035" flags="" value="1" parameter="137" symbol="g_11"/>
+        <Controllable name="Quality factor 11" id="4036" flags="" value="0" parameter="138" symbol="q_11"/>
+        <Controllable name="Hue 11" id="4037" flags="" value="0.6875" parameter="139" symbol="hue_11"/>
+        <Controllable name="Filter type 12" id="4038" flags="" value="0" parameter="141" symbol="ft_12"/>
+        <Controllable name="Filter mode 12" id="4039" flags="" value="0" parameter="142" symbol="fm_12"/>
+        <Controllable name="Filter slope 12" id="4040" flags="" value="0" parameter="143" symbol="s_12"/>
+        <Controllable name="Filter solo 12" id="4041" flags="Toggle" value="0" parameter="144" symbol="xs_12"/>
+        <Controllable name="Filter mute 12" id="4042" flags="Toggle" value="0" parameter="145" symbol="xm_12"/>
+        <Controllable name="Frequency 12" id="4043" flags="" value="4000" parameter="146" symbol="f_12"/>
+        <Controllable name="Gain 12" id="4044" flags="" value="1" parameter="147" symbol="g_12"/>
+        <Controllable name="Quality factor 12" id="4045" flags="" value="0" parameter="148" symbol="q_12"/>
+        <Controllable name="Hue 12" id="4046" flags="" value="0.75" parameter="149" symbol="hue_12"/>
+        <Controllable name="Filter type 13" id="4047" flags="" value="0" parameter="151" symbol="ft_13"/>
+        <Controllable name="Filter mode 13" id="4048" flags="" value="0" parameter="152" symbol="fm_13"/>
+        <Controllable name="Filter slope 13" id="4049" flags="" value="0" parameter="153" symbol="s_13"/>
+        <Controllable name="Filter solo 13" id="4050" flags="Toggle" value="0" parameter="154" symbol="xs_13"/>
+        <Controllable name="Filter mute 13" id="4051" flags="Toggle" value="0" parameter="155" symbol="xm_13"/>
+        <Controllable name="Frequency 13" id="4052" flags="" value="6300" parameter="156" symbol="f_13"/>
+        <Controllable name="Gain 13" id="4053" flags="" value="1" parameter="157" symbol="g_13"/>
+        <Controllable name="Quality factor 13" id="4054" flags="" value="0" parameter="158" symbol="q_13"/>
+        <Controllable name="Hue 13" id="4055" flags="" value="0.8125" parameter="159" symbol="hue_13"/>
+        <Controllable name="Filter type 14" id="4056" flags="" value="0" parameter="161" symbol="ft_14"/>
+        <Controllable name="Filter mode 14" id="4057" flags="" value="0" parameter="162" symbol="fm_14"/>
+        <Controllable name="Filter slope 14" id="4058" flags="" value="0" parameter="163" symbol="s_14"/>
+        <Controllable name="Filter solo 14" id="4059" flags="Toggle" value="0" parameter="164" symbol="xs_14"/>
+        <Controllable name="Filter mute 14" id="4060" flags="Toggle" value="0" parameter="165" symbol="xm_14"/>
+        <Controllable name="Frequency 14" id="4061" flags="" value="10000" parameter="166" symbol="f_14"/>
+        <Controllable name="Gain 14" id="4062" flags="" value="1" parameter="167" symbol="g_14"/>
+        <Controllable name="Quality factor 14" id="4063" flags="" value="0" parameter="168" symbol="q_14"/>
+        <Controllable name="Hue 14" id="4064" flags="" value="0.875" parameter="169" symbol="hue_14"/>
+        <Controllable name="Filter type 15" id="4065" flags="" value="0" parameter="171" symbol="ft_15"/>
+        <Controllable name="Filter mode 15" id="4066" flags="" value="0" parameter="172" symbol="fm_15"/>
+        <Controllable name="Filter slope 15" id="4067" flags="" value="0" parameter="173" symbol="s_15"/>
+        <Controllable name="Filter solo 15" id="4068" flags="Toggle" value="0" parameter="174" symbol="xs_15"/>
+        <Controllable name="Filter mute 15" id="4069" flags="Toggle" value="0" parameter="175" symbol="xm_15"/>
+        <Controllable name="Frequency 15" id="4070" flags="" value="16000" parameter="176" symbol="f_15"/>
+        <Controllable name="Gain 15" id="4071" flags="" value="1" parameter="177" symbol="g_15"/>
+        <Controllable name="Quality factor 15" id="4072" flags="" value="0" parameter="178" symbol="q_15"/>
+        <Controllable name="Hue 15" id="4073" flags="" value="0.9375" parameter="179" symbol="hue_15"/>
+      </Processor>
+      <Processor id="4271" name="ACE Compressor (stereo)" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="urn:ardour:a-comp#stereo" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="3"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" template-dir="/home/chrisanthropic/.config/ardour6/templates/Midi track with mixbus, reverb, and parallel distortion">
+          <Port symbol="att" value="10"/>
+          <Port symbol="rel" value="80"/>
+          <Port symbol="kn" value="0"/>
+          <Port symbol="rat" value="4"/>
+          <Port symbol="thr" value="0"/>
+          <Port symbol="mak" value="0"/>
+          <Port symbol="sidech" value="0"/>
+          <Port symbol="enable" value="0"/>
+        </lv2>
+        <Controllable name="Attack" id="4254" flags="" value="10" parameter="0" symbol="att"/>
+        <Controllable name="Release" id="4255" flags="" value="80" parameter="1" symbol="rel"/>
+        <Controllable name="Knee" id="4256" flags="" value="0" parameter="2" symbol="kn"/>
+        <Controllable name="Ratio" id="4257" flags="" value="4" parameter="3" symbol="rat"/>
+        <Controllable name="Threshold" id="4258" flags="" value="0" parameter="4" symbol="thr"/>
+        <Controllable name="Makeup" id="4259" flags="" value="0" parameter="5" symbol="mak"/>
+        <Controllable name="Sidechain" id="4260" flags="Toggle" value="0" parameter="9" symbol="sidech"/>
+        <Controllable name="Enable" id="4261" flags="Toggle" value="0" parameter="10" symbol="enable"/>
+      </Processor>
+      <Processor id="4286" name="TAP TubeWarmth" active="0" user-latency="0" use-user-latency="0" type="ladspa" unique-id="2158" count="2" custom="0">
+        <ConfiguredInput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="audio" count="1"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+        </OutputMap-0>
+        <InputMap-1>
+          <Channelmap type="audio" from="0" to="1"/>
+        </InputMap-1>
+        <OutputMap-1>
+          <Channelmap type="audio" from="0" to="1"/>
+        </OutputMap-1>
+        <ThruMap/>
+        <ladspa last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0">
+          <Port number="0" value="2.5750000476837158"/>
+          <Port number="1" value="10"/>
+        </ladspa>
+        <Controllable name="Drive" id="4281" flags="" value="2.5750000476837158" parameter="0"/>
+        <Controllable name="Tape--Tube Blend" id="4282" flags="" value="10" parameter="1"/>
+      </Processor>
+      <Processor id="3542" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="3516" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="3546" name="meter-DISTORTION" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="3547" name="DISTORTION" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="DISTORTION" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+        <Pannable>
+          <Controllable name="pan-azimuth" id="3531" flags="" value="0.5"/>
+          <Controllable name="pan-width" id="3535" flags="" value="0"/>
+          <Controllable name="pan-elevation" id="3533" flags="" value="0"/>
+          <Controllable name="pan-frontback" id="3537" flags="" value="0"/>
+          <Controllable name="pan-lfe" id="3539" flags="" value="0"/>
+          <Automation>
+            <AutomationList automation-id="pan-azimuth" id="3530" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-elevation" id="3532" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-width" id="3534" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-frontback" id="3536" interpolation-style="Linear" state="Off"/>
+            <AutomationList automation-id="pan-lfe" id="3538" interpolation-style="Linear" state="Off"/>
+          </Automation>
+        </Pannable>
+      </Processor>
+      <Slavable/>
+    </Route>
+  </Routes>
+  <Playlists>
+    <Playlist id="301" name="General MIDI Synth.1" type="midi" orig-track-id="262" shared-with-ids="" frozen="0"/>
+  </Playlists>
+  <UnusedPlaylists/>
+  <RouteGroups/>
+  <Click>
+    <IO name="Click" id="58" direction="Output" default-type="audio">
+      <Port type="audio" name="Click/audio_out 1">
+        <Connection other="system:playback_1"/>
+      </Port>
+      <Port type="audio" name="Click/audio_out 2">
+        <Connection other="system:playback_2"/>
+      </Port>
+    </IO>
+    <Processor id="59" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+      <Controllable name="gaincontrol" id="57" flags="GainLike" value="1"/>
+    </Processor>
+  </Click>
+  <Speakers>
+    <Speaker azimuth="240" elevation="0" distance="1"/>
+    <Speaker azimuth="120" elevation="0" distance="1"/>
+  </Speakers>
+  <TempoMap>
+    <Tempo pulse="0" frame="0" movable="0" lock-style="AudioTime" beats-per-minute="120" note-type="4" clamped="0" end-beats-per-minute="120" active="1" locked-to-meter="1"/>
+    <Meter pulse="0" frame="0" movable="0" lock-style="AudioTime" bbt="1|1|0" beat="0" note-type="4" divisions-per-bar="4"/>
+  </TempoMap>
+  <ControlProtocols>
+    <Protocol name="Ableton Push 2" active="0" session-state="0"/>
+    <Protocol name="ContourDesign" active="0" session-state="0"/>
+    <Protocol name="Generic MIDI" active="0" session-state="0"/>
+    <Protocol name="Mackie" active="0" session-state="0"/>
+    <Protocol name="Novation Launch Control XL" active="0" session-state="0"/>
+    <Protocol name="Open Sound Control (OSC)" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort16" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort2" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort8" active="0" session-state="0"/>
+    <Protocol name="Steinberg CC121" active="0" session-state="0"/>
+    <Protocol name="Tascam US-2400" active="0" session-state="0"/>
+    <Protocol name="WebSockets Server (Experimental)" active="0" session-state="0"/>
+  </ControlProtocols>
+  <Extra>
+    <Videomonitor active="0"/>
+  </Extra>
+  <Script lua="Lua 5.3">c2NyaXB0cyA9IHt9IA==</Script>
+  <description>1 midi track
+  - with General Midi Synth plugin
+  - with Aux Send to audio mixbus
+  
+1 Audio mixbus
+  - routed to master
+  - with aux send to REVERB and aux send to DISTORTION
+
+1 REVERB mixbus
+  - with ACE Reverb plugin
+  - with wet 100% (we only hear the reverb and none of the original signal)
+  - routed to master
+
+1 DISTORTION mixbus
+  - with kpp-Distortion plugin
+  - routed to master
+  
+Plugins on every bus (including master):
+    - LSP Parametric EQ 
+    - ACE Compressor
+    - TAP Tubewarmth
+
+Usage:
+    - use midi track send mixer to control level sent to the mixbus
+    - control original signal sent to master via audio mixbus mixer
+    - control distortion signal sent to master via distortion aux send
+    - use midi track panning to control panning
+    - enable eq/compressor/saturation as desired and adjust as needed</description>
+</Session>
